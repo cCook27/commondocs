@@ -4,10 +4,14 @@ title: Private Alternatives Alongside an Employer Plan — Vector Store Source
 kind: vector-store-source
 schema_version: "1.0"
 source_document: plan-structures/alternative-companion/human-readable.md
-source_commit: fed8062947b6045779a0fea1438b9e1ffcdc6f5f
-source_sha256: 64702774a771332e6c7b6d4be309b417018e1eeec3d36e20b5149916eafbb2e9
+metadata_document: plan-structures/alternative-companion/metadata.yaml
+source_commit: 2b6ee17093e27a00afc6b54c86f6f2a244e9acd9
+source_sha256: 56cc23f84de3ca41e5964dded14f2fb0919e3637c31e5baeaa540b26c6d09522
+metadata_sha256: 52f7b5bc38cafb9ebcd01126a7527ba89707c0532e3fa4f21a0d6d70698068eb
 generation_method: deterministic-markdown-conversion
 canonical_source: false
+source_status: draft
+owner: CommonCare
 last_reviewed: unknown
 ---
 

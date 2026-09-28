@@ -4,10 +4,15 @@ title: CommonFunds — Rules and Calculation Specification
 kind: vector-store-source
 schema_version: "1.0"
 source_document: plan-structures/common-funds/human-readable.md
-source_commit: fed8062947b6045779a0fea1438b9e1ffcdc6f5f
-source_sha256: 28bd18d311eddf271bfd7b1e8e3f8a8a52e53ea8b79f261fecac56cb3e87beec
+metadata_document: plan-structures/common-funds/metadata.yaml
+source_commit: 2b6ee17093e27a00afc6b54c86f6f2a244e9acd9
+source_sha256: 681c63c1a32bd60e13cd58316de967cb9134804b6c248fc43704cb4a2848dd24
+metadata_sha256: 242e0b9567a3a775bf269d2acb0a8c0a73af902bb2206acafad8fc6bf6064a90
 generation_method: deterministic-commonfunds-split-conversion
 canonical_source: false
+source_status: draft
+source_version: 1.0
+jurisdiction: United States
 scope: rules-and-calculation-specification
 last_reviewed: unknown
 ---

@@ -4,10 +4,15 @@ title: CHOICE — Vector Store Source
 kind: vector-store-source
 schema_version: "1.0"
 source_document: plan-structures/choice-ichra/human-readable.md
-source_commit: fed8062947b6045779a0fea1438b9e1ffcdc6f5f
-source_sha256: 1ed9660c30ebf965c9cc361f2e5c7a233ed2f27e0942fd7457b25242d08f8f34
+metadata_document: plan-structures/choice-ichra/metadata.yaml
+source_commit: 2b6ee17093e27a00afc6b54c86f6f2a244e9acd9
+source_sha256: dacefe6afd0828ff6fa290ee178580d42b633b02f96c3e64000ad2e4aba0c1de
+metadata_sha256: 9b769bd2d50959f57bfb1171245902f69217a5d83d81470045364dd1d8325bb9
 generation_method: deterministic-markdown-conversion
 canonical_source: false
+source_status: draft
+source_version: 1.0
+jurisdiction: United States
 last_reviewed: 2026-09-15
 ---
 

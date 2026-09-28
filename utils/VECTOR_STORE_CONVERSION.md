@@ -17,19 +17,20 @@ If the source contains an error, ambiguity, unsupported assertion, stale citatio
 
 ## Required file relationship
 
-For each convertible document, use this colocated pair:
+For each convertible document, use this colocated set:
 
 ```text
-human-readable.md   # canonical source
+human-readable.md   # canonical editorial source
+metadata.yaml       # canonical document metadata
 vector-store.md     # generated retrieval source
 ```
 
 Every `vector-store.md` must identify:
 
 - The stable source-document ID;
-- The relative source path;
+- The relative source and metadata paths;
 - The Git commit used for conversion;
-- A SHA-256 hash of the exact source contents;
+- SHA-256 hashes of the exact source and metadata contents;
 - The conversion schema version;
 - The source's jurisdiction, effective context, and review date; and
 - That the generated file is not canonical.
@@ -38,7 +39,7 @@ Every `vector-store.md` must identify:
 
 ### 1. Read the complete source
 
-Read the entire file before converting it. Include front matter, callouts, tables, footnotes, quotations, citations, appendices, and material inside collapsible HTML elements.
+Read the entire Markdown source and its adjacent `metadata.yaml` before converting it. Include callouts, tables, footnotes, quotations, citations, appendices, and material inside collapsible HTML elements.
 
 ### 2. Preserve source metadata
 
@@ -152,8 +153,8 @@ Before accepting a generated vector-store file, verify all of the following:
 
 ## Repository workflow
 
-1. Edit `human-readable.md`.
-2. Review and approve the human-readable change.
+1. Edit `human-readable.md` and, when needed, `metadata.yaml`.
+2. Review and approve the human-readable and metadata changes.
 3. Regenerate `vector-store.md` from the approved source.
 4. Run structural and content validation.
 5. Commit both files together.

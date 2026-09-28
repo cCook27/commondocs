@@ -332,15 +332,20 @@ An offer of employer major medical coverage generally blocks the premium tax cre
 
 This option allows employees to benefit from the premium tax credit while the employer offers the same streamlined CommonFunds companion structure for out of pocket costs. CommonCare administers a turn-key plan structure for achieving this compliantly.
 
-Like the alternative coverages, this option generally cannot be employer-sponsored. Generally because of an important but realistic exception for some groups: 
+Like the alternative coverages, this option generally cannot be employer-sponsored. Generally, because of an important but realistic exception for some groups: 
 
 - If the ages/income mix of employees is a fit, the employer may offer an CHOICE/ICHRA arrangement with minimal allowance. This will mean some employees (those most able to benefit from the PTC) still have access to the PTC due to the coverage not being legally affordable. The employer can still offer an allowance, but it is a flex-allowance and therefore does not count toward affordability.
 - These employees opt-out of the CHOICE/ICHRA and CommonCare helps them enroll in individual coverage seamlessly (still payroll-funded, only post-tax, and not employer-sponsored)
 - The remaining employees still get the benefit of tax-free premiums through the CHOICE/ICHRA arrangement. 
 
-This is a really potent option for employers with less than 50 full-time-equivalent employees. Often the total optimal arrangement cannot be known until enrollment is already underway, but CommonCare can allow an easy migration to this arrangement where it is optimal. The savings netted make the bother of a small change very worthwhile.
+This is an important option for employers with less than 50 full-time-equivalent employees. Often the total optimal arrangement cannot be known until enrollment is already underway, but CommonCare can allow an easy migration to this arrangement where it is optimal. The savings netted make the bother of a small change very worthwhile.
 
 See the [PTC Plan documentation](https://commoncare.org/products/ptc).
+
+> [WARNING!] It is important to note that most plans who offer this option will need to offer a legitimate employer sponsored health plan in order to be able to offered qualified HRA/FSA options as excepted benefits. See [§45 CFR 146.145](https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-B/part-146/subpart-D/section-146.145).
+> 
+> CommonCare self-funded MEC product is the ideal way to accomplish this. The plan does not meet minimum value and therefore preserves the PTC eligibility for employees. It is self-funded, so there is no premium dollars sent off to a trite insurance product. The utilization and risks for the plan are defined and limited. See [The self-funded MEC docs](https://github.com/commoncare-dev/commondocs/blob/main/plan-structures/self-funded-mec/basic-mec/human-readable.md)
+
 
 ---
 
@@ -361,3 +366,113 @@ The flexibility of CommonFunding comes from coordinating distinct components, no
 ## Core principle
 
 > **Use insurance for the risk that needs insurance. Fund routine care directly, cap the employer’s exposure, and optimize the combination for the participant standing in front of you.**
+
+## Implementation and pricing nuances
+
+CommonCare provides turn-key tooling for pricing, implementing, and administering this plan structure. There are some critical decisions made in modeling costs in our model worth considering: 
+
+### Employee deductible/network elections
+
+CommonFunding is designed to work with the existing insurance product landscape. It is not a carrier-designed level-funded arrangement in which a single carrier controls the insurance product, funding account, and participant incentives. Instead, CommonFunding accepts the incentives and cost-sharing rules of the underlying insurance products and applies a consistent funding layer across them.
+
+An important implementation nuance arises when an employee selects an underlying insurance plan that differs from the benchmark plan used to price the CommonFunding arrangement. This is a standard use case in CHOICE and ICHRA programs, but it can also occur when employees live in different geographic markets, require access to different provider networks, or are offered multiple insurance options.
+
+The benchmark price assumes a particular underlying deductible and expected CommonFunds liability. Selecting a plan with a different deductible changes that expected liability:
+
+- A higher underlying deductible creates additional potential exposure and supports a lower deductible-adjusted insurance premium.
+- A lower underlying deductible reduces potential exposure and produces a higher deductible-adjusted insurance premium.
+
+This adjustment is separate from any difference in the carriers’ raw premiums. Raw premium differences may reflect network breadth, negotiated provider rates, plan design, carrier administration, geography, or other factors. The deductible adjustment only estimates the expected value associated with the change in deductible exposure.
+
+#### Deductible cost ratios
+
+The model calculates expected CommonFunds claims at $1,000 deductible intervals. These projections are converted into marginal deductible cost ratios:
+
+```text
+Deductible cost ratio
+=
+(CommonFunds exposure at the current tier
+ − CommonFunds exposure at the next tier)
+÷ deductible dollars in the tier
+```
+
+When the projections contain group totals, the difference is also divided by the number of participating employees.
+
+For example:
+
+```text
+Projected CommonFunds claims at $2,000: $3,500
+Projected CommonFunds claims at $3,000: $2,900
+
+Cost ratio for the $2,000–$3,000 tier:
+($3,500 − $2,900) ÷ $1,000 = 0.60
+```
+
+A ratio of `0.60` means that each additional dollar of deductible in that tier represents approximately `$0.60` of expected cost.
+
+Because claim frequency generally declines at higher levels of exposure, the ratio can vary by deductible tier. This produces a more accurate adjustment than applying one average ratio to the entire deductible difference.
+
+If an elected deductible exceeds the range supported by the benchmark simulation, the model carries forward the highest stable tier rate for which CommonFunds claim information exists. This prevents the adjustment from incorrectly falling to zero merely because the benchmark plan’s cost-sharing limit has been reached.
+
+#### Applying the adjustment
+
+The applicable tier rates are accumulated between the benchmark deductible and the elected deductible.
+
+```text
+Deductible-adjusted premium
+=
+Benchmark premium + deductible adjustment
+```
+
+The direction of the adjustment depends on the election:
+
+```text
+Higher elected deductible → negative adjustment
+Lower elected deductible  → positive adjustment
+```
+
+> **Example**
+>
+> Assume the benchmark plan has:
+>
+> - Annual premium: `$12,000`
+> - Deductible: `$2,000`
+>
+> An employee selects a plan with a `$4,500` deductible. The applicable cost ratios are:
+>
+> | Deductible tier | Cost ratio | Adjustment |
+> |---|---:|---:|
+> | $2,000–$3,000 | 0.60 | $600 |
+> | $3,000–$4,000 | 0.50 | $500 |
+> | $4,000–$4,500 | 0.40 | $200 |
+>
+> The additional `$2,500` of deductible represents `$1,300` of expected cost:
+>
+> ```text
+> ($1,000 × 0.60)
+> + ($1,000 × 0.50)
+> + ($500 × 0.40)
+> = $1,300
+> ```
+>
+> Because the employee selected a higher deductible, the adjustment is negative:
+>
+> ```text
+> $12,000 − $1,300 = $10,700
+> ```
+>
+> The resulting deductible-adjusted annual premium is `$10,700`, before applying any separate difference between the underlying plans’ raw carrier premiums.
+
+The same method works in reverse. If the employee selects a lower deductible than the benchmark, the accumulated expected cost is added to the benchmark premium rather than subtracted.
+
+### Cost sharing nuances
+
+The cost-sharing differences between insurance and CommonFunds are too nuanced to model accurately. Things such as:
+
+- Preventive care being insurance-covered with no cost-sharing
+- The complexities of insurance coinsurance and co-pays in and out of network
+- Drug tiers
+
+Are practically impossible to price into cost simulations in great detail if using genuine claims data and not manufactured data. 
+
+Because of this, CommonCare simply assumes the conservative approach for each of these. We exclude no preventive care costs as being "insurance-paid," assume global high coinsurance rates, and assume no special tiers for specialty care or drugs. It is assumed that all of the bills simulated fall through fully to the CommonFunds cost sharing layer. 

@@ -1,7 +1,7 @@
 import fs from "node:fs/promises";
 import path from "node:path";
-import crypto from "node:crypto";
 import { execFileSync } from "node:child_process";
+import { loadDocumentSource } from "./document-source.mjs";
 
 const repoRoot = path.resolve(import.meta.dirname, "..");
 const sourceRel = process.argv[2];
@@ -16,21 +16,21 @@ if (path.basename(sourcePath) !== "human-readable.md") {
 }
 
 const targetPath = path.join(path.dirname(sourcePath), "vector-store.md");
-const source = await fs.readFile(sourcePath, "utf8");
-const sourceSha256 = crypto.createHash("sha256").update(source).digest("hex");
 const sourceCommit = execFileSync("git", ["-C", repoRoot, "rev-parse", "HEAD"], { encoding: "utf8" }).trim();
-
-const fm = source.match(/^---\n([\s\S]*?)\n---\n/);
-if (!fm) throw new Error("Source document requires YAML front matter");
-
-const getScalar = (key, fallback = "") => {
-  const match = fm[1].match(new RegExp(`^${key}:\\s*(.+)$`, "m"));
-  return match ? match[1].replace(/^['"]|['"]$/g, "") : fallback;
-};
+const { body, sourceSha256, metadataRel, metadataSha256, scalar: getScalar } =
+  await loadDocumentSource(repoRoot, sourceRel);
 
 const docId = getScalar("id", "document.unknown");
 const title = getScalar("title", "Untitled document");
-const body = source.slice(fm[0].length);
+const sourceMetadata = [
+  ["source_status", "status"],
+  ["source_version", "version"],
+  ["jurisdiction", "jurisdiction"],
+  ["owner", "owner"],
+].map(([outputKey, sourceKey]) => {
+  const value = getScalar(sourceKey);
+  return value ? `${outputKey}: ${value}` : "";
+}).filter(Boolean).join("\n");
 
 const slugify = (value) => value
   .toLowerCase()
@@ -111,10 +111,13 @@ title: ${title} — Vector Store Source
 kind: vector-store-source
 schema_version: "1.0"
 source_document: ${sourceRel}
+metadata_document: ${metadataRel}
 source_commit: ${sourceCommit}
 source_sha256: ${sourceSha256}
+metadata_sha256: ${metadataSha256}
 generation_method: deterministic-markdown-conversion
 canonical_source: false
+${sourceMetadata}
 last_reviewed: ${getScalar("last_reviewed", "unknown")}
 ---
 

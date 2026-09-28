@@ -4,10 +4,15 @@ title: CommonCare Self-Funded Dental Plan — Vector Store Source
 kind: vector-store-source
 schema_version: "1.0"
 source_document: plan-structures/self-funded-dental/human-readable.md
-source_commit: fed8062947b6045779a0fea1438b9e1ffcdc6f5f
-source_sha256: 7328e4aa99dcb2e69a4963e7f525b0d1e024bfada48a18288028279df241f2f5
+metadata_document: plan-structures/self-funded-dental/metadata.yaml
+source_commit: 2b6ee17093e27a00afc6b54c86f6f2a244e9acd9
+source_sha256: f77bf0320c01d02efb121a0c8f111fc9ead62182dbb50def62ff4bf5828747b6
+metadata_sha256: e559c1066d3668c8b651b076980cb3afb95abe748f063c995094bfa7d0b35d45
 generation_method: deterministic-markdown-conversion
 canonical_source: false
+source_status: draft
+source_version: 1.0
+jurisdiction: United States
 last_reviewed: 2026-09-16
 ---
 
@@ -23,82 +28,82 @@ A simple employer dental plan that pays routine preventive care in full, shares 
 
 <!-- record_id: plan.self-funded-dental.find-what-you-need -->
 ## Find what you need
-> Retrieval context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Find what you need
+> Retrieval context: CommonCare Self-Funded Dental Plan — Find what you need
 
 #### Understand the product
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-find-what-you-need.understand-the-product; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Find what you need
+<!-- record_id: plan.self-funded-dental.find-what-you-need.understand-the-product; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Find what you need
 - Goal: Understand the product
 - Section: [Design thesis](#design-thesis)
 
 #### Compare benefit options
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-find-what-you-need.compare-benefit-options; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Find what you need
+<!-- record_id: plan.self-funded-dental.find-what-you-need.compare-benefit-options; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Find what you need
 - Goal: Compare benefit options
 - Section: [Benefit design](#2-benefit-design)
 
 #### Understand provider pricing
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-find-what-you-need.understand-provider-pricing; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Find what you need
+<!-- record_id: plan.self-funded-dental.find-what-you-need.understand-provider-pricing; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Find what you need
 - Goal: Understand provider pricing
 - Section: [Cash-price network](#4-lowest-negotiable-cash-price-network)
 
 #### Calculate claims and caps
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-find-what-you-need.calculate-claims-and-caps; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Find what you need
+<!-- record_id: plan.self-funded-dental.find-what-you-need.calculate-claims-and-caps; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Find what you need
 - Goal: Calculate claims and caps
 - Section: [Claims calculation](#6-claims-calculation) · [Cap-aware model](#7-cap-aware-pricing-model)
 
 #### Look up common service prices
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-find-what-you-need.look-up-common-service-prices; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Find what you need
+<!-- record_id: plan.self-funded-dental.find-what-you-need.look-up-common-service-prices; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Find what you need
 - Goal: Look up common service prices
 - Section: [Service inventory](#appendix-a-common-services-and-price-guidance)
 
 
 <!-- record_id: plan.self-funded-dental.at-a-glance -->
 ## At a glance
-> Retrieval context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > At a glance
+> Retrieval context: CommonCare Self-Funded Dental Plan — At a glance
 
 #### Is this insurance?
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-at-a-glance.is-this-insurance; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > At a glance
+<!-- record_id: plan.self-funded-dental.at-a-glance.is-this-insurance; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — At a glance
 - Question: Is this insurance?
 - Answer: No. It is a self-funded employer group health plan paid from employer assets
 
 #### Can it be an excepted benefit?
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-at-a-glance.can-it-be-an-excepted-benefit; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > At a glance
+<!-- record_id: plan.self-funded-dental.at-a-glance.can-it-be-an-excepted-benefit; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — At a glance
 - Question: Can it be an excepted benefit?
 - Answer: Yes, when it satisfies the limited-scope dental rules
 
 #### Preventive coverage
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-at-a-glance.preventive-coverage; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > At a glance
+<!-- record_id: plan.self-funded-dental.at-a-glance.preventive-coverage; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — At a glance
 - Question: Preventive coverage
 - Answer: 100% of the approved amount; no deductible
 
 #### Nonpreventive coverage
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-at-a-glance.nonpreventive-coverage; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > At a glance
+<!-- record_id: plan.self-funded-dental.at-a-glance.nonpreventive-coverage; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — At a glance
 - Question: Nonpreventive coverage
 - Answer: \$50 per treatment-event deductible, then 75% of the approved amount
 
 #### Do preventive benefits consume the maximum?
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-at-a-glance.do-preventive-benefits-consume-the-maximum; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > At a glance
+<!-- record_id: plan.self-funded-dental.at-a-glance.do-preventive-benefits-consume-the-maximum; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — At a glance
 - Question: Do preventive benefits consume the maximum?
 - Answer: No
 
 #### Can any dentist be used?
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-at-a-glance.can-any-dentist-be-used; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > At a glance
+<!-- record_id: plan.self-funded-dental.at-a-glance.can-any-dentist-be-used; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — At a glance
 - Question: Can any dentist be used?
 - Answer: Yes, but amounts above the approved price may be balance-billed unless pricing is agreed in advance
 
 #### Is employer exposure bounded?
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-at-a-glance.is-employer-exposure-bounded; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > At a glance
+<!-- record_id: plan.self-funded-dental.at-a-glance.is-employer-exposure-bounded; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — At a glance
 - Question: Is employer exposure bounded?
 - Answer: Yes. Nonpreventive claims have individual and family caps; preventive care has service-frequency limits
 
@@ -108,7 +113,7 @@ A simple employer dental plan that pays routine preventive care in full, shares 
 
 <!-- record_id: plan.self-funded-dental.design-thesis -->
 ## Design thesis
-> Retrieval context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Design thesis
+> Retrieval context: CommonCare Self-Funded Dental Plan — Design thesis
 
 Conventional dental insurance is itself a small-dollar financing product with an annual benefit maximum—not catastrophic protection. CommonCare retains the useful parts of that structure while removing the insurer from routine dental transactions.
 
@@ -118,7 +123,7 @@ Dental care is unusually suitable for self-funding. Services are discrete, sched
 
 <!-- record_id: plan.self-funded-dental.1-legal-classification -->
 ## 1. Legal classification
-> Retrieval context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 1. Legal classification
+> Retrieval context: CommonCare Self-Funded Dental Plan — 1. Legal classification
 
 Dental benefits are medical care and create a group health plan. Limited-scope dental benefits are nevertheless **excepted benefits** when substantially all benefits treat the mouth and the coverage is not integral to another group health plan because participants may decline it or its claims are administered under a separate contract. The rule permits dental coverage to be the only plan offered. [29 CFR §2590.732(c)(3)](https://www.law.cornell.edu/cfr/text/29/2590.732)
 
@@ -126,55 +131,55 @@ Excepted status means the dental plan does not have to operate as ACA major medi
 
 <!-- record_id: plan.self-funded-dental.2-benefit-design -->
 ## 2. Benefit design
-> Retrieval context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 2. Benefit design
+> Retrieval context: CommonCare Self-Funded Dental Plan — 2. Benefit design
 
 The options differ only in the maximum nonpreventive benefit.
 
 #### Preventive services
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-2-benefit-design.preventive-services; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 2. Benefit design
+<!-- record_id: plan.self-funded-dental.2-benefit-design.preventive-services; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — 2. Benefit design
 - Feature: Preventive services
 - \$1,000 / \$3,000 option: 100% approved amount
 - \$3,000 / \$7,500 option: 100% approved amount
 
 #### Preventive deductible
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-2-benefit-design.preventive-deductible; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 2. Benefit design
+<!-- record_id: plan.self-funded-dental.2-benefit-design.preventive-deductible; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — 2. Benefit design
 - Feature: Preventive deductible
 - \$1,000 / \$3,000 option: None
 - \$3,000 / \$7,500 option: None
 
 #### Preventive counts toward maximum
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-2-benefit-design.preventive-counts-toward-maximum; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 2. Benefit design
+<!-- record_id: plan.self-funded-dental.2-benefit-design.preventive-counts-toward-maximum; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — 2. Benefit design
 - Feature: Preventive counts toward maximum
 - \$1,000 / \$3,000 option: No
 - \$3,000 / \$7,500 option: No
 
 #### Nonpreventive deductible
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-2-benefit-design.nonpreventive-deductible; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 2. Benefit design
+<!-- record_id: plan.self-funded-dental.2-benefit-design.nonpreventive-deductible; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — 2. Benefit design
 - Feature: Nonpreventive deductible
 - \$1,000 / \$3,000 option: \$50 per treatment event
 - \$3,000 / \$7,500 option: \$50 per treatment event
 
 #### Plan share after deductible
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-2-benefit-design.plan-share-after-deductible; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 2. Benefit design
+<!-- record_id: plan.self-funded-dental.2-benefit-design.plan-share-after-deductible; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — 2. Benefit design
 - Feature: Plan share after deductible
 - \$1,000 / \$3,000 option: 75%
 - \$3,000 / \$7,500 option: 75%
 
 #### Individual annual maximum
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-2-benefit-design.individual-annual-maximum; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 2. Benefit design
+<!-- record_id: plan.self-funded-dental.2-benefit-design.individual-annual-maximum; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — 2. Benefit design
 - Feature: Individual annual maximum
 - \$1,000 / \$3,000 option: \$1,000
 - \$3,000 / \$7,500 option: \$3,000
 
 #### Family annual maximum
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-2-benefit-design.family-annual-maximum; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 2. Benefit design
+<!-- record_id: plan.self-funded-dental.2-benefit-design.family-annual-maximum; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — 2. Benefit design
 - Feature: Family annual maximum
 - \$1,000 / \$3,000 option: \$3,000
 - \$3,000 / \$7,500 option: \$7,500
@@ -187,11 +192,11 @@ The maximum limits what the plan pays. It does not cap the provider's charge, pa
 
 <!-- record_id: plan.self-funded-dental.3-covered-services -->
 ## 3. Covered services
-> Retrieval context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 3. Covered services
+> Retrieval context: CommonCare Self-Funded Dental Plan — 3. Covered services
 
 <!-- record_id: plan.self-funded-dental.preventive -->
 ### Preventive
-> Retrieval context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 3. Covered services > Preventive
+> Retrieval context: CommonCare Self-Funded Dental Plan — 3. Covered services > Preventive
 
 - Routine exams and cleanings, generally twice per year;
 - Bitewing radiographs, generally once per year;
@@ -201,7 +206,7 @@ The maximum limits what the plan pays. It does not cap the provider's charge, pa
 
 <!-- record_id: plan.self-funded-dental.basic-and-major -->
 ### Basic and major
-> Retrieval context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 3. Covered services > Basic and major
+> Retrieval context: CommonCare Self-Funded Dental Plan — 3. Covered services > Basic and major
 
 Subject to deductible, coinsurance, approved price, and both maximums:
 
@@ -214,7 +219,7 @@ Cosmetic or investigational treatment, medical or hospital charges, non-dental p
 
 <!-- record_id: plan.self-funded-dental.4-lowest-negotiable-cash-price-network -->
 ## 4. Lowest negotiable cash-price network
-> Retrieval context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 4. Lowest negotiable cash-price network
+> Retrieval context: CommonCare Self-Funded Dental Plan — 4. Lowest negotiable cash-price network
 
 The CommonCare network is a procurement process rather than a leased carrier directory.
 
@@ -224,7 +229,7 @@ For the service and geography, CommonCare identifies actual providers willing to
 
 <!-- record_id: plan.self-funded-dental.workflow -->
 ### Workflow
-> Retrieval context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 4. Lowest negotiable cash-price network > Workflow
+> Retrieval context: CommonCare Self-Funded Dental Plan — 4. Lowest negotiable cash-price network > Workflow
 
 1. The participant submits the proposed service or treatment plan.
 2. CommonCare obtains or confirms complete local cash prices.
@@ -239,7 +244,7 @@ The administrator may approve more when the nominally lowest option is not genui
 
 <!-- record_id: plan.self-funded-dental.5-predetermination -->
 ## 5. Predetermination
-> Retrieval context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 5. Predetermination
+> Retrieval context: CommonCare Self-Funded Dental Plan — 5. Predetermination
 
 Predetermination is the normal tool for crowns, root canals, implants, dentures, periodontal treatment, oral surgery, and other expensive or multi-stage care. A request should include CDT codes, tooth/surface/arch/quadrant information, radiographs, diagnosis, all anticipated stages and charges, material or laboratory specifications, and proposed dates.
 
@@ -247,7 +252,7 @@ Predetermination confirms the information and price then available. It does not 
 
 <!-- record_id: plan.self-funded-dental.6-claims-calculation -->
 ## 6. Claims calculation
-> Retrieval context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 6. Claims calculation
+> Retrieval context: CommonCare Self-Funded Dental Plan — 6. Claims calculation
 
 ```text
 allowed_amount = min(provider_charge, approved_price)
@@ -276,7 +281,7 @@ An event is a clinically connected course of treatment—not each CDT line and n
 
 <!-- record_id: plan.self-funded-dental.example -->
 ### Example
-> Retrieval context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 6. Claims calculation > Example
+> Retrieval context: CommonCare Self-Funded Dental Plan — 6. Claims calculation > Example
 
 For a crown billed at \$1,400 with a \$1,050 approved price:
 
@@ -290,7 +295,7 @@ If \$750 remains under both maximums, the plan pays \$750. The participant owes 
 
 <!-- record_id: plan.self-funded-dental.7-cap-aware-pricing-model -->
 ## 7. Cap-aware pricing model
-> Retrieval context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 7. Cap-aware pricing model
+> Retrieval context: CommonCare Self-Funded Dental Plan — 7. Cap-aware pricing model
 
 For `n` enrolled people:
 
@@ -302,29 +307,29 @@ nonpreventive_exposure_ceiling = min(
 ```
 
 #### 1
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-7-cap-aware-pricing-model.1; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 7. Cap-aware pricing model
+<!-- record_id: plan.self-funded-dental.7-cap-aware-pricing-model.1; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — 7. Cap-aware pricing model
 - Enrolled people: 1
 - \$1,000 / \$3,000 option: \$1,000
 - \$3,000 / \$7,500 option: \$3,000
 
 #### 2
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-7-cap-aware-pricing-model.2; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 7. Cap-aware pricing model
+<!-- record_id: plan.self-funded-dental.7-cap-aware-pricing-model.2; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — 7. Cap-aware pricing model
 - Enrolled people: 2
 - \$1,000 / \$3,000 option: \$2,000
 - \$3,000 / \$7,500 option: \$6,000
 
 #### 3
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-7-cap-aware-pricing-model.3; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 7. Cap-aware pricing model
+<!-- record_id: plan.self-funded-dental.7-cap-aware-pricing-model.3; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — 7. Cap-aware pricing model
 - Enrolled people: 3
 - \$1,000 / \$3,000 option: \$3,000
 - \$3,000 / \$7,500 option: \$7,500
 
 #### 4+
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-7-cap-aware-pricing-model.4; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 7. Cap-aware pricing model
+<!-- record_id: plan.self-funded-dental.7-cap-aware-pricing-model.4; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — 7. Cap-aware pricing model
 - Enrolled people: 4+
 - \$1,000 / \$3,000 option: \$3,000
 - \$3,000 / \$7,500 option: \$7,500
@@ -334,7 +339,7 @@ This is a severity ceiling—not expected claims. Pricing every family as though
 
 <!-- record_id: plan.self-funded-dental.expected-claims-algorithm -->
 ### Expected-claims algorithm
-> Retrieval context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 7. Cap-aware pricing model > Expected-claims algorithm
+> Retrieval context: CommonCare Self-Funded Dental Plan — 7. Cap-aware pricing model > Expected-claims algorithm
 
 For each simulated person and plan year:
 
@@ -354,22 +359,22 @@ annual_guidance_price =
 ```
 
 #### Aggressive
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-7-cap-aware-pricing-model-expected-cl.aggressive; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 7. Cap-aware pricing model > Expected-claims algorithm
+<!-- record_id: plan.self-funded-dental.7-cap-aware-pricing-model-expected-claims-algorithm.aggressive; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — 7. Cap-aware pricing model > Expected-claims algorithm
 - Pricing posture: Aggressive
 - Target claims share of price: 88%–92%
 - Best use: Larger/predictable group with reserves
 
 #### Medium
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-7-cap-aware-pricing-model-expected-cl.medium; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 7. Cap-aware pricing model > Expected-claims algorithm
+<!-- record_id: plan.self-funded-dental.7-cap-aware-pricing-model-expected-claims-algorithm.medium; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — 7. Cap-aware pricing model > Expected-claims algorithm
 - Pricing posture: Medium
 - Target claims share of price: 78%–85%
 - Best use: Ordinary starting position
 
 #### Low-risk
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-7-cap-aware-pricing-model-expected-cl.low-risk; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 7. Cap-aware pricing model > Expected-claims algorithm
+<!-- record_id: plan.self-funded-dental.7-cap-aware-pricing-model-expected-claims-algorithm.low-risk; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — 7. Cap-aware pricing model > Expected-claims algorithm
 - Pricing posture: Low-risk
 - Target claims share of price: 68%–76%
 - Best use: Small group prioritizing rate stability
@@ -385,53 +390,53 @@ incremental_cost =
 
 <!-- record_id: plan.self-funded-dental.example-monthly-pricing -->
 ### Example monthly pricing
-> Retrieval context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 7. Cap-aware pricing model > Example monthly pricing
+> Retrieval context: CommonCare Self-Funded Dental Plan — 7. Cap-aware pricing model > Example monthly pricing
 
 The following table shows an example output from the current CommonCare pricing model. It is not part of the benefit formula and does not guarantee that the same rates are appropriate for every employer, geography, enrollment mix, or plan year.
 
 #### Employee only
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-7-cap-aware-pricing-model-example-mon.employee-only; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 7. Cap-aware pricing model > Example monthly pricing
+<!-- record_id: plan.self-funded-dental.7-cap-aware-pricing-model-example-monthly-pricing.employee-only; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — 7. Cap-aware pricing model > Example monthly pricing
 - Enrollment tier: Employee only
 - \$1,000 individual / \$3,000 family cap: \$24
 - \$3,000 individual / \$7,500 family cap: \$44
 - Increase for higher cap: \$20
 
 #### Employee + spouse
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-7-cap-aware-pricing-model-example-mon.employee-spouse; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 7. Cap-aware pricing model > Example monthly pricing
+<!-- record_id: plan.self-funded-dental.7-cap-aware-pricing-model-example-monthly-pricing.employee-spouse; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — 7. Cap-aware pricing model > Example monthly pricing
 - Enrollment tier: Employee + spouse
 - \$1,000 individual / \$3,000 family cap: \$48
 - \$3,000 individual / \$7,500 family cap: \$88
 - Increase for higher cap: \$40
 
 #### Employee + 1 child
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-7-cap-aware-pricing-model-example-mon.employee-1-child; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 7. Cap-aware pricing model > Example monthly pricing
+<!-- record_id: plan.self-funded-dental.7-cap-aware-pricing-model-example-monthly-pricing.employee-1-child; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — 7. Cap-aware pricing model > Example monthly pricing
 - Enrollment tier: Employee + 1 child
 - \$1,000 individual / \$3,000 family cap: \$61
 - \$3,000 individual / \$7,500 family cap: \$110
 - Increase for higher cap: \$49
 
 #### Employee + 2 children
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-7-cap-aware-pricing-model-example-mon.employee-2-children; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 7. Cap-aware pricing model > Example monthly pricing
+<!-- record_id: plan.self-funded-dental.7-cap-aware-pricing-model-example-monthly-pricing.employee-2-children; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — 7. Cap-aware pricing model > Example monthly pricing
 - Enrollment tier: Employee + 2 children
 - \$1,000 individual / \$3,000 family cap: \$92
 - \$3,000 individual / \$7,500 family cap: \$140
 - Increase for higher cap: \$48
 
 #### Employee + 3 or more children
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-7-cap-aware-pricing-model-example-mon.employee-3-or-more-children; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 7. Cap-aware pricing model > Example monthly pricing
+<!-- record_id: plan.self-funded-dental.7-cap-aware-pricing-model-example-monthly-pricing.employee-3-or-more-children; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — 7. Cap-aware pricing model > Example monthly pricing
 - Enrollment tier: Employee + 3 or more children
 - \$1,000 individual / \$3,000 family cap: \$109
 - \$3,000 individual / \$7,500 family cap: \$170
 - Increase for higher cap: \$61
 
 #### Family
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-7-cap-aware-pricing-model-example-mon.family; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 7. Cap-aware pricing model > Example monthly pricing
+<!-- record_id: plan.self-funded-dental.7-cap-aware-pricing-model-example-monthly-pricing.family; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — 7. Cap-aware pricing model > Example monthly pricing
 - Enrollment tier: Family
 - \$1,000 individual / \$3,000 family cap: \$109
 - \$3,000 individual / \$7,500 family cap: \$170
@@ -454,7 +459,7 @@ The employer contribution changes who funds the plan. It does not change the cla
 
 <!-- record_id: plan.self-funded-dental.8-administration -->
 ## 8. Administration
-> Retrieval context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > 8. Administration
+> Retrieval context: CommonCare Self-Funded Dental Plan — 8. Administration
 
 Formal plan materials should specify eligibility, benefits, frequency and replacement rules, event grouping, approved-price rules, balance billing, predetermination, claims deadlines, coordination, appeals, and amendment authority.
 
@@ -464,81 +469,81 @@ A 180-day deadline for submitting the original claim is a separate plan rule fro
 
 <!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance -->
 ## Appendix A: Common services and price guidance
-> Retrieval context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance
+> Retrieval context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance
 
 These are national working estimates for complete cash-pay treatment in ordinary settings—not an official fee schedule or a substitute for live local quotes. The ADA discontinued its national Survey of Dental Fees after 2022, making actual local procurement and plan experience especially important. [ADA Health Policy Institute](https://www.ada.org/resources/research/health-policy-institute/dental-care-market)
 
 <!-- record_id: plan.self-funded-dental.diagnostic-and-preventive -->
 ### Diagnostic and preventive
-> Retrieval context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Diagnostic and preventive
+> Retrieval context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Diagnostic and preventive
 
 #### Periodic exam
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.periodic-exam; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Diagnostic and preventive
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-diagnostic-and-preventive.periodic-exam; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Diagnostic and preventive
 - Service: Periodic exam
 - CDT family: D0120
 - Cash range: \$40–\$90
 - Initial target: \$55
 
 #### Comprehensive exam
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.comprehensive-exam; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Diagnostic and preventive
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-diagnostic-and-preventive.comprehensive-exam; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Diagnostic and preventive
 - Service: Comprehensive exam
 - CDT family: D0150
 - Cash range: \$70–\$150
 - Initial target: \$90
 
 #### Adult cleaning
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.adult-cleaning; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Diagnostic and preventive
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-diagnostic-and-preventive.adult-cleaning; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Diagnostic and preventive
 - Service: Adult cleaning
 - CDT family: D1110
 - Cash range: \$80–\$160
 - Initial target: \$100
 
 #### Child cleaning
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.child-cleaning; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Diagnostic and preventive
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-diagnostic-and-preventive.child-cleaning; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Diagnostic and preventive
 - Service: Child cleaning
 - CDT family: D1120
 - Cash range: \$60–\$130
 - Initial target: \$80
 
 #### Bitewing radiographs
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.bitewing-radiographs; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Diagnostic and preventive
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-diagnostic-and-preventive.bitewing-radiographs; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Diagnostic and preventive
 - Service: Bitewing radiographs
 - CDT family: D0272–D0274
 - Cash range: \$35–\$100
 - Initial target: \$55
 
 #### Full-mouth radiographs
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.full-mouth-radiographs; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Diagnostic and preventive
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-diagnostic-and-preventive.full-mouth-radiographs; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Diagnostic and preventive
 - Service: Full-mouth radiographs
 - CDT family: D0210
 - Cash range: \$100–\$220
 - Initial target: \$130
 
 #### Panoramic radiograph
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.panoramic-radiograph; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Diagnostic and preventive
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-diagnostic-and-preventive.panoramic-radiograph; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Diagnostic and preventive
 - Service: Panoramic radiograph
 - CDT family: D0330
 - Cash range: \$90–\$180
 - Initial target: \$110
 
 #### Fluoride
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.fluoride; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Diagnostic and preventive
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-diagnostic-and-preventive.fluoride; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Diagnostic and preventive
 - Service: Fluoride
 - CDT family: D1206/D1208
 - Cash range: \$25–\$65
 - Initial target: \$35
 
 #### Sealant, per tooth
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.sealant-per-tooth; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Diagnostic and preventive
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-diagnostic-and-preventive.sealant-per-tooth; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Diagnostic and preventive
 - Service: Sealant, per tooth
 - CDT family: D1351
 - Cash range: \$35–\$75
@@ -547,67 +552,67 @@ These are national working estimates for complete cash-pay treatment in ordinary
 
 <!-- record_id: plan.self-funded-dental.restorative-and-surgical -->
 ### Restorative and surgical
-> Retrieval context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Restorative and surgical
+> Retrieval context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Restorative and surgical
 
 #### One-surface composite filling
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.one-surface-composite-filling; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Restorative and surgical
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-restorative-and-surgical.one-surface-composite-filling; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Restorative and surgical
 - Service: One-surface composite filling
 - CDT family: D2391
 - Cash range: \$150–\$275
 - Initial target: \$175
 
 #### Two-surface composite filling
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.two-surface-composite-filling; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Restorative and surgical
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-restorative-and-surgical.two-surface-composite-filling; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Restorative and surgical
 - Service: Two-surface composite filling
 - CDT family: D2392
 - Cash range: \$190–\$350
 - Initial target: \$225
 
 #### Three-plus-surface filling
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.three-plus-surface-filling; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Restorative and surgical
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-restorative-and-surgical.three-plus-surface-filling; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Restorative and surgical
 - Service: Three-plus-surface filling
 - CDT family: D2393–D2394
 - Cash range: \$240–\$450
 - Initial target: \$290
 
 #### Simple extraction
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.simple-extraction; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Restorative and surgical
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-restorative-and-surgical.simple-extraction; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Restorative and surgical
 - Service: Simple extraction
 - CDT family: D7140
 - Cash range: \$150–\$350
 - Initial target: \$200
 
 #### Surgical extraction
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.surgical-extraction; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Restorative and surgical
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-restorative-and-surgical.surgical-extraction; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Restorative and surgical
 - Service: Surgical extraction
 - CDT family: D7210
 - Cash range: \$275–\$650
 - Initial target: \$350
 
 #### Impacted extraction
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.impacted-extraction; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Restorative and surgical
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-restorative-and-surgical.impacted-extraction; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Restorative and surgical
 - Service: Impacted extraction
 - CDT family: D7220–D7241
 - Cash range: \$350–\$900
 - Initial target: Quote
 
 #### Core buildup
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.core-buildup; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Restorative and surgical
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-restorative-and-surgical.core-buildup; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Restorative and surgical
 - Service: Core buildup
 - CDT family: D2950
 - Cash range: \$200–\$450
 - Initial target: \$250
 
 #### Crown, ordinary lab work included
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.crown-ordinary-lab-work-included; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Restorative and surgical
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-restorative-and-surgical.crown-ordinary-lab-work-included; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Restorative and surgical
 - Service: Crown, ordinary lab work included
 - CDT family: D2740 family
 - Cash range: \$900–\$1,700
@@ -616,51 +621,51 @@ These are national working estimates for complete cash-pay treatment in ordinary
 
 <!-- record_id: plan.self-funded-dental.endodontic-and-periodontal -->
 ### Endodontic and periodontal
-> Retrieval context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Endodontic and periodontal
+> Retrieval context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Endodontic and periodontal
 
 #### Anterior root canal
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.anterior-root-canal; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Endodontic and periodontal
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-endodontic-and-periodontal.anterior-root-canal; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Endodontic and periodontal
 - Service: Anterior root canal
 - CDT family: D3310
 - Cash range: \$650–\$1,100
 - Initial target: \$750
 
 #### Premolar root canal
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.premolar-root-canal; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Endodontic and periodontal
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-endodontic-and-periodontal.premolar-root-canal; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Endodontic and periodontal
 - Service: Premolar root canal
 - CDT family: D3320
 - Cash range: \$750–\$1,300
 - Initial target: \$900
 
 #### Molar root canal
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.molar-root-canal; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Endodontic and periodontal
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-endodontic-and-periodontal.molar-root-canal; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Endodontic and periodontal
 - Service: Molar root canal
 - CDT family: D3330
 - Cash range: \$950–\$1,700
 - Initial target: \$1,100
 
 #### Scaling/root planing, quadrant
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.scaling-root-planing-quadrant; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Endodontic and periodontal
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-endodontic-and-periodontal.scaling-root-planing-quadrant; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Endodontic and periodontal
 - Service: Scaling/root planing, quadrant
 - CDT family: D4341/D4342
 - Cash range: \$180–\$400
 - Initial target: \$225
 
 #### Periodontal maintenance
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.periodontal-maintenance; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Endodontic and periodontal
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-endodontic-and-periodontal.periodontal-maintenance; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Endodontic and periodontal
 - Service: Periodontal maintenance
 - CDT family: D4910
 - Cash range: \$120–\$240
 - Initial target: \$150
 
 #### Gingival/osseous surgery
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.gingival-osseous-surgery; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Endodontic and periodontal
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-endodontic-and-periodontal.gingival-osseous-surgery; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Endodontic and periodontal
 - Service: Gingival/osseous surgery
 - CDT family: D4210–D4261
 - Cash range: \$700–\$2,000
@@ -669,67 +674,67 @@ These are national working estimates for complete cash-pay treatment in ordinary
 
 <!-- record_id: plan.self-funded-dental.prosthodontics-implants-and-anesthesia -->
 ### Prosthodontics, implants, and anesthesia
-> Retrieval context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Prosthodontics, implants, and anesthesia
+> Retrieval context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Prosthodontics, implants, and anesthesia
 
 #### Acrylic partial denture
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.acrylic-partial-denture; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Prosthodontics, implants, and anesthesia
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-prosthodontics-implants-an.acrylic-partial-denture; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Prosthodontics, implants, and anesthesia
 - Service: Acrylic partial denture
 - Pricing unit: Per arch
 - Cash range: \$900–\$1,800
 - Initial target: \$1,050
 
 #### Cast-metal partial denture
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.cast-metal-partial-denture; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Prosthodontics, implants, and anesthesia
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-prosthodontics-implants-an.cast-metal-partial-denture; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Prosthodontics, implants, and anesthesia
 - Service: Cast-metal partial denture
 - Pricing unit: Per arch
 - Cash range: \$1,400–\$2,800
 - Initial target: \$1,700
 
 #### Complete denture
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.complete-denture; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Prosthodontics, implants, and anesthesia
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-prosthodontics-implants-an.complete-denture; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Prosthodontics, implants, and anesthesia
 - Service: Complete denture
 - Pricing unit: Per arch
 - Cash range: \$1,000–\$2,500
 - Initial target: \$1,250
 
 #### Implant body placement
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.implant-body-placement; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Prosthodontics, implants, and anesthesia
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-prosthodontics-implants-an.implant-body-placement; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Prosthodontics, implants, and anesthesia
 - Service: Implant body placement
 - Pricing unit: Per implant
 - Cash range: \$1,500–\$3,000
 - Initial target: Quote
 
 #### Implant abutment and crown
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.implant-abutment-and-crown; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Prosthodontics, implants, and anesthesia
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-prosthodontics-implants-an.implant-abutment-and-crown; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Prosthodontics, implants, and anesthesia
 - Service: Implant abutment and crown
 - Pricing unit: Per tooth
 - Cash range: \$1,500–\$3,000
 - Initial target: Quote
 
 #### Complete single-tooth implant
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.complete-single-tooth-implant; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Prosthodontics, implants, and anesthesia
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-prosthodontics-implants-an.complete-single-tooth-implant; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Prosthodontics, implants, and anesthesia
 - Service: Complete single-tooth implant
 - Pricing unit: Complete course
 - Cash range: \$3,000–\$6,000
 - Initial target: Quote
 
 #### Nitrous oxide
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.nitrous-oxide; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Prosthodontics, implants, and anesthesia
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-prosthodontics-implants-an.nitrous-oxide; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Prosthodontics, implants, and anesthesia
 - Service: Nitrous oxide
 - Pricing unit: Encounter
 - Cash range: \$75–\$175
 - Initial target: \$100
 
 #### IV moderate sedation
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.iv-moderate-sedation; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Prosthodontics, implants, and anesthesia
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-prosthodontics-implants-an.iv-moderate-sedation; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Prosthodontics, implants, and anesthesia
 - Service: IV moderate sedation
 - Pricing unit: Encounter/time
 - Cash range: \$400–\$1,200
@@ -740,35 +745,35 @@ Consumer cash-price compilations show similarly wide ranges, including roughly \
 
 <!-- record_id: plan.self-funded-dental.compare-complete-treatments -->
 ### Compare complete treatments
-> Retrieval context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Compare complete treatments
+> Retrieval context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Compare complete treatments
 
 #### Crown
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.crown; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Compare complete treatments
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-compare-complete-treatment.crown; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Compare complete treatments
 - Treatment: Crown
 - Components often omitted from the headline price: Exam, imaging, buildup, temporary, laboratory work, placement
 
 #### Root canal
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.root-canal; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Compare complete treatments
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-compare-complete-treatment.root-canal; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Compare complete treatments
 - Treatment: Root canal
 - Components often omitted from the headline price: Imaging, testing, treatment, temporary, buildup, final crown
 
 #### Implant
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.implant; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Compare complete treatments
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-compare-complete-treatment.implant; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Compare complete treatments
 - Treatment: Implant
 - Components often omitted from the headline price: Imaging, extraction, graft, implant, abutment, crown, follow-up
 
 #### Denture
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.denture; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Compare complete treatments
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-compare-complete-treatment.denture; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Compare complete treatments
 - Treatment: Denture
 - Components often omitted from the headline price: Exam, impressions, extractions, immediate appliance, adjustments, relines
 
 #### Periodontal care
-<!-- record_id: plan.self-funded-dental.commoncare-self-funded-dental-plan-appendix-a-common-services-and-price-.periodontal-care; record_type: table-row -->
-- Context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix A: Common services and price guidance > Compare complete treatments
+<!-- record_id: plan.self-funded-dental.appendix-a-common-services-and-price-guidance-compare-complete-treatment.periodontal-care; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — Appendix A: Common services and price guidance > Compare complete treatments
 - Treatment: Periodontal care
 - Components often omitted from the headline price: Measurements, quadrants, anesthesia, maintenance
 
@@ -777,7 +782,7 @@ The plan should approve explicit bundles and prevent duplicated payment when int
 
 <!-- record_id: plan.self-funded-dental.appendix-b-data-needed-for-renewal -->
 ## Appendix B: Data needed for renewal
-> Retrieval context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Appendix B: Data needed for renewal
+> Retrieval context: CommonCare Self-Funded Dental Plan — Appendix B: Data needed for renewal
 
 Track any-service utilization, preventive visits, nonpreventive events, approved cost per event, individual and family cap exhaustion, charges above caps, balance bills, negotiation savings, and claim lag.
 
@@ -789,7 +794,7 @@ National data provide a reasonableness check: ADA reports 45% of the population 
 
 <!-- record_id: plan.self-funded-dental.primary-references -->
 ## Primary references
-> Retrieval context: CommonCare Self-Funded Dental Plan — CommonCare Self-Funded Dental Plan > Primary references
+> Retrieval context: CommonCare Self-Funded Dental Plan — Primary references
 
 - [29 CFR §2590.732(c)(3)](https://www.law.cornell.edu/cfr/text/29/2590.732)
 - [DOL federal health-benefit compliance guide](https://www.dol.gov/sites/dolgov/files/EBSA/about-ebsa/our-activities/resource-center/publications/compliance-assistance-guide.pdf)

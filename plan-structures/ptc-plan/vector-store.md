@@ -4,10 +4,14 @@ title: Private Health Options Alongside an Employer Plan — Vector Store Source
 kind: vector-store-source
 schema_version: "1.0"
 source_document: plan-structures/ptc-plan/human-readable.md
-source_commit: fed8062947b6045779a0fea1438b9e1ffcdc6f5f
-source_sha256: fe8ec110512d8514cc148b9a89ba1da6d3796ee7994a693d3b097ef26c8b46c4
+metadata_document: plan-structures/ptc-plan/metadata.yaml
+source_commit: 2b6ee17093e27a00afc6b54c86f6f2a244e9acd9
+source_sha256: 0686b9c81425f30a8b2e43d205141832db5c5d7d023a6fd91c1479f6a81111e4
+metadata_sha256: 2df494ab408dc784ef42b23c5c054c8452a6784d484d2583609e2174ccf858df
 generation_method: deterministic-markdown-conversion
 canonical_source: false
+source_status: draft
+owner: CommonCare
 last_reviewed: unknown
 ---
 

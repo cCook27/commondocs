@@ -4,10 +4,15 @@ title: CommonFunding — Vector Store Source
 kind: vector-store-source
 schema_version: "1.0"
 source_document: plan-structures/common-funding/human-readable.md
-source_commit: 1cef2924767fd56f15826d842856163d671c7afb
-source_sha256: 47960d34dc8dfe06b9ee665f245c9f00df7abac3717877828be3f386a25edfa8
+metadata_document: plan-structures/common-funding/metadata.yaml
+source_commit: 2b6ee17093e27a00afc6b54c86f6f2a244e9acd9
+source_sha256: 919d7810b8320d5e0716a366fbb8aa5d9c79ec4f9cde6dcf872cf7b9ece81fd9
+metadata_sha256: 135e7bccdb792435c55904202cfcd5cbd31b1601d48212e39d7b07f3c3d1e7d4
 generation_method: deterministic-markdown-conversion
 canonical_source: false
+source_status: draft
+source_version: 1.0
+jurisdiction: United States
 last_reviewed: 2026-09-15
 ---
 
@@ -31,47 +36,47 @@ The result preserves a familiar participant choice structure while reducing reli
 
 <!-- record_id: product.commonfunding.at-a-glance -->
 ## At a glance
-> Retrieval context: CommonFunding — CommonFunding > At a glance
+> Retrieval context: CommonFunding — At a glance
 
 #### Routine healthcare
-<!-- record_id: product.commonfunding.commonfunding-at-a-glance.routine-healthcare; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > At a glance
+<!-- record_id: product.commonfunding.at-a-glance.routine-healthcare; record_type: table-row -->
+- Context: CommonFunding — At a glance
 - Product function: Routine healthcare
 - CommonFunding approach: Reimbursed through CommonFunds
 
 #### Large and unpredictable claims
-<!-- record_id: product.commonfunding.commonfunding-at-a-glance.large-and-unpredictable-claims; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > At a glance
+<!-- record_id: product.commonfunding.at-a-glance.large-and-unpredictable-claims; record_type: table-row -->
+- Context: CommonFunding — At a glance
 - Product function: Large and unpredictable claims
 - CommonFunding approach: Managed through major medical insurance or another selected coverage vehicle
 
 #### Employer risk
-<!-- record_id: product.commonfunding.commonfunding-at-a-glance.employer-risk; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > At a glance
+<!-- record_id: product.commonfunding.at-a-glance.employer-risk; record_type: table-row -->
+- Context: CommonFunding — At a glance
 - Product function: Employer risk
 - CommonFunding approach: Capped by the CommonFunds benefit made available, subject to limited Health FSA uniform-coverage timing risk
 
 #### Participant choice
-<!-- record_id: product.commonfunding.commonfunding-at-a-glance.participant-choice; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > At a glance
+<!-- record_id: product.commonfunding.at-a-glance.participant-choice; record_type: table-row -->
+- Context: CommonFunding — At a glance
 - Product function: Participant choice
 - CommonFunding approach: Coverage and funding combinations can be evaluated participant by participant
 
 #### Savings mechanism
-<!-- record_id: product.commonfunding.commonfunding-at-a-glance.savings-mechanism; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > At a glance
+<!-- record_id: product.commonfunding.at-a-glance.savings-mechanism; record_type: table-row -->
+- Context: CommonFunding — At a glance
 - Product function: Savings mechanism
 - CommonFunding approach: Replace a portion of premium with a bounded reimbursement benefit
 
 #### Experience gains
-<!-- record_id: product.commonfunding.commonfunding-at-a-glance.experience-gains; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > At a glance
+<!-- record_id: product.commonfunding.at-a-glance.experience-gains; record_type: table-row -->
+- Context: CommonFunding — At a glance
 - Product function: Experience gains
 - CommonFunding approach: Unused notional balances remain employer assets and may cease to be liabilities according to the plan terms
 
 #### Administration
-<!-- record_id: product.commonfunding.commonfunding-at-a-glance.administration; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > At a glance
+<!-- record_id: product.commonfunding.at-a-glance.administration; record_type: table-row -->
+- Context: CommonFunding — At a glance
 - Product function: Administration
 - CommonFunding approach: Coverage, CommonFunds, enrollment, payroll, and participant-facing cost sharing are presented together
 
@@ -79,11 +84,11 @@ The result preserves a familiar participant choice structure while reducing reli
 > [!NOTE]
 > **How is CommonFunding different from CommonFunds?**
 >
-> The underlying CommonFunds product is the same. CommonFunding pairs it with a selected set of coverage options and wraps compliance, enrollment, administration, and participant communication into a turnkey plan structure. CommonFunds may also be used à la carte without being presented as part of a larger coverage design.
+> The underlying CommonFunds product is the same. CommonFunding pairs it with a selected set of coverage options and wraps compliance, enrollment, administration, and participant communication into a turnkey plan structure.
 
 <!-- record_id: product.commonfunding.navigate-this-document -->
 ## Navigate this document
-> Retrieval context: CommonFunding — CommonFunding > Navigate this document
+> Retrieval context: CommonFunding — Navigate this document
 
 - [The design thesis](#the-design-thesis)
 - [Bounded partial self-funding](#bounded-partial-self-funding)
@@ -99,7 +104,7 @@ The result preserves a familiar participant choice structure while reducing reli
 
 <!-- record_id: product.commonfunding.the-design-thesis -->
 ## The design thesis
-> Retrieval context: CommonFunding — CommonFunding > The design thesis
+> Retrieval context: CommonFunding — The design thesis
 
 “CommonFunding” is partial self-funding. The structure captures many of self-funding’s advantages without asking the employer to accept catastrophic claims risk, build a claims operation, or purchase the entire healthcare benefit directly.
 
@@ -108,14 +113,14 @@ CommonCare’s coverage-ranking process simulates economic outcomes. It does not
 That analysis repeatedly favors separating two different jobs:
 
 #### Routine, lower-cost, high-frequency expenses
-<!-- record_id: product.commonfunding.commonfunding-the-design-thesis.routine-lower-cost-high-frequency-expenses; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > The design thesis
+<!-- record_id: product.commonfunding.the-design-thesis.routine-lower-cost-high-frequency-expenses; record_type: table-row -->
+- Context: CommonFunding — The design thesis
 - Healthcare need: Routine, lower-cost, high-frequency expenses
 - Best-suited funding mechanism: A bounded account-based benefit with direct price sensitivity
 
 #### Large, concentrated, financially disruptive expenses
-<!-- record_id: product.commonfunding.commonfunding-the-design-thesis.large-concentrated-financially-disruptive-expenses; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > The design thesis
+<!-- record_id: product.commonfunding.the-design-thesis.large-concentrated-financially-disruptive-expenses; record_type: table-row -->
+- Context: CommonFunding — The design thesis
 - Healthcare need: Large, concentrated, financially disruptive expenses
 - Best-suited funding mechanism: Insurance or another risk-sharing vehicle
 
@@ -135,7 +140,7 @@ This means much of insurance’s value is delivered through a relatively small n
 
 <!-- record_id: product.commonfunding.bounded-partial-self-funding -->
 ## Bounded partial self-funding
-> Retrieval context: CommonFunding — CommonFunding > Bounded partial self-funding
+> Retrieval context: CommonFunding — Bounded partial self-funding
 
 CommonFunding creates a contained layer of self-funded medical expense without exposing the employer to the open-ended risk of a self-funded major medical plan.
 
@@ -145,7 +150,7 @@ When the applicable participant benefit has been exhausted, CommonFunds does not
 
 <!-- record_id: product.commonfunding.why-excepted-benefit-status-matters -->
 ### Why excepted-benefit status matters
-> Retrieval context: CommonFunding — CommonFunding > Bounded partial self-funding > Why excepted-benefit status matters
+> Retrieval context: CommonFunding — Bounded partial self-funding > Why excepted-benefit status matters
 
 CommonFunds combines EBHRA and Health FSA components designed to qualify as excepted benefits. The components therefore operate under their own account limits and plan terms rather than assuming the comprehensive coverage obligations imposed on non-excepted ACA group health plans.
 
@@ -155,39 +160,39 @@ For the component structure, classifications, annual limits, and availability ru
 
 <!-- record_id: product.commonfunding.the-participant-experience -->
 ## The participant experience
-> Retrieval context: CommonFunding — CommonFunding > The participant experience
+> Retrieval context: CommonFunding — The participant experience
 
 CommonFunding presents the selected coverage and CommonFunds together. A participant should not have to translate a \$10,000 insurance deductible and a separate reimbursement account into their real financial exposure.
 
 Instead, CommonCare can display:
 
 #### Normalized plan choices such as A, B, and C
-<!-- record_id: product.commonfunding.commonfunding-the-participant-experience.normalized-plan-choices-such-as-a-b-and-c; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > The participant experience
+<!-- record_id: product.commonfunding.the-participant-experience.normalized-plan-choices-such-as-a-b-and-c; record_type: table-row -->
+- Context: CommonFunding — The participant experience
 - Participant sees: Normalized plan choices such as A, B, and C
 - System administers: The underlying insurance or alternative coverage options
 
 #### Effective deductible after CommonFunds
-<!-- record_id: product.commonfunding.commonfunding-the-participant-experience.effective-deductible-after-commonfunds; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > The participant experience
+<!-- record_id: product.commonfunding.the-participant-experience.effective-deductible-after-commonfunds; record_type: table-row -->
+- Context: CommonFunding — The participant experience
 - Participant sees: Effective deductible after CommonFunds
 - System administers: The contractual deductible plus available reimbursement
 
 #### Effective maximum exposure
-<!-- record_id: product.commonfunding.commonfunding-the-participant-experience.effective-maximum-exposure; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > The participant experience
+<!-- record_id: product.commonfunding.the-participant-experience.effective-maximum-exposure; record_type: table-row -->
+- Context: CommonFunding — The participant experience
 - Participant sees: Effective maximum exposure
 - System administers: Premium, cost sharing, and available benefit
 
 #### One enrollment process
-<!-- record_id: product.commonfunding.commonfunding-the-participant-experience.one-enrollment-process; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > The participant experience
+<!-- record_id: product.commonfunding.the-participant-experience.one-enrollment-process; record_type: table-row -->
+- Context: CommonFunding — The participant experience
 - Participant sees: One enrollment process
 - System administers: Coverage enrollment, CommonFunds elections, and payroll instructions
 
 #### One place to understand costs
-<!-- record_id: product.commonfunding.commonfunding-the-participant-experience.one-place-to-understand-costs; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > The participant experience
+<!-- record_id: product.commonfunding.the-participant-experience.one-place-to-understand-costs; record_type: table-row -->
+- Context: CommonFunding — The participant experience
 - Participant sees: One place to understand costs
 - System administers: Separate legal and accounting components maintained behind the interface
 
@@ -198,7 +203,7 @@ The participant sees the terms that matter economically without having to perfor
 
 <!-- record_id: product.commonfunding.where-the-savings-come-from -->
 ## Where the savings come from
-> Retrieval context: CommonFunding — CommonFunding > Where the savings come from
+> Retrieval context: CommonFunding — Where the savings come from
 
 CommonFunding replaces a portion of fixed insurance premium with a capped reimbursement promise.
 
@@ -211,7 +216,7 @@ The economic difference appears when the participant incurs less than \$9,200 of
 
 <!-- record_id: product.commonfunding.sources-of-value -->
 ### Sources of value
-> Retrieval context: CommonFunding — CommonFunding > Where the savings come from > Sources of value
+> Retrieval context: CommonFunding — Where the savings come from > Sources of value
 
 - Many participants do not reach their annual deductible.
 - Insured preventive services are generally covered without participant cost sharing, reducing the draw on CommonFunds.
@@ -222,29 +227,29 @@ The economic difference appears when the participant incurs less than \$9,200 of
 
 <!-- record_id: product.commonfunding.illustrative-2026-comparison -->
 ### Illustrative 2026 comparison
-> Retrieval context: CommonFunding — CommonFunding > Where the savings come from > Illustrative 2026 comparison
+> Retrieval context: CommonFunding — Where the savings come from > Illustrative 2026 comparison
 
 The following CommonCare quote comparison involved a 40-year-old man in Nashville:
 
 #### Higher deductible
-<!-- record_id: product.commonfunding.commonfunding-where-the-savings-come-from-illustrative-2026-comparison.higher-deductible; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > Where the savings come from > Illustrative 2026 comparison
+<!-- record_id: product.commonfunding.where-the-savings-come-from-illustrative-2026-comparison.higher-deductible; record_type: table-row -->
+- Context: CommonFunding — Where the savings come from > Illustrative 2026 comparison
 - Plan variant: Higher deductible
 - Annual premium: \$15,350
 - Deductible: \$10,600
 - Maximum out of pocket: \$10,600
 
 #### Lower deductible
-<!-- record_id: product.commonfunding.commonfunding-where-the-savings-come-from-illustrative-2026-comparison.lower-deductible; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > Where the savings come from > Illustrative 2026 comparison
+<!-- record_id: product.commonfunding.where-the-savings-come-from-illustrative-2026-comparison.lower-deductible; record_type: table-row -->
+- Context: CommonFunding — Where the savings come from > Illustrative 2026 comparison
 - Plan variant: Lower deductible
 - Annual premium: \$22,116
 - Deductible: \$5,900
 - Maximum out of pocket: \$6,900
 
 #### Difference
-<!-- record_id: product.commonfunding.commonfunding-where-the-savings-come-from-illustrative-2026-comparison.difference; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > Where the savings come from > Illustrative 2026 comparison
+<!-- record_id: product.commonfunding.where-the-savings-come-from-illustrative-2026-comparison.difference; record_type: table-row -->
+- Context: CommonFunding — Where the savings come from > Illustrative 2026 comparison
 - Plan variant: **Difference**
 - Annual premium: **+\$6,766**
 - Deductible: **−\$4,700**
@@ -260,7 +265,7 @@ The lower-deductible option required \$6,766 of additional premium to reduce max
 
 <!-- record_id: product.commonfunding.how-commoncare-identifies-the-optimal-plan -->
 ## How CommonCare identifies the optimal plan
-> Retrieval context: CommonFunding — CommonFunding > How CommonCare identifies the optimal plan
+> Retrieval context: CommonFunding — How CommonCare identifies the optimal plan
 
 CommonCare evaluates health plans using multiyear simulations populated with realistic medical expenses for each member of a household. A long simulation is more stable than pretending to predict one specific person’s next twelve months.
 
@@ -270,7 +275,7 @@ Designing the plan to perform optimally in the majority of cases is the right re
 
 <!-- record_id: product.commonfunding.known-high-cost-needs-often-simplify-the-decision -->
 ### Known high-cost needs often simplify the decision
-> Retrieval context: CommonFunding — CommonFunding > How CommonCare identifies the optimal plan > Known high-cost needs often simplify the decision
+> Retrieval context: CommonFunding — How CommonCare identifies the optimal plan > Known high-cost needs often simplify the decision
 
 Unknown claims require probability modeling. A known treatment need can be priced against each available plan directly.
 
@@ -280,7 +285,7 @@ That means CommonFunding does not need to design the entire employer plan around
 
 <!-- record_id: product.commonfunding.when-is-additional-premium-worthwhile -->
 ### When is additional premium worthwhile?
-> Retrieval context: CommonFunding — CommonFunding > How CommonCare identifies the optimal plan > When is additional premium worthwhile?
+> Retrieval context: CommonFunding — How CommonCare identifies the optimal plan > When is additional premium worthwhile?
 
 For a simplified plan with one deductible and a uniform coinsurance rate:
 
@@ -291,32 +296,32 @@ Annual cost = P + min(M, min(x, D) + r × max(0, x − D))
 Where:
 
 #### P
-<!-- record_id: product.commonfunding.commonfunding-how-commoncare-identifies-the-optimal-plan-when-is-additio.p; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > How CommonCare identifies the optimal plan > When is additional premium worthwhile?
+<!-- record_id: product.commonfunding.how-commoncare-identifies-the-optimal-plan-when-is-additional-premium-wo.p; record_type: table-row -->
+- Context: CommonFunding — How CommonCare identifies the optimal plan > When is additional premium worthwhile?
 - Variable: `P`
 - Meaning: Total annual premium
 
 #### x
-<!-- record_id: product.commonfunding.commonfunding-how-commoncare-identifies-the-optimal-plan-when-is-additio.x; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > How CommonCare identifies the optimal plan > When is additional premium worthwhile?
+<!-- record_id: product.commonfunding.how-commoncare-identifies-the-optimal-plan-when-is-additional-premium-wo.x; record_type: table-row -->
+- Context: CommonFunding — How CommonCare identifies the optimal plan > When is additional premium worthwhile?
 - Variable: `x`
 - Meaning: Annual covered medical bills at the insurer’s allowed prices
 
 #### D
-<!-- record_id: product.commonfunding.commonfunding-how-commoncare-identifies-the-optimal-plan-when-is-additio.d; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > How CommonCare identifies the optimal plan > When is additional premium worthwhile?
+<!-- record_id: product.commonfunding.how-commoncare-identifies-the-optimal-plan-when-is-additional-premium-wo.d; record_type: table-row -->
+- Context: CommonFunding — How CommonCare identifies the optimal plan > When is additional premium worthwhile?
 - Variable: `D`
 - Meaning: Annual deductible
 
 #### r
-<!-- record_id: product.commonfunding.commonfunding-how-commoncare-identifies-the-optimal-plan-when-is-additio.r; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > How CommonCare identifies the optimal plan > When is additional premium worthwhile?
+<!-- record_id: product.commonfunding.how-commoncare-identifies-the-optimal-plan-when-is-additional-premium-wo.r; record_type: table-row -->
+- Context: CommonFunding — How CommonCare identifies the optimal plan > When is additional premium worthwhile?
 - Variable: `r`
 - Meaning: Participant coinsurance after the deductible, expressed as a decimal
 
 #### M
-<!-- record_id: product.commonfunding.commonfunding-how-commoncare-identifies-the-optimal-plan-when-is-additio.m; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > How CommonCare identifies the optimal plan > When is additional premium worthwhile?
+<!-- record_id: product.commonfunding.how-commoncare-identifies-the-optimal-plan-when-is-additional-premium-wo.m; record_type: table-row -->
+- Context: CommonFunding — How CommonCare identifies the optimal plan > When is additional premium worthwhile?
 - Variable: `M`
 - Meaning: Annual maximum out-of-pocket limit, excluding premium
 
@@ -325,7 +330,7 @@ The formula adds annual premium to participant medical expense: deductible spend
 
 <!-- record_id: product.commonfunding.decision-rule -->
 #### Decision rule
-> Retrieval context: CommonFunding — CommonFunding > How CommonCare identifies the optimal plan > When is additional premium worthwhile? > Decision rule
+> Retrieval context: CommonFunding — How CommonCare identifies the optimal plan > When is additional premium worthwhile? > Decision rule
 
 Additional premium is worthwhile when the reduction in expected out-of-pocket expense exceeds the additional annual premium:
 
@@ -338,7 +343,7 @@ Here, `A` is the lower-premium plan and `B` is the higher-premium plan. Equality
 
 <!-- record_id: product.commonfunding.dominance-rule -->
 #### Dominance rule
-> Retrieval context: CommonFunding — CommonFunding > How CommonCare identifies the optimal plan > When is additional premium worthwhile? > Dominance rule
+> Retrieval context: CommonFunding — How CommonCare identifies the optimal plan > When is additional premium worthwhile? > Dominance rule
 
 Calculate the difference over the entire relevant claims range:
 
@@ -372,7 +377,7 @@ The higher-deductible option costs **$3,066 less even when both participants rea
 
 <!-- record_id: product.commonfunding.why-cash-pay-routine-care-matters -->
 ## Why cash-pay routine care matters
-> Retrieval context: CommonFunding — CommonFunding > Why cash-pay routine care matters
+> Retrieval context: CommonFunding — Why cash-pay routine care matters
 
 A small percentage of healthcare transactions accounts for an enormous share of total spending. Those limited, expensive events are where insurance provides its strongest risk-transfer value.
 
@@ -411,7 +416,7 @@ These are not arguments against HSAs. CommonCare considers the HSA model superb 
 
 <!-- record_id: product.commonfunding.how-commonfunding-improves-the-implementation -->
 ### How CommonFunding improves the implementation
-> Retrieval context: CommonFunding — CommonFunding > Why cash-pay routine care matters > How CommonFunding improves the implementation
+> Retrieval context: CommonFunding — Why cash-pay routine care matters > How CommonFunding improves the implementation
 
 1. **The funding is integrated with the coverage.** CommonFunding presents the major medical option and CommonFunds as one plan experience. The participant does not receive a high deductible followed by a vague promise that a separate account makes it better; the effective cost-sharing position is calculated and displayed directly.
 2. **Experience gains remain with the employer.** CommonFunds availability is a reimbursement promise, not a portable employee-owned asset. Amounts not paid as valid claims remain employer property, and unused availability may expire according to the plan terms.
@@ -427,25 +432,40 @@ These are not arguments against HSAs. CommonCare considers the HSA model superb 
 
 <!-- record_id: product.commonfunding.pluggable-coverages -->
 ## Pluggable Coverages
-> Retrieval context: CommonFunding — CommonFunding > Pluggable Coverages
+> Retrieval context: CommonFunding — Pluggable Coverages
 
 CommonFunding can operate with multiple underlying coverage structures because CommonFunds is administered as an excepted-benefit companion rather than as the participant’s comprehensive major medical coverage.
 
 <!-- record_id: product.commonfunding.choice-formerly-ichra -->
 ### CHOICE — formerly ICHRA
-> Retrieval context: CommonFunding — CommonFunding > Pluggable Coverages > CHOICE — formerly ICHRA
+> Retrieval context: CommonFunding — Pluggable Coverages > CHOICE — formerly ICHRA
 
 CHOICE allows employees to select the optimal private individual coverage option. This option creates the maximum flexibility for meeting individual needs and takes the employer completely out of the risk-management process for major medical coverage. CommonCare can fully administer a CHOICE arrangement as the CommonFunding coverage option. See our [CHOICE documentation](https://commoncare.org/products/choice) for more details.
 
-CommonCare via the CommonFunding plan structure is able to wrap a CHOICE offering to normalize the premiums and deductible amounts so that employees see a simplified "A, B, C" plan offering with fixed premiums and deductibles (or age-banded if desired). This structure also avoids putting any excess funds in the actual CHOICE HRA to avoid trapping funds to be used or lost on insurance premiums. Rather, the plan comes with a section 125 plan for paying unreimbursed CHOICE premiums tax-free (CommonCare return off-exchange options only for this). This arrangement keeps more dollars free for the CommonFunds portion of the plan instead of the more restrictive CHOICE HRA portion.
+CommonCare via the CommonFunding plan structure is able to wrap a CHOICE offering to normalize the premiums and deductible amounts so that employees see a simplified "A, B, C" plan offering with fixed premiums and deductibles (or age-banded if desired). This structure also avoids putting any excess funds in the actual CHOICE HRA to avoid trapping funds to be used or lost on insurance premiums. How much goes into the HRA depends on a few factors: 
+
+<!-- record_id: product.commonfunding.rule-how-much-funding-goes-into-the-hra -->
+#### Rule: How much funding goes into the HRA?
+> Retrieval context: CommonFunding — Pluggable Coverages > CHOICE — formerly ICHRA > Rule: How much funding goes into the HRA?
+
+CHOICE cannot legally be paired with the EBHRA portion of CommonFunds - rather, it replaces it. There are pros and cons to this replacement. The pros are: the limits on the HRA disappear completely. The main con is that the funds are only accessible to an employee enrolled in qualifying coverage (even if not through the ICHRA). 
+
+- **Rule 1:** Utilize the maximum FSA portion of CommonFunds first. This is the easiest and least restrictive option. CommonFunds FSA is the bulk of the CommonFunds cap already.
+- **Rule 2:** Confirm whether a participant is enrolled in qualifying coverage. A simple affidavit is enough (CommonCare provides this workflow). If they are, the portion of allowance not used for qualifying premiums is available for CommonFunds.
+
+<!-- record_id: product.commonfunding.paying-unreimbursed-premiums-tax-free -->
+#### Paying unreimbursed premiums tax-free
+> Retrieval context: CommonFunding — Pluggable Coverages > CHOICE — formerly ICHRA > Paying unreimbursed premiums tax-free
+
+Create a section 125 plan for paying unreimbursed CHOICE premiums tax-free (CommonCare return off-exchange options only for this). This arrangement keeps more dollars free for the CommonFunds portion of the plan instead of the more restrictive CHOICE HRA portion.
 
 > Federal law does not permit Section 125 salary reduction to pay premiums for a qualified health plan purchased through an Exchange. [IRS final ICHRA rules](https://www.irs.gov/pub/irs-irbs/irb19-42.pdf)
 
-See the [CHOICE documentation](https://commoncare.org/products/choice).
+See the [CHOICE documentation](https://commoncare.org/products/choice) for further details on compliance and affordability of this implementation.
 
 <!-- record_id: product.commonfunding.group-insurance-contracts -->
 ### Group insurance contracts
-> Retrieval context: CommonFunding — CommonFunding > Pluggable Coverages > Group insurance contracts
+> Retrieval context: CommonFunding — Pluggable Coverages > Group insurance contracts
 
 Group insurance may outperform individual coverage when the employer receives favorable rates based on its population or when group contracts offer stronger local networks.
 
@@ -457,7 +477,7 @@ The selection should be driven by the quoted economics, not a presumption that t
 
 <!-- record_id: product.commonfunding.individually-selected-non-employer-sponsored-options -->
 ### Individually selected, non-employer-sponsored options
-> Retrieval context: CommonFunding — CommonFunding > Pluggable Coverages > Individually selected, non-employer-sponsored options
+> Retrieval context: CommonFunding — Pluggable Coverages > Individually selected, non-employer-sponsored options
 
 Employees may independently choose arrangements that the employer does not sponsor. An employer may facilitate voluntary, employee-paid access—including payroll deduction—when the arrangement is structured to preserve employer neutrality and comply with applicable wage-deduction law.
 
@@ -467,7 +487,7 @@ CommonCare’s process keeps the employer’s role administrative rather than pr
 
 <!-- record_id: product.commonfunding.medical-cost-sharing-and-other-alternatives -->
 #### Medical cost sharing and other alternatives
-> Retrieval context: CommonFunding — CommonFunding > Pluggable Coverages > Individually selected, non-employer-sponsored options > Medical cost sharing and other alternatives
+> Retrieval context: CommonFunding — Pluggable Coverages > Individually selected, non-employer-sponsored options > Medical cost sharing and other alternatives
 
 Medical cost-sharing programs can offer a substantially lower-cost approach to large medical expenses for participants who understand and accept their limitations. These people need to:
 
@@ -482,7 +502,7 @@ See the [Alternatives documentation](https://commoncare.org/products/alternative
 
 <!-- record_id: product.commonfunding.marketplace-coverage-with-premium-tax-credits -->
 ### Marketplace coverage with premium tax credits
-> Retrieval context: CommonFunding — CommonFunding > Pluggable Coverages > Marketplace coverage with premium tax credits
+> Retrieval context: CommonFunding — Pluggable Coverages > Marketplace coverage with premium tax credits
 
 For employers with fewer than 50 full-time-equivalent employees, Marketplace premium tax credits can be a critical part of the analysis.
 
@@ -490,61 +510,194 @@ An offer of employer major medical coverage generally blocks the premium tax cre
 
 This option allows employees to benefit from the premium tax credit while the employer offers the same streamlined CommonFunds companion structure for out of pocket costs. CommonCare administers a turn-key plan structure for achieving this compliantly.
 
+Like the alternative coverages, this option generally cannot be employer-sponsored. Generally, because of an important but realistic exception for some groups: 
+
+- If the ages/income mix of employees is a fit, the employer may offer an CHOICE/ICHRA arrangement with minimal allowance. This will mean some employees (those most able to benefit from the PTC) still have access to the PTC due to the coverage not being legally affordable. The employer can still offer an allowance, but it is a flex-allowance and therefore does not count toward affordability.
+- These employees opt-out of the CHOICE/ICHRA and CommonCare helps them enroll in individual coverage seamlessly (still payroll-funded, only post-tax, and not employer-sponsored)
+- The remaining employees still get the benefit of tax-free premiums through the CHOICE/ICHRA arrangement. 
+
+This is an important option for employers with less than 50 full-time-equivalent employees. Often the total optimal arrangement cannot be known until enrollment is already underway, but CommonCare can allow an easy migration to this arrangement where it is optimal. The savings netted make the bother of a small change very worthwhile.
+
 See the [PTC Plan documentation](https://commoncare.org/products/ptc).
+
+> [WARNING!] It is important to note that most plans who offer this option will need to offer a legitimate employer sponsored health plan in order to be able to offered qualified HRA/FSA options as excepted benefits. See [§45 CFR 146.145](https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-B/part-146/subpart-D/section-146.145).
+> 
+> CommonCare self-funded MEC product is the ideal way to accomplish this. The plan does not meet minimum value and therefore preserves the PTC eligibility for employees. It is self-funded, so there is no premium dollars sent off to a trite insurance product. The utilization and risks for the plan are defined and limited. See [The self-funded MEC docs](https://github.com/commoncare-dev/commondocs/blob/main/plan-structures/self-funded-mec/basic-mec/human-readable.md)
+
 
 ---
 
 <!-- record_id: product.commonfunding.important-implementation-rules -->
 ## Important implementation rules
-> Retrieval context: CommonFunding — CommonFunding > Important implementation rules
+> Retrieval context: CommonFunding — Important implementation rules
 
 The flexibility of CommonFunding comes from coordinating distinct components, not ignoring their boundaries.
 
 #### CommonFunds classification
-<!-- record_id: product.commonfunding.commonfunding-important-implementation-rules.commonfunds-classification; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > Important implementation rules
+<!-- record_id: product.commonfunding.important-implementation-rules.commonfunds-classification; record_type: table-row -->
+- Context: CommonFunding — Important implementation rules
 - Design issue: CommonFunds classification
 - Operating rule: Maintain the EBHRA and Health FSA classifications, limits, funding sources, and claims rules separately
 
 #### Individual optimization
-<!-- record_id: product.commonfunding.commonfunding-important-implementation-rules.individual-optimization; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > Important implementation rules
+<!-- record_id: product.commonfunding.important-implementation-rules.individual-optimization; record_type: table-row -->
+- Context: CommonFunding — Important implementation rules
 - Design issue: Individual optimization
 - Operating rule: Recommend and enroll participants among valid available options; do not alter plan terms arbitrarily for an individual
 
 #### EBHRA availability
-<!-- record_id: product.commonfunding.commonfunding-important-implementation-rules.ebhra-availability; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > Important implementation rules
+<!-- record_id: product.commonfunding.important-implementation-rules.ebhra-availability; record_type: table-row -->
+- Context: CommonFunding — Important implementation rules
 - Design issue: EBHRA availability
 - Operating rule: Apply the same terms to similarly situated individuals, regardless of health factor
 
 #### Health FSA risk
-<!-- record_id: product.commonfunding.commonfunding-important-implementation-rules.health-fsa-risk; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > Important implementation rules
+<!-- record_id: product.commonfunding.important-implementation-rules.health-fsa-risk; record_type: table-row -->
+- Context: CommonFunding — Important implementation rules
 - Design issue: Health FSA risk
 - Operating rule: Apply uniform coverage and the governing forfeiture, carryover, and runout provisions
 
 #### Participant-facing normalization
-<!-- record_id: product.commonfunding.commonfunding-important-implementation-rules.participant-facing-normalization; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > Important implementation rules
+<!-- record_id: product.commonfunding.important-implementation-rules.participant-facing-normalization; record_type: table-row -->
+- Context: CommonFunding — Important implementation rules
 - Design issue: Participant-facing normalization
 - Operating rule: Show effective economics without replacing or contradicting the underlying coverage documents
 
 #### Premium tax credits
-<!-- record_id: product.commonfunding.commonfunding-important-implementation-rules.premium-tax-credits; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > Important implementation rules
+<!-- record_id: product.commonfunding.important-implementation-rules.premium-tax-credits; record_type: table-row -->
+- Context: CommonFunding — Important implementation rules
 - Design issue: Premium tax credits
 - Operating rule: Evaluate affordability, minimum value, ICHRA rules, household eligibility, and the actual employer offer
 
 #### Independent alternatives
-<!-- record_id: product.commonfunding.commonfunding-important-implementation-rules.independent-alternatives; record_type: table-row -->
-- Context: CommonFunding — CommonFunding > Important implementation rules
+<!-- record_id: product.commonfunding.important-implementation-rules.independent-alternatives; record_type: table-row -->
+- Context: CommonFunding — Important implementation rules
 - Design issue: Independent alternatives
 - Operating rule: Preserve voluntariness and employer neutrality when the option is not employer sponsored
 
 
 <!-- record_id: product.commonfunding.core-principle -->
 ## Core principle
-> Retrieval context: CommonFunding — CommonFunding > Core principle
+> Retrieval context: CommonFunding — Core principle
 
 > **Use insurance for the risk that needs insurance. Fund routine care directly, cap the employer’s exposure, and optimize the combination for the participant standing in front of you.**
+
+<!-- record_id: product.commonfunding.implementation-and-pricing-nuances -->
+## Implementation and pricing nuances
+> Retrieval context: CommonFunding — Implementation and pricing nuances
+
+CommonCare provides turn-key tooling for pricing, implementing, and administering this plan structure. There are some critical decisions made in modeling costs in our model worth considering: 
+
+<!-- record_id: product.commonfunding.employee-deductible-network-elections -->
+### Employee deductible/network elections
+> Retrieval context: CommonFunding — Implementation and pricing nuances > Employee deductible/network elections
+
+CommonFunding is designed to work with the existing insurance product landscape. It is not a carrier-designed level-funded arrangement in which a single carrier controls the insurance product, funding account, and participant incentives. Instead, CommonFunding accepts the incentives and cost-sharing rules of the underlying insurance products and applies a consistent funding layer across them.
+
+An important implementation nuance arises when an employee selects an underlying insurance plan that differs from the benchmark plan used to price the CommonFunding arrangement. This is a standard use case in CHOICE and ICHRA programs, but it can also occur when employees live in different geographic markets, require access to different provider networks, or are offered multiple insurance options.
+
+The benchmark price assumes a particular underlying deductible and expected CommonFunds liability. Selecting a plan with a different deductible changes that expected liability:
+
+- A higher underlying deductible creates additional potential exposure and supports a lower deductible-adjusted insurance premium.
+- A lower underlying deductible reduces potential exposure and produces a higher deductible-adjusted insurance premium.
+
+This adjustment is separate from any difference in the carriers’ raw premiums. Raw premium differences may reflect network breadth, negotiated provider rates, plan design, carrier administration, geography, or other factors. The deductible adjustment only estimates the expected value associated with the change in deductible exposure.
+
+<!-- record_id: product.commonfunding.deductible-cost-ratios -->
+#### Deductible cost ratios
+> Retrieval context: CommonFunding — Implementation and pricing nuances > Employee deductible/network elections > Deductible cost ratios
+
+The model calculates expected CommonFunds claims at $1,000 deductible intervals. These projections are converted into marginal deductible cost ratios:
+
+```text
+Deductible cost ratio
+=
+(CommonFunds exposure at the current tier
+ − CommonFunds exposure at the next tier)
+÷ deductible dollars in the tier
+```
+
+When the projections contain group totals, the difference is also divided by the number of participating employees.
+
+For example:
+
+```text
+Projected CommonFunds claims at $2,000: $3,500
+Projected CommonFunds claims at $3,000: $2,900
+
+Cost ratio for the $2,000–$3,000 tier:
+($3,500 − $2,900) ÷ $1,000 = 0.60
+```
+
+A ratio of `0.60` means that each additional dollar of deductible in that tier represents approximately `$0.60` of expected cost.
+
+Because claim frequency generally declines at higher levels of exposure, the ratio can vary by deductible tier. This produces a more accurate adjustment than applying one average ratio to the entire deductible difference.
+
+If an elected deductible exceeds the range supported by the benchmark simulation, the model carries forward the highest stable tier rate for which CommonFunds claim information exists. This prevents the adjustment from incorrectly falling to zero merely because the benchmark plan’s cost-sharing limit has been reached.
+
+<!-- record_id: product.commonfunding.applying-the-adjustment -->
+#### Applying the adjustment
+> Retrieval context: CommonFunding — Implementation and pricing nuances > Employee deductible/network elections > Applying the adjustment
+
+The applicable tier rates are accumulated between the benchmark deductible and the elected deductible.
+
+```text
+Deductible-adjusted premium
+=
+Benchmark premium + deductible adjustment
+```
+
+The direction of the adjustment depends on the election:
+
+```text
+Higher elected deductible → negative adjustment
+Lower elected deductible  → positive adjustment
+```
+
+> **Example**
+>
+> Assume the benchmark plan has:
+>
+> - Annual premium: `$12,000`
+> - Deductible: `$2,000`
+>
+> An employee selects a plan with a `$4,500` deductible. The applicable cost ratios are:
+>
+> | Deductible tier | Cost ratio | Adjustment |
+> |---|---:|---:|
+> | $2,000–$3,000 | 0.60 | $600 |
+> | $3,000–$4,000 | 0.50 | $500 |
+> | $4,000–$4,500 | 0.40 | $200 |
+>
+> The additional `$2,500` of deductible represents `$1,300` of expected cost:
+>
+> ```text
+> ($1,000 × 0.60)
+> + ($1,000 × 0.50)
+> + ($500 × 0.40)
+> = $1,300
+> ```
+>
+> Because the employee selected a higher deductible, the adjustment is negative:
+>
+> ```text
+> $12,000 − $1,300 = $10,700
+> ```
+>
+> The resulting deductible-adjusted annual premium is `$10,700`, before applying any separate difference between the underlying plans’ raw carrier premiums.
+
+The same method works in reverse. If the employee selects a lower deductible than the benchmark, the accumulated expected cost is added to the benchmark premium rather than subtracted.
+
+<!-- record_id: product.commonfunding.cost-sharing-nuances -->
+### Cost sharing nuances
+> Retrieval context: CommonFunding — Implementation and pricing nuances > Cost sharing nuances
+
+The cost-sharing differences between insurance and CommonFunds are too nuanced to model accurately. Things such as:
+
+- Preventive care being insurance-covered with no cost-sharing
+- The complexities of insurance coinsurance and co-pays in and out of network
+- Drug tiers
+
+Are practically impossible to price into cost simulations in great detail if using genuine claims data and not manufactured data. 
+
+Because of this, CommonCare simply assumes the conservative approach for each of these. We exclude no preventive care costs as being "insurance-paid," assume global high coinsurance rates, and assume no special tiers for specialty care or drugs. It is assumed that all of the bills simulated fall through fully to the CommonFunds cost sharing layer.
