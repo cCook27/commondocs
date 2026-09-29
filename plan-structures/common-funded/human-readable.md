@@ -1,8 +1,8 @@
-## CommonFunding
+## CommonFunded
 
-> **CommonFunding pairs [CommonFunds](https://commoncare.org/products/common-funds) with major medical insurance or an alternative coverage arrangement to reduce sunk premium costs, preserve participant choice, and turn predictable healthcare spending into a bounded employer-funded benefit.**
+> **CommonFunded pairs [CommonFunds](https://commoncare.org/products/common-funds) with major medical insurance or an alternative coverage arrangement to reduce sunk premium costs, preserve participant choice, and turn predictable healthcare spending into a bounded employer-funded benefit.**
 
-CommonFunding is CommonCare’s core plan structure. It combines:
+CommonFunded is CommonCare’s core plan structure. It combines:
 
 1. **CommonFunds** for routine and lower-cost healthcare expenses;
 2. **Major medical insurance or another coverage vehicle** for larger and less predictable expenses; and
@@ -12,7 +12,7 @@ The result preserves a familiar participant choice structure while reducing reli
 
 ## At a glance
 
-| Product function | CommonFunding approach |
+| Product function | CommonFunded approach |
 |---|---|
 | Routine healthcare | Reimbursed through CommonFunds |
 | Large and unpredictable claims | Managed through major medical insurance or another selected coverage vehicle |
@@ -23,9 +23,9 @@ The result preserves a familiar participant choice structure while reducing reli
 | Administration | Coverage, CommonFunds, enrollment, payroll, and participant-facing cost sharing are presented together |
 
 > [!NOTE]
-> **How is CommonFunding different from CommonFunds?**
+> **How is CommonFunded different from CommonFunds?**
 >
-> The underlying CommonFunds product is the same. CommonFunding pairs it with a selected set of coverage options and wraps compliance, enrollment, administration, and participant communication into a turnkey plan structure.
+> The underlying CommonFunds product is the same. CommonFunded pairs it with a selected set of coverage options and wraps compliance, enrollment, administration, and participant communication into a turnkey plan structure.
 
 ## Navigate this document
 
@@ -35,7 +35,7 @@ The result preserves a familiar participant choice structure while reducing reli
 - [Where the savings come from](#where-the-savings-come-from)
 - [How CommonCare identifies the optimal plan](#how-commoncare-identifies-the-optimal-plan)
 - [Why cash-pay routine care matters](#why-cash-pay-routine-care-matters)
-- [What CommonFunding learns from HSAs](#what-commonfunding-learns-from-hsas)
+- [What CommonFunded learns from HSAs](#what-commonfunded-learns-from-hsas)
 - [Coverage vehicles](#pluggable-coverages)
 - [Important implementation rules](#important-implementation-rules)
 
@@ -43,7 +43,7 @@ The result preserves a familiar participant choice structure while reducing reli
 
 ## The design thesis
 
-“CommonFunding” is partial self-funding. The structure captures many of self-funding’s advantages without asking the employer to accept catastrophic claims risk, build a claims operation, or purchase the entire healthcare benefit directly.
+“CommonFunded” is partial self-funding. The structure captures many of self-funding’s advantages without asking the employer to accept catastrophic claims risk, build a claims operation, or purchase the entire healthcare benefit directly.
 
 CommonCare’s coverage-ranking process simulates economic outcomes. It does not factor advertised "richness" of the plan, it ranks plans based on actuarial efficiency in realistic outcomes. A plan performs better when its projected total economic result is better.
 
@@ -63,13 +63,13 @@ In essence, this means that the majority of insurance benefit is not in the \\$0
 This means much of insurance’s value is delivered through a relatively small number of high-cost periods. For many participants, differences in premium and maximum out-of-pocket exposure are more economically significant than the deductible alone.
 
 > [!IMPORTANT]
-> Individual circumstances still matter. CommonFunding uses the generally efficient structure as its default, then evaluates available options participant by participant. A predictable high-cost claimant may spend less overall with a lower-deductible plan; another participant may spend substantially less with lower premium, higher cost sharing, and CommonFunds.
+> Individual circumstances still matter. CommonFunded uses the generally efficient structure as its default, then evaluates available options participant by participant. A predictable high-cost claimant may spend less overall with a lower-deductible plan; another participant may spend substantially less with lower premium, higher cost sharing, and CommonFunds.
 
 ---
 
 ## Bounded partial self-funding
 
-CommonFunding creates a contained layer of self-funded medical expense without exposing the employer to the open-ended risk of a self-funded major medical plan.
+CommonFunded creates a contained layer of self-funded medical expense without exposing the employer to the open-ended risk of a self-funded major medical plan.
 
 The employer defines the CommonFunds benefit made available to each participant. That amount establishes the employer’s maximum reimbursement exposure under the account-based component.
 
@@ -85,7 +85,7 @@ For the component structure, classifications, annual limits, and availability ru
 
 ## The participant experience
 
-CommonFunding presents the selected coverage and CommonFunds together. A participant should not have to translate a \$10,000 insurance deductible and a separate reimbursement account into their real financial exposure.
+CommonFunded presents the selected coverage and CommonFunds together. A participant should not have to translate a \$10,000 insurance deductible and a separate reimbursement account into their real financial exposure.
 
 Instead, CommonCare can display:
 
@@ -103,7 +103,7 @@ The participant sees the terms that matter economically without having to perfor
 
 ## Where the savings come from
 
-CommonFunding replaces a portion of fixed insurance premium with a capped reimbursement promise.
+CommonFunded replaces a portion of fixed insurance premium with a capped reimbursement promise.
 
 Suppose a participant chooses coverage with a \$9,200 deductible. CommonFunds can reduce the participant’s effective exposure to \$0—or another employer-selected amount—even though the insurance contract still has a \$9,200 deductible.
 
@@ -150,9 +150,9 @@ Designing the plan to perform optimally in the majority of cases is the right re
 
 Unknown claims require probability modeling. A known treatment need can be priced against each available plan directly.
 
-That means CommonFunding does not need to design the entire employer plan around a few expensive participants. Each participant can select among the available options using their own expected premium, claims, deductible, coinsurance, and maximum exposure (or we can auto-select the optimal plan based on their inputs).
+That means CommonFunded does not need to design the entire employer plan around a few expensive participants. Each participant can select among the available options using their own expected premium, claims, deductible, coinsurance, and maximum exposure (or we can auto-select the optimal plan based on their inputs).
 
-> 🔑 For participants who have significant needs, the math for the optimal plan actually tends to get simpler. Most often entire plans optimize to solve a few significant problems - as if they were unknown. CommonFunding allows just that one employee to modify the cost-sharing structure to optimize for their needs - underlying insurance options allowing; see the section on [insurance options](#pluggable-coverages) for details.
+> 🔑 For participants who have significant needs, the math for the optimal plan actually tends to get simpler. Most often entire plans optimize to solve a few significant problems - as if they were unknown. CommonFunded allows just that one employee to modify the cost-sharing structure to optimize for their needs - underlying insurance options allowing; see the section on [insurance options](#pluggable-coverages) for details.
 
 ### When is additional premium worthwhile?
 
@@ -233,7 +233,7 @@ Direct-pay models can also create a less encumbered provider relationship. The p
 > [!EXAMPLE]
 >  Ex: If you crash your mountain bike riding down a hill and break your arm, there's a good chance fixing the bike will cost more than fixing your arm—assuming you don't head straight to the ER and instead go to a private clinic, where the price is better, the company is better, and the expertise is more focused.
 >
-> If you feel that's an absurd priority tree, and you'd rather escalate any possible emergency to the maximally defensive treatment, that's ok; the CommonFunding model still works well if you end up spending more of your deductible. Some people will prefer to escalate their care. Most will avoid it.
+> If you feel that's an absurd priority tree, and you'd rather escalate any possible emergency to the maximally defensive treatment, that's ok; the CommonFunded model still works well if you end up spending more of your deductible. Some people will prefer to escalate their care. Most will avoid it.
 
 The broader point is not that every participant should make the same care decision. It is that routine healthcare priorities and purchasing decisions do not need to be socialized through insurance before they can be funded effectively.
 
@@ -252,31 +252,31 @@ If the math is so strong, why has adoption and funding remained weaker than it s
 - **The payroll-tax advantage is poorly understood.** Employee HSA contributions made through an employer’s Section 125 arrangement avoid federal income and payroll tax. A participant contributing independently may receive an income-tax deduction, but generally misses the payroll-tax savings.
 - **The ownership economics favor the employee, not the employer.** Employer HSA contributions immediately become portable employee assets. That is excellent for the participant, but it gives the employer no experience gain when healthcare use is lower than expected.
 
-These are not arguments against HSAs. CommonCare considers the HSA model superb and has created plan structures intended to produce HSA eligibility with the lowest practical sunk cost, including the [self-funded MEC plan](https://commoncare.org/products/mec). HSA-driven options can be offered alongside CommonFunding and other CommonCare structures.
+These are not arguments against HSAs. CommonCare considers the HSA model superb and has created plan structures intended to produce HSA eligibility with the lowest practical sunk cost, including the [self-funded MEC plan](https://commoncare.org/products/mec). HSA-driven options can be offered alongside CommonFunded and other CommonCare structures.
 
-### How CommonFunding improves the implementation
+### How CommonFunded improves the implementation
 
-1. **The funding is integrated with the coverage.** CommonFunding presents the major medical option and CommonFunds as one plan experience. The participant does not receive a high deductible followed by a vague promise that a separate account makes it better; the effective cost-sharing position is calculated and displayed directly.
+1. **The funding is integrated with the coverage.** CommonFunded presents the major medical option and CommonFunds as one plan experience. The participant does not receive a high deductible followed by a vague promise that a separate account makes it better; the effective cost-sharing position is calculated and displayed directly.
 2. **Experience gains remain with the employer.** CommonFunds availability is a reimbursement promise, not a portable employee-owned asset. Amounts not paid as valid claims remain employer property, and unused availability may expire according to the plan terms.
 3. **The benefit is not tied to HDHP enrollment.** A participant does not have to enroll in an HSA-qualified plan to use CommonFunds. The employer must make the other coverage required for excepted-benefit status available, but participant enrollment in one prescribed major medical option is not the source of CommonFunds eligibility. For example, an employer can use our [self-funded MEC plan](https://commoncare.org/products/mec) to satisfy this requirement and pair with CommonFunds.
 4. **Carryover does not create portability.** If the employer elects rollover, unused availability can accumulate for the participant while employed without becoming an asset the participant takes at termination.
 5. **No individual custodial account is required.** The employer can establish and operate CommonFunds without waiting for every employee to open, fund, or manage a separate account.
-6. **The employer captures the funding efficiency.** CommonFunding replaces the employee profit opportunity created by portable HSA assets with an employer experience-gain opportunity, while still paying valid participant claims tax-free.
+6. **The employer captures the funding efficiency.** CommonFunded replaces the employee profit opportunity created by portable HSA assets with an employer experience-gain opportunity, while still paying valid participant claims tax-free.
 
 > [!IMPORTANT]
-> CommonCare still loves HSAs. CommonFunding solves a different ownership and implementation problem. An HSA makes unused healthcare dollars the employee’s permanent asset; CommonFunding keeps unused reimbursement dollars with the employer. CommonCare can use either structure—or both—when the economics support it.
+> CommonCare still loves HSAs. CommonFunded solves a different ownership and implementation problem. An HSA makes unused healthcare dollars the employee’s permanent asset; CommonFunded keeps unused reimbursement dollars with the employer. CommonCare can use either structure—or both—when the economics support it.
 
 ---
 
 ## Pluggable Coverages
 
-CommonFunding can operate with multiple underlying coverage structures because CommonFunds is administered as an excepted-benefit companion rather than as the participant’s comprehensive major medical coverage.
+CommonFunded can operate with multiple underlying coverage structures because CommonFunds is administered as an excepted-benefit companion rather than as the participant’s comprehensive major medical coverage.
 
 ### CHOICE — formerly ICHRA
 
-CHOICE allows employees to select the optimal private individual coverage option. This option creates the maximum flexibility for meeting individual needs and takes the employer completely out of the risk-management process for major medical coverage. CommonCare can fully administer a CHOICE arrangement as the CommonFunding coverage option. See our [CHOICE documentation](https://commoncare.org/products/choice) for more details.
+CHOICE allows employees to select the optimal private individual coverage option. This option creates the maximum flexibility for meeting individual needs and takes the employer completely out of the risk-management process for major medical coverage. CommonCare can fully administer a CHOICE arrangement as the CommonFunded coverage option. See our [CHOICE documentation](https://commoncare.org/products/choice) for more details.
 
-CommonCare via the CommonFunding plan structure is able to wrap a CHOICE offering to normalize the premiums and deductible amounts so that employees see a simplified "A, B, C" plan offering with fixed premiums and deductibles (or age-banded if desired). This structure also avoids putting any excess funds in the actual CHOICE HRA to avoid trapping funds to be used or lost on insurance premiums. How much goes into the HRA depends on a few factors: 
+CommonCare via the CommonFunded plan structure is able to wrap a CHOICE offering to normalize the premiums and deductible amounts so that employees see a simplified "A, B, C" plan offering with fixed premiums and deductibles (or age-banded if desired). This structure also avoids putting any excess funds in the actual CHOICE HRA to avoid trapping funds to be used or lost on insurance premiums. How much goes into the HRA depends on a few factors: 
 
 #### Rule: How much funding goes into the HRA?
 
@@ -297,9 +297,9 @@ See the [CHOICE documentation](https://commoncare.org/products/choice) for furth
 
 Group insurance may outperform individual coverage when the employer receives favorable rates based on its population or when group contracts offer stronger local networks.
 
-CommonFunding can pair the highest-value group options with CommonFunds and normalize the participant-facing presentation of:
+CommonFunded can pair the highest-value group options with CommonFunds and normalize the participant-facing presentation of:
 
-Like with the CHOICE option, it is simple to wrap the insurance options in the CommonFunding structure to normalize employee-facing cost-sharing (deductible, MOOP, etc.) and premiums. No displaying \$10,000 deductibles + some nebulous savings account.
+Like with the CHOICE option, it is simple to wrap the insurance options in the CommonFunded structure to normalize employee-facing cost-sharing (deductible, MOOP, etc.) and premiums. No displaying \$10,000 deductibles + some nebulous savings account.
 
 The selection should be driven by the quoted economics, not a presumption that the group or individual market always wins.
 
@@ -351,7 +351,7 @@ See the [PTC Plan documentation](https://commoncare.org/products/ptc).
 
 ## Important implementation rules
 
-The flexibility of CommonFunding comes from coordinating distinct components, not ignoring their boundaries.
+The flexibility of CommonFunded comes from coordinating distinct components, not ignoring their boundaries.
 
 | Design issue | Operating rule |
 |---|---|
@@ -373,9 +373,9 @@ CommonCare provides turn-key tooling for pricing, implementing, and administerin
 
 ### Employee deductible/network elections
 
-CommonFunding is designed to work with the existing insurance product landscape. It is not a carrier-designed level-funded arrangement in which a single carrier controls the insurance product, funding account, and participant incentives. Instead, CommonFunding accepts the incentives and cost-sharing rules of the underlying insurance products and applies a consistent funding layer across them.
+CommonFunded is designed to work with the existing insurance product landscape. It is not a carrier-designed level-funded arrangement in which a single carrier controls the insurance product, funding account, and participant incentives. Instead, CommonFunded accepts the incentives and cost-sharing rules of the underlying insurance products and applies a consistent funding layer across them.
 
-An important implementation nuance arises when an employee selects an underlying insurance plan that differs from the benchmark plan used to price the CommonFunding arrangement. This is a standard use case in CHOICE and ICHRA programs, but it can also occur when employees live in different geographic markets, require access to different provider networks, or are offered multiple insurance options.
+An important implementation nuance arises when an employee selects an underlying insurance plan that differs from the benchmark plan used to price the CommonFunded arrangement. This is a standard use case in CHOICE and ICHRA programs, but it can also occur when employees live in different geographic markets, require access to different provider networks, or are offered multiple insurance options.
 
 The benchmark price assumes a particular underlying deductible and expected CommonFunds liability. Selecting a plan with a different deductible changes that expected liability:
 
