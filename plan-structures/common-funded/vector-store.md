@@ -3,8 +3,8 @@ id: product.commonfunding.vector-store
 title: CommonFunding — Vector Store Source
 kind: vector-store-source
 schema_version: "1.0"
-source_document: plan-structures/common-funding/human-readable.md
-metadata_document: plan-structures/common-funding/metadata.yaml
+source_document: plan-structures/common-funded/human-readable.md
+metadata_document: plan-structures/common-funded/metadata.yaml
 source_commit: 2b6ee17093e27a00afc6b54c86f6f2a244e9acd9
 source_sha256: 919d7810b8320d5e0716a366fbb8aa5d9c79ec4f9cde6dcf872cf7b9ece81fd9
 metadata_sha256: 135e7bccdb792435c55904202cfcd5cbd31b1601d48212e39d7b07f3c3d1e7d4
@@ -18,7 +18,7 @@ last_reviewed: 2026-09-15
 
 # CommonFunding — Vector Store Source
 
-> Retrieval context: This generated document restructures `plan-structures/common-funding/human-readable.md` for semantic retrieval. The human-readable source remains canonical. Substantive edits belong in the source and must be regenerated here.
+> Retrieval context: This generated document restructures `plan-structures/common-funded/human-readable.md` for semantic retrieval. The human-readable source remains canonical. Substantive edits belong in the source and must be regenerated here.
 
 <!-- record_id: product.commonfunding.commonfunding -->
 ## CommonFunding
