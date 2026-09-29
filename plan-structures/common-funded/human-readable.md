@@ -134,7 +134,7 @@ The following CommonCare quote comparison involved a 40-year-old man in Nashvill
 The lower-deductible option required \$6,766 of additional premium to reduce maximum out-of-pocket exposure by \$3,700. Within those quoted terms, the additional premium exceeded even the maximum possible reduction in cost sharing.
 
 > [!TIP]
-> The model does not assume that every higher-deductible plan wins. It uses dominance before probability. A lower deductible has no economic value when the additional premium costs more than the largest reduction in out-of-pocket expense the plan can produce. If the lower-premium plan has a lower total cost at $0 of claims, throughout the cost-sharing curve, and at premium plus MOOP, it wins at every possible claim level. Claim probability matters only when the plans’ total-cost curves cross.
+> The model does not assume that every higher-deductible plan wins. It uses dominance before probability. A lower deductible has no economic value when the additional premium costs more than the largest reduction in out-of-pocket expense the plan can produce. If the lower-premium plan has a lower total cost at \$0 of claims, throughout the cost-sharing curve, and at premium plus MOOP, it wins at every possible claim level. Claim probability matters only when the plans’ total-cost curves cross.
 
 ---
 
@@ -206,11 +206,11 @@ Catastrophic annual cost = annual premium + MOOP
 In the Nashville example:
 
 ```text
-Higher-deductible option: $15,350 + $10,600 = $25,950
-Lower-deductible option:  $22,116 +  $6,900 = $29,016
+Higher-deductible option: \$15,350 + \$10,600 = \$25,950
+Lower-deductible option:  \$22,116 +  \$6,900 = \$29,016
 ```
 
-The higher-deductible option costs **$3,066 less even when both participants reach their MOOP**. A $100,000 covered claim does not make the lower-deductible option perform better; it simply causes both options to reach maximum cost sharing.
+The higher-deductible option costs **\$3,066 less even when both participants reach their MOOP**. A \$100,000 covered claim does not make the lower-deductible option perform better; it simply causes both options to reach maximum cost sharing.
 
 > [!NOTE]
 > This simplified equation assumes covered, in-network care subject to one deductible and one coinsurance rate, with deductible spending counting toward the maximum out-of-pocket limit. Copays, embedded family deductibles, service-specific rules, prescriptions, separate limits, balance bills, and noncovered expenses require additional modeling.
@@ -299,7 +299,7 @@ Group insurance may outperform individual coverage when the employer receives fa
 
 CommonFunding can pair the highest-value group options with CommonFunds and normalize the participant-facing presentation of:
 
-Like with the CHOICE option, it is simple to wrap the insurance options in the CommonFunding structure to normalize employee-facing cost-sharing (deductible, MOOP, etc.) and premiums. No displaying $10,000 deductibles + some nebulous savings account.
+Like with the CHOICE option, it is simple to wrap the insurance options in the CommonFunding structure to normalize employee-facing cost-sharing (deductible, MOOP, etc.) and premiums. No displaying \$10,000 deductibles + some nebulous savings account.
 
 The selection should be driven by the quoted economics, not a presumption that the group or individual market always wins.
 
@@ -386,7 +386,7 @@ This adjustment is separate from any difference in the carriers’ raw premiums.
 
 #### Deductible cost ratios
 
-The model calculates expected CommonFunds claims at $1,000 deductible intervals. These projections are converted into marginal deductible cost ratios:
+The model calculates expected CommonFunds claims at \$1,000 deductible intervals. These projections are converted into marginal deductible cost ratios:
 
 ```text
 Deductible cost ratio
@@ -401,14 +401,14 @@ When the projections contain group totals, the difference is also divided by the
 For example:
 
 ```text
-Projected CommonFunds claims at $2,000: $3,500
-Projected CommonFunds claims at $3,000: $2,900
+Projected CommonFunds claims at \$2,000: \$3,500
+Projected CommonFunds claims at \$3,000: \$2,900
 
-Cost ratio for the $2,000–$3,000 tier:
-($3,500 − $2,900) ÷ $1,000 = 0.60
+Cost ratio for the \$2,000–\$3,000 tier:
+(\$3,500 − \$2,900) ÷ \$1,000 = 0.60
 ```
 
-A ratio of `0.60` means that each additional dollar of deductible in that tier represents approximately `$0.60` of expected cost.
+A ratio of `0.60` means that each additional dollar of deductible in that tier represents approximately `\$0.60` of expected cost.
 
 Because claim frequency generally declines at higher levels of exposure, the ratio can vary by deductible tier. This produces a more accurate adjustment than applying one average ratio to the entire deductible difference.
 
@@ -435,33 +435,33 @@ Lower elected deductible  → positive adjustment
 >
 > Assume the benchmark plan has:
 >
-> - Annual premium: `$12,000`
-> - Deductible: `$2,000`
+> - Annual premium: `\$12,000`
+> - Deductible: `\$2,000`
 >
-> An employee selects a plan with a `$4,500` deductible. The applicable cost ratios are:
+> An employee selects a plan with a `\$4,500` deductible. The applicable cost ratios are:
 >
 > | Deductible tier | Cost ratio | Adjustment |
 > |---|---:|---:|
-> | $2,000–$3,000 | 0.60 | $600 |
-> | $3,000–$4,000 | 0.50 | $500 |
-> | $4,000–$4,500 | 0.40 | $200 |
+> | \$2,000–\$3,000 | 0.60 | \$600 |
+> | \$3,000–\$4,000 | 0.50 | \$500 |
+> | \$4,000–\$4,500 | 0.40 | \$200 |
 >
-> The additional `$2,500` of deductible represents `$1,300` of expected cost:
+> The additional `\$2,500` of deductible represents `\$1,300` of expected cost:
 >
 > ```text
-> ($1,000 × 0.60)
-> + ($1,000 × 0.50)
-> + ($500 × 0.40)
-> = $1,300
+> (\$1,000 × 0.60)
+> + (\$1,000 × 0.50)
+> + (\$500 × 0.40)
+> = \$1,300
 > ```
 >
 > Because the employee selected a higher deductible, the adjustment is negative:
 >
 > ```text
-> $12,000 − $1,300 = $10,700
+> \$12,000 − \$1,300 = \$10,700
 > ```
 >
-> The resulting deductible-adjusted annual premium is `$10,700`, before applying any separate difference between the underlying plans’ raw carrier premiums.
+> The resulting deductible-adjusted annual premium is `\$10,700`, before applying any separate difference between the underlying plans’ raw carrier premiums.
 
 The same method works in reverse. If the employee selects a lower deductible than the benchmark, the accumulated expected cost is added to the benchmark premium rather than subtracted.
 

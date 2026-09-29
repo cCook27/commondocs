@@ -234,7 +234,7 @@ CommonCare payroll reports therefore classify each independent-option payment as
 |---|---|
 | Funding source | Employee compensation |
 | Tax treatment | Post-tax |
-| Employer plan contribution | $0 |
+| Employer plan contribution | \$0 |
 | Section 125 treatment | None |
 | Election status | Voluntary, nonsponsored |
 | Destination | Employee-selected provider |

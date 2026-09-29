@@ -229,7 +229,7 @@ The regulation turns on what the employee **may use** the health-only amount to 
 
 A cashable flex credit elected into the Health FSA is treated as employee salary reduction. It consumes the Section 125(i) salary-reduction limit and increases permitted true-employer Health FSA capacity under the excepted-benefit maximum-benefit test.
 
-If the employee directs `$1` of cashable flex into the Health FSA, that election generally permits up to another `$1` of true employer Health FSA contribution, after accounting for the `$500` floor and all other FSA contributions:
+If the employee directs `\$1` of cashable flex into the Health FSA, that election generally permits up to another `\$1` of true employer Health FSA contribution, after accounting for the `\$500` floor and all other FSA contributions:
 
 ```text
 maximum_true_employer_fsa_contribution = max(S, 500)
@@ -331,11 +331,11 @@ The employer may condition access to the excess cashable allowance on the employ
 
 The condition may be broad:
 
-> The employee must commit at least `$X` to any qualified health benefit before the excess allowance becomes available through the cashable-flex election.
+> The employee must commit at least `\$X` to any qualified health benefit before the excess allowance becomes available through the cashable-flex election.
 
 Or narrow:
 
-> The employee must commit at least `$X` specifically to CHOICE/ICHRA before the excess allowance becomes available through the cashable-flex election.
+> The employee must commit at least `\$X` specifically to CHOICE/ICHRA before the excess allowance becomes available through the cashable-flex election.
 
 ```text
 if cash_unlock_scope == "any_qualified_benefit":
@@ -438,13 +438,13 @@ Assume:
 
 | Input | Amount |
 |---|---:|
-| Total employer allowance | `$5,000` |
-| Required contribution before flex | `$3,000` |
-| Maximum affordable contribution | `$1,800` |
-| Affordability gap | `$1,200` |
+| Total employer allowance | `\$5,000` |
+| Required contribution before flex | `\$3,000` |
+| Maximum affordable contribution | `\$1,800` |
+| Affordability gap | `\$1,200` |
 | Sponsor target | Preserve the full affordability result |
-| Conditional cashable flex elected to FSA | `$1,500` |
-| Cash-unlock condition | At least `$1,500` committed to any qualified health benefit |
+| Conditional cashable flex elected to FSA | `\$1,500` |
+| Cash-unlock condition | At least `\$1,500` committed to any qualified health benefit |
 
 ```text
 health_only_flex_credit = 1,200
@@ -460,9 +460,9 @@ health_only_flex_remaining_for_premium = 0
 remaining_affordability_gap = 0
 ```
 
-The `$1,200` health-only flex credit is noncashable, exclusively medical, and available for the applicable premium. It therefore preserves the selected affordability result. The employee's `$1,500` cashable-flex election into the Health FSA creates enough true-employer FSA capacity to place the full `$1,200` health-only credit into the FSA.
+The `\$1,200` health-only flex credit is noncashable, exclusively medical, and available for the applicable premium. It therefore preserves the selected affordability result. The employee's `\$1,500` cashable-flex election into the Health FSA creates enough true-employer FSA capacity to place the full `\$1,200` health-only credit into the FSA.
 
-The employee's `$1,500` qualified-benefit commitment satisfies the cash-unlock condition. The result is the desired center: the employer has not lost affordability credit, has not forced the `$1,200` into the ICHRA, and has not made the allowance freely cashable for an employee who does nothing. The employee receives `$2,700` of Health FSA value—`$1,500` of salary reduction plus `$1,200` of health-only employer flex—and may direct the remaining unlocked flex according to the cafeteria plan.
+The employee's `\$1,500` qualified-benefit commitment satisfies the cash-unlock condition. The result is the desired center: the employer has not lost affordability credit, has not forced the `\$1,200` into the ICHRA, and has not made the allowance freely cashable for an employee who does nothing. The employee receives `\$2,700` of Health FSA value—`\$1,500` of salary reduction plus `\$1,200` of health-only employer flex—and may direct the remaining unlocked flex according to the cafeteria plan.
 
 > [!IMPORTANT]
 > For a traditional employer plan, the cafeteria-plan affordability rule expressly describes when a health flex contribution reduces required contribution. ICHRA affordability also has a specific regulatory calculation based on the applicable lowest-cost silver-plan premium and the HRA amount. CommonCare should preserve both calculations in the data model and identify the authority used for the final affordability result rather than silently applying a traditional-plan output to an ICHRA calculation.
@@ -783,15 +783,15 @@ Assume:
 | Input | Amount |
 |---|---:|
 | `benefit_path` | `excepted` |
-| Employer noncashable budget | $3,000 |
-| Cashable flex credit | $2,400 |
-| Cashable flex to Health FSA | $2,000 |
-| Cashable flex to wages | $400 |
-| Direct employee FSA election | $1,000 |
-| EBHRA limit | $2,200 |
-| Existing EBHRA amount | $0 |
-| Existing employer FSA contribution | $0 |
-| FSA salary reduction limit | $3,400 |
+| Employer noncashable budget | \$3,000 |
+| Cashable flex credit | \$2,400 |
+| Cashable flex to Health FSA | \$2,000 |
+| Cashable flex to wages | \$400 |
+| Direct employee FSA election | \$1,000 |
+| EBHRA limit | \$2,200 |
+| Existing EBHRA amount | \$0 |
+| Existing employer FSA contribution | \$0 |
+| FSA salary reduction limit | \$3,400 |
 
 ```text
 fsa_salary_reduction = 2,000 + 1,000 = 3,000
@@ -815,12 +815,12 @@ unallocated_employer_noncashable_budget = 0
 
 | Output | Amount |
 |---|---:|
-| EBHRA newly available | $2,200 |
-| Health FSA salary reduction | $3,000 |
-| Health FSA employer contribution | $800 |
-| Total Health FSA maximum benefit | $3,800 |
-| Taxable wages | $400 |
-| Unallocated employer-only budget | $0 |
+| EBHRA newly available | \$2,200 |
+| Health FSA salary reduction | \$3,000 |
+| Health FSA employer contribution | \$800 |
+| Total Health FSA maximum benefit | \$3,800 |
+| Taxable wages | \$400 |
+| Unallocated employer-only budget | \$0 |
 
 ### Worked example B — ICHRA pathway
 
@@ -831,12 +831,12 @@ Assume:
 | `benefit_path` | `ichra` |
 | `ichra_participation` | `accepted` |
 | ICHRA covers nonpremium expenses | `true` |
-| Employer noncashable budget | $4,800 |
-| ICHRA newly available | $4,800 |
-| Premium reimbursements for the year | $3,600 |
-| Other ICHRA reimbursements already paid | $200 |
-| Health FSA salary reduction | $1,000 |
-| Health FSA reimbursements paid | $250 |
+| Employer noncashable budget | \$4,800 |
+| ICHRA newly available | \$4,800 |
+| Premium reimbursements for the year | \$3,600 |
+| Other ICHRA reimbursements already paid | \$200 |
+| Health FSA salary reduction | \$1,000 |
+| Health FSA reimbursements paid | \$250 |
 
 ```text
 ebhra_newly_available = 0
@@ -852,15 +852,15 @@ fsa_available
 = 750
 ```
 
-For an expense eligible under both components, the participant may see up to `$1,750` of CommonFunds availability, subject to the plan's claims-ordering rule:
+For an expense eligible under both components, the participant may see up to `\$1,750` of CommonFunds availability, subject to the plan's claims-ordering rule:
 
 | Internal component | Available |
 |---|---:|
-| ICHRA available for nonpremium §213(d) expenses | $1,000 |
-| Health FSA | $750 |
-| **Unified CommonFunds availability** | **$1,750** |
+| ICHRA available for nonpremium §213(d) expenses | \$1,000 |
+| Health FSA | \$750 |
+| **Unified CommonFunds availability** | **\$1,750** |
 
-The participant has no EBHRA. The `$1,000` primary balance is simply the unused portion of the predetermined ICHRA after premium and other reimbursements.
+The participant has no EBHRA. The `\$1,000` primary balance is simply the unused portion of the predetermined ICHRA after premium and other reimbursements.
 
 ---
 
@@ -913,9 +913,9 @@ A cashable employer allowance elected into the Health FSA belongs to the first c
 
 The Health FSA must make the maximum reimbursement amount available throughout the coverage period. Availability is not limited to payroll contributions collected when a claim occurs.
 
-For example, an employee who elects $2,400 for the year may have the full $2,400 available in January even though only $200 has been collected through payroll.
+For example, an employee who elects \$2,400 for the year may have the full \$2,400 available in January even though only \$200 has been collected through payroll.
 
-Employer contributions included in the Health FSA benefit follow the same availability rule. A Health FSA containing a $3,000 employee election and a $1,000 employer contribution generally makes the full $4,000 benefit available at the beginning of the coverage period.
+Employer contributions included in the Health FSA benefit follow the same availability rule. A Health FSA containing a \$3,000 employee election and a \$1,000 employer contribution generally makes the full \$4,000 benefit available at the beginning of the coverage period.
 
 ### The risk runs both ways
 
@@ -923,8 +923,8 @@ Uniform coverage creates a group risk arrangement, not a one-sided employer loss
 
 | Scenario | Result |
 |---|---|
-| Participant incurs $3,000 in eligible claims early, then terminates after only $250 has been collected | The plan generally bears the shortfall and cannot require repayment merely because employment ended |
-| Participant contributes $3,000 but submits only $500 in claims | The unused $2,500 is generally forfeited unless the plan provides a permitted carryover or grace period |
+| Participant incurs \$3,000 in eligible claims early, then terminates after only \$250 has been collected | The plan generally bears the shortfall and cannot require repayment merely because employment ended |
+| Participant contributes \$3,000 but submits only \$500 in claims | The unused \$2,500 is generally forfeited unless the plan provides a permitted carryover or grace period |
 
 The employer bears early-utilization risk. Participants bear forfeiture risk. The plan is not required to pay unused Health FSA amounts as cash compensation.
 
@@ -936,9 +936,9 @@ CommonFunds represents accelerated EBHRA availability through `commonFundLoanMul
 
 | Monthly allocation | `commonFundLoanMultiple` | Initial availability | Meaning |
 |---:|---:|---:|---|
-| $100 | 1 | $100 | Funds become available as they accrue monthly |
-| $100 | 6 | $600 | Up to six months of future allocations are available |
-| $100 | 12 | $1,200 | The full annual allocation is available immediately |
+| \$100 | 1 | \$100 | Funds become available as they accrue monthly |
+| \$100 | 6 | \$600 | Up to six months of future allocations are available |
+| \$100 | 12 | \$1,200 | The full annual allocation is available immediately |
 
 The property determines timing only. Despite its name, it does not automatically make the arrangement a legal loan or create a repayment obligation.
 
@@ -967,8 +967,8 @@ The EBHRA limit applies to the amount newly made available for a plan year. It d
 
 | Plan year | Annual EBHRA limit | Status in source data |
 |---:|---:|---|
-| 2025 | $2,150 | Official |
-| 2026 | $2,200 | Official |
+| 2025 | \$2,150 | Official |
+| 2026 | \$2,200 | Official |
 | 2027 | Not stated | Not released when the source was prepared |
 
 ### Health FSA salary reduction limit
@@ -987,7 +987,7 @@ A genuine noncashable employer contribution does not consume this limit.
 True employer contributions may increase the total Health FSA benefit beyond the employee salary reduction limit. To remain an excepted benefit, the maximum Health FSA benefit cannot exceed the greater of:
 
 1. Two times the participant’s salary reduction election; or
-2. The participant’s salary reduction election plus $500.
+2. The participant’s salary reduction election plus \$500.
 
 If `S` is total Health FSA salary reduction:
 
@@ -998,9 +998,9 @@ maximum true employer contribution = max(S, 500)
 
 | Salary reduction (`S`) | Maximum total benefit | Maximum employer contribution under this test |
 |---:|---:|---:|
-| $3,400 | $6,800 | $3,400 |
-| $1,000 | $2,000 | $1,000 |
-| $100 | $600 | $500 |
+| \$3,400 | \$6,800 | \$3,400 |
+| \$1,000 | \$2,000 | \$1,000 |
+| \$100 | \$600 | \$500 |
 
 This financial test is not the only excepted-benefit requirement. Other non-excepted group health coverage must also be made available for the year to the applicable class.
 
@@ -1010,10 +1010,10 @@ One participant could have:
 
 | Component | Source | Amount |
 |---|---|---:|
-| EBHRA | Employer-only | $2,200 |
-| Health FSA | Employee salary reduction | $3,400 |
-| Health FSA | Employer contribution | $3,400 |
-| **Combined availability** |  | **$9,000** |
+| EBHRA | Employer-only | \$2,200 |
+| Health FSA | Employee salary reduction | \$3,400 |
+| Health FSA | Employer contribution | \$3,400 |
+| **Combined availability** |  | **\$9,000** |
 
 The combined balance exceeding an individual component’s limit does not itself create a compliance problem. Each component is tested separately.
 
@@ -1031,7 +1031,7 @@ It tracks:
 - Reimbursements paid; and
 - Remaining reimbursement availability.
 
-When the application displays `$2,500 available`, it means the participant may receive up to $2,500 in additional eligible reimbursements under the applicable benefit terms. It does not necessarily mean that:
+When the application displays `\$2,500 available`, it means the participant may receive up to \$2,500 in additional eligible reimbursements under the applicable benefit terms. It does not necessarily mean that:
 
 - Cash is held in the participant’s name;
 - The employer deposited that amount into a segregated account;
@@ -1077,11 +1077,11 @@ Uniform coverage or accelerated access can make the real-time balance exceed the
 A participant-facing balance may combine amounts that follow different rules:
 
 ```text
-CommonFunds available: $2,500
+CommonFunds available: \$2,500
 
 Internal classification:
-  EBHRA employer funds:          $1,000
-  Health FSA salary reduction:   $1,500
+  EBHRA employer funds:          \$1,000
+  Health FSA salary reduction:   \$1,500
 ```
 
 The application must determine which component can reimburse an expense. “CommonFunds covers it” is not a complete eligibility rule.
@@ -1102,12 +1102,12 @@ For every claim, determine:
 | “Employees cannot contribute to CommonFunds because EBHRAs cannot accept employee contributions.” | “Employee salary reductions are allocated to the Health FSA component because they are not HRA funds.” |
 | “Employer funds are always EBHRA funds.” | “Employer funds may be EBHRA funds or permitted Health FSA employer contributions, depending on cashability, plan design, and applicable limits.” |
 | “The employer credit is an employer contribution.” | “If the employee could take the credit as cash or another taxable benefit and elects it into the Health FSA, it is treated as salary reduction for the relevant rules.” |
-| “The employee has only contributed $100, so only $100 is available.” | “Health FSA availability follows the annual election, not payroll contributions collected to date.” |
+| “The employee has only contributed \$100, so only \$100 is available.” | “Health FSA availability follows the annual election, not payroll contributions collected to date.” |
 | “All CommonFunds dollars are available immediately.” | “The Health FSA follows uniform coverage; the EBHRA follows its plan-defined availability schedule.” |
 | “The employer loses money because FSA funds are available immediately.” | “The Health FSA transfers risk in both directions: employers bear early-claim risk and participants bear forfeiture risk.” |
 | “`commonFundLoanMultiple` means the participant owes repayment.” | “The property controls availability timing; recourse depends on the plan document.” |
-| “You have $2,000 saved in CommonFunds.” | “You have $2,000 available for eligible reimbursement.” |
-| “Your employer deposited $2,000 for you.” | “Your employer made $2,000 available for eligible reimbursement.” |
+| “You have \$2,000 saved in CommonFunds.” | “You have \$2,000 available for eligible reimbursement.” |
+| “Your employer deposited \$2,000 for you.” | “Your employer made \$2,000 available for eligible reimbursement.” |
 | “You lose your money if you do not use the EBHRA.” | “Unused EBHRA amounts are handled according to the plan terms.” |
 | “The Health FSA limit is the most an employee can have available.” | “The indexed limit applies to salary reduction; permitted employer contributions may increase the total benefit.” |
 | “The CommonFunds balance exceeds the EBHRA limit.” | “Apply the EBHRA limit only to the EBHRA component and test the other components separately.” |
