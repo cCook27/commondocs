@@ -19,6 +19,22 @@ This document is the canonical source for CommonFunds account classification, al
 > [!IMPORTANT]
 > A participant can use the `excepted` CommonFunds pathway while enrolled in a PTC-supported Marketplace plan. In that context, CommonFunds pays only expenses permitted by its EBHRA and Health FSA components. It does **not** reimburse the Marketplace major-medical premium, and the employee must decline—not enroll in—the employer MEC offered to support the excepted-benefit structure.
 
+## Find the operating rule
+
+For account administration, jump directly to the relevant rule. The foreword explains the design rationale; the sections below explain how to classify and administer each component.
+
+| Question | Section |
+|---|---|
+| Which component receives a dollar? | [Classify funding](human-readable.md#1-classify-the-dollar-before-applying-a-limit) |
+| How are allowances allocated? | [Priority engine](human-readable.md#allowance-design-the-priority-engine) |
+| How is available reimbursement calculated? | [Calculation engine](human-readable.md#2-commonfunds-calculation-engine) |
+| When can a participant claim funds? | [Availability](human-readable.md#4-when-funds-become-available) |
+| Which annual limit applies? | [Component-specific limits](human-readable.md#5-annual-limits-are-component-specific) |
+| Is the displayed balance owned cash? | [Balance meaning](human-readable.md#6-what-a-commonfunds-balance-means) |
+| Which component can pay a claim? | [Separate claims rules](human-readable.md#7-one-balance-separate-claims-rules) |
+| How should the benefit be explained? | [Interpretation guide](human-readable.md#8-practical-interpretation-guide) |
+| Where are the authorities? | [References](human-readable.md#9-authorities-cited-in-this-document) |
+
 ## Foreword: CommonFunds origin and purpose
 
 ### How it started: because of how CommonCare scores health coverages
