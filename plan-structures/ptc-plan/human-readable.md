@@ -420,6 +420,21 @@ The structure does not depend on relabeling a reimbursement, ignoring a plan, or
 
 # Part VI — Implementation controls
 
+### Who handles each step?
+
+Before getting started, the employer and CommonCare should agree on who handles each step. This table is a starting point.
+
+| Step | Who handles it | When |
+| --- | --- | --- |
+| Confirm whether the employer is a non-ALE | Employer and CommonCare | Before setup and each year |
+| Set up benefit documents | Employer and CommonCare | Before benefits start |
+| Explain benefit choices | CommonCare | Before employees choose benefits |
+| Record employee benefit choices | CommonCare | Before coverage starts |
+| Set up and check payroll deductions | Employer payroll team and CommonCare | Before the first payroll using the new benefits |
+| Review the checklist and finish any open items | Employer and CommonCare | Before launch |
+
+Confirm these assignments during setup so everyone knows what they need to do.
+
 ## Employer checklist
 
 - [ ] Determine ALE status annually, including controlled-group aggregation and full-time equivalents.
