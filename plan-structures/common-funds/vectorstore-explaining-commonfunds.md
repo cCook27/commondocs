@@ -5,8 +5,8 @@ kind: vector-store-source
 schema_version: "1.0"
 source_document: plan-structures/common-funds/human-readable.md
 metadata_document: plan-structures/common-funds/metadata.yaml
-source_commit: 4235ce61af6a40ca83d60d3de831552365311056
-source_sha256: fc41249664eb6d4aa6cd16085fde5f74216cb5e7e81da8aed3f7a84756d3bc25
+source_commit: cb2d724e1710d1f2b6a9ba282c6d05c10dab29f6
+source_sha256: f0a47e671f4325bba963b246b85a141df9308e6c2f1ad1f88c710175be7a13cd
 metadata_sha256: ec2da998690975e56cbbb2bd3f6e342a3faf67c8c52304eb46facc31c41c1c61
 generation_method: deterministic-commonfunds-split-conversion
 canonical_source: false
@@ -54,55 +54,55 @@ For account administration, jump directly to the relevant rule. The foreword exp
 <!-- record_id: product.commonfunds.explaining.vector-store.find-the-operating-rule.which-component-receives-a-dollar; record_type: table-row -->
 - Context: CommonFunds — Find the operating rule
 - Question: Which component receives a dollar?
-- Section: [Classify funding](#1-classify-the-dollar-before-applying-a-limit)
+- Section: [Classify funding](human-readable.md#1-classify-the-dollar-before-applying-a-limit)
 
 #### How are allowances allocated?
 <!-- record_id: product.commonfunds.explaining.vector-store.find-the-operating-rule.how-are-allowances-allocated; record_type: table-row -->
 - Context: CommonFunds — Find the operating rule
 - Question: How are allowances allocated?
-- Section: [Priority engine](#allowance-design-the-priority-engine)
+- Section: [Priority engine](human-readable.md#allowance-design-the-priority-engine)
 
 #### How is available reimbursement calculated?
 <!-- record_id: product.commonfunds.explaining.vector-store.find-the-operating-rule.how-is-available-reimbursement-calculated; record_type: table-row -->
 - Context: CommonFunds — Find the operating rule
 - Question: How is available reimbursement calculated?
-- Section: [Calculation engine](#2-commonfunds-calculation-engine)
+- Section: [Calculation engine](human-readable.md#2-commonfunds-calculation-engine)
 
 #### When can a participant claim funds?
 <!-- record_id: product.commonfunds.explaining.vector-store.find-the-operating-rule.when-can-a-participant-claim-funds; record_type: table-row -->
 - Context: CommonFunds — Find the operating rule
 - Question: When can a participant claim funds?
-- Section: [Availability](#4-when-funds-become-available)
+- Section: [Availability](human-readable.md#4-when-funds-become-available)
 
 #### Which annual limit applies?
 <!-- record_id: product.commonfunds.explaining.vector-store.find-the-operating-rule.which-annual-limit-applies; record_type: table-row -->
 - Context: CommonFunds — Find the operating rule
 - Question: Which annual limit applies?
-- Section: [Component-specific limits](#5-annual-limits-are-component-specific)
+- Section: [Component-specific limits](human-readable.md#5-annual-limits-are-component-specific)
 
 #### Is the displayed balance owned cash?
 <!-- record_id: product.commonfunds.explaining.vector-store.find-the-operating-rule.is-the-displayed-balance-owned-cash; record_type: table-row -->
 - Context: CommonFunds — Find the operating rule
 - Question: Is the displayed balance owned cash?
-- Section: [Balance meaning](#6-what-a-commonfunds-balance-means)
+- Section: [Balance meaning](human-readable.md#6-what-a-commonfunds-balance-means)
 
 #### Which component can pay a claim?
 <!-- record_id: product.commonfunds.explaining.vector-store.find-the-operating-rule.which-component-can-pay-a-claim; record_type: table-row -->
 - Context: CommonFunds — Find the operating rule
 - Question: Which component can pay a claim?
-- Section: [Separate claims rules](#7-one-balance-separate-claims-rules)
+- Section: [Separate claims rules](human-readable.md#7-one-balance-separate-claims-rules)
 
 #### How should the benefit be explained?
 <!-- record_id: product.commonfunds.explaining.vector-store.find-the-operating-rule.how-should-the-benefit-be-explained; record_type: table-row -->
 - Context: CommonFunds — Find the operating rule
 - Question: How should the benefit be explained?
-- Section: [Interpretation guide](#8-practical-interpretation-guide)
+- Section: [Interpretation guide](human-readable.md#8-practical-interpretation-guide)
 
 #### Where are the authorities?
 <!-- record_id: product.commonfunds.explaining.vector-store.find-the-operating-rule.where-are-the-authorities; record_type: table-row -->
 - Context: CommonFunds — Find the operating rule
 - Question: Where are the authorities?
-- Section: [References](#9-authorities-cited-in-this-document)
+- Section: [References](human-readable.md#9-authorities-cited-in-this-document)
 
 
 <!-- record_id: product.commonfunds.explaining.vector-store.foreword-commonfunds-origin-and-purpose -->
