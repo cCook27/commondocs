@@ -463,7 +463,7 @@ The employee should acknowledge that:
 - General-purpose CommonFunds coverage may affect HSA eligibility; and
 - The employee remains responsible for verifying provider networks, prescriptions, plan terms, and tax information.
 
-## Records Plan Sponsors should retain (CommonCare provides most of these)
+## Records Plan Sponsors should retain (CommonCare provides tools for most of these)
 
 - Employer ALE determination and measurement inputs;
 - Eligibility classes and each benefit offered to them;
