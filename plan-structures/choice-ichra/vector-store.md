@@ -6,7 +6,7 @@ schema_version: "1.0"
 source_document: plan-structures/choice-ichra/human-readable.md
 metadata_document: plan-structures/choice-ichra/metadata.yaml
 source_commit: 1eb6e3d61a4ca5c61bdd1fa63c92983bdfdc9132
-source_sha256: 6ac4923873343c3a23929e48f6e772a0f57d05f212d80e8ccec21ae88d4dd1ae
+source_sha256: 31254922c3644bb23f89d77e1b4d92739ebb6a8aa8cabe68791f6992b7c9e1ee
 metadata_sha256: 9b769bd2d50959f57bfb1171245902f69217a5d83d81470045364dd1d8325bb9
 generation_method: deterministic-markdown-conversion
 canonical_source: false
