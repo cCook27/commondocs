@@ -34,14 +34,17 @@ This makes sense for the obvious actuarial reason that most insured don't reach 
 
 - Selection bias: the people most likely to select a high deductible feel they are unlikely to use the insurance. This means the risk pool is more optimal—a huge factor.
 - Cost distribution: the odds that you don't meet your deductible may be high, but when expensive medical events do arise, the odds the bill greatly exceeds your deductible are also fairly high. Furthermore, across a lifetime, most people's total medical expenses will be disproportionately allocated to the most expensive years. In these years there is a high likelihood the max out of pocket (MOOP) will be reached on any plan. This means the premium savings for a plan with a higher deductible are direct savings. There is some nuance to this since MOOP isn't standard, but it is broadly much more uniform than deductibles.
-- Behavioral changes: participants with more cost responsibility are more price- and service-sensitive.
+- Behavioral changes: participants with more cost responsibility become more price-sensitive and service-sensitive.
 - Preventive care is still covered: a significant volume of total transactions are preventive services, which are covered without regard to deductibles
 
 These facts aside, there is widespread sentiment for desiring plans with lower deductibles. This is complex material to understand, the stakes are high, and trust in new information is low.
 
 It's hard to imagine otherwise why HSA adoption would not have been universal. HSA is an unbelievably beneficial tool for improving the total economic offer of health insurance. CommonFunds doesn't offer all of the benefits of HSA to an individual, but it offers significant benefits to a group sponsor (employer) that HSA does not and does not come with the stringent requirements of HDHP + no other first-dollar coverage.
 
-CommonFunds allows the satisfaction of both these concerns: capture the efficiency of pushing insurance to a lower-utilization/higher-risk level while preserving the desirable participant experience of low deductibles.
+CommonFunds addresses both concerns:
+
+- **Efficiency:** pushes insurance toward lower-utilization, higher-risk coverage.
+- **Experience:** preserves the participant-friendly feel of low deductibles.
 
 For all insurance arrangements, it's critical to understand the economic utility of insurance and the downsides.
 
@@ -74,7 +77,7 @@ Insurable underwriting and rating classes create significant risk curbs and cont
 - Significant increase in behavioral moral hazards due to removal of penalties for high utilization
 - For groups, regulations assign them their own risk pool. This means managing the population health and claims efficiency of employees becomes an employer task, a daunting task for an employer to attempt to succeed at.
 
-The most recent AHRQ analysis reports that in 2022:
+The most recent [AHRQ analysis](https://meps.ahrq.gov/data_files/publications/st560/stat560.shtml) reports that in 2022:
 - The highest-spending 1% of people accounted for 21.7% of healthcare expenditures.
 - The highest-spending 5% accounted for 49.7%.
 - The highest-spending 10% accounted for 65.9%.
@@ -123,15 +126,15 @@ This allows critical structural changes with the relationship of insurance to gr
 - Participant claims track to their individual account—they are not shared among other participants. This restores price sensitivity to the bulk of healthcare transactions by volume and rewards efficient consumption.
 - The risk is fully contained to the contribution amount, and funds remain employer property indefinitely unless paid out as claims. This creates a significant opportunity for experience gains (leftover money).
 
-In short, CommonFunds pushes health insurance into a box where it spends more time delivering where insurance offers value. Not entirely, and problems in the marketplace still exist that we wish did not, but it is fantastically effective given the circumstances. Compared with assigning the same dollars to additional insurance premium so the insurer can adjudicate routine expenses, CommonFunds has no meaningful structural downside. Employer exposure is capped, unused amounts may produce experience gains, and the Health FSA’s early-claim risk is counterbalanced by forfeitures.
+In short, CommonFunds pushes health insurance back toward what it was meant to be: a major medical coverage layer, not a payment system for predictable claims. Of course, problems in the marketplace still exist that we wish did not, but it is fantastically effective given the circumstances. Compared with assigning the same dollars to additional insurance premium so the insurer can adjudicate routine expenses, CommonFunds has no meaningful structural downside. Employer exposure is capped, unused amounts may produce experience gains, and the Health FSA’s early-claim risk is counterbalanced by forfeitures.
 
-Furthermore, CommonCare's implementation of this solution enables participant-level cherry-picking in the beneficial sense: each employee can select the available combination that produces the best projected economic result for that employee. A predictable high-cost claimant may belong in the lower-deductible plan, while a lower-utilizing participant may perform better with a high deductible and CommonFunds. The optimization favors the participant’s actual economics; it does not exclude or disadvantage people because they are expensive.
+Furthermore, CommonCare's implementation of this solution enables participant-level cherry-picking in the beneficial sense: each employee can select the available combination that produces the best projected economic result for themselves. A predictable high-cost claimant may belong in the lower-deductible plan, while a lower-utilizing participant may perform better with a high deductible and CommonFunds. The optimization favors the participant’s actual economics; it does not exclude or disadvantage people because they are expensive.
 
 ---
 
 ## The essential idea
 
-One participant may see one CommonFunds balance while the system maintains multiple classifications behind it:
+Participants see one CommonFunds balance while the system maintains multiple classifications behind it:
 
 | Component | Typical funding source | Core availability rule | Treatment of unused amounts |
 |---|---|---|---|
