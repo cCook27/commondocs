@@ -1,0 +1,8 @@
+id: product.ptc-plan
+title: Premium Tax Credit Plan
+kind: human-readable
+status: draft
+version: "1.0"
+jurisdiction: United States
+last_reviewed: 2026-10-01
+owner: CommonCare
