@@ -426,29 +426,20 @@ The structure does not depend on relabeling a reimbursement, ignoring a plan, or
 
 # Part VI — Implementation controls
 
-## Employer checklist
+## Records Plan Sponsors should retain (CommonCare provides tools for most of these)
 
-- [ ] Determine ALE status annually, including controlled-group aggregation and full-time equivalents.
-- [ ] Confirm the employer is not offering affordable minimum-value coverage to the PTC-eligible class.
-- [ ] Adopt the MEC and excepted-benefit documents before the plan year.
-- [ ] Make the MEC available to every class that needs the underlying offer for an excepted-benefit FSA or EBHRA.
-- [ ] Give employees a clear, timely MEC opt-out.
-- [ ] Disable automatic MEC enrollment for an employee electing the PTC pathway, or provide a compliant prompt and timely opt-out process.
-- [ ] Keep Marketplace coverage outside the employer's plan documents and ERISA benefit descriptions.
-- [ ] Do not reimburse, match, or directly fund Marketplace major-medical premiums.
-- [ ] Keep every premium payroll deduction post-tax.
-- [ ] Confirm that individual-policy participation is completely voluntary and that employees may decline payroll remittance without losing wages or employer benefits.
-- [ ] Limit employer functions to neutral insurer publicity and mechanical post-tax collection and remittance; do not select, recommend, negotiate, interpret, or administer an individual policy.
-- [ ] Ensure the employer receives no commissions, rebates, or other consideration connected to an individual-policy program, except permissible no-profit compensation for payroll services actually performed.
-- [ ] Use employer and CommonCare communications that clearly identify Marketplace coverage as independent and employee selected; avoid saying the employer “arranged,” recommends, or is “enthusiastic” about a policy or issuer.
-- [ ] Apply the §2510.3-1(j) safe-harbor label only to an insurance program offered by an insurer; separately analyze non-insurance arrangements.
-- [ ] Separate restricted employer-benefit credits from unrestricted taxable wages.
-- [ ] Apply the Health FSA maximum-benefit rule and the current EBHRA annual limit.
-- [ ] Issue the required EBHRA notice and maintain SPD, claims, appeals, and substantiation procedures.
-- [ ] Test HSA eligibility independently; use limited-purpose or post-deductible CommonFunds components where required.
-- [ ] Review dental and vision for limited-scope excepted-benefit status.
-- [ ] Train employer staff not to recommend Marketplace issuers or plans.
-- [ ] Retain employee acknowledgments, MEC waivers, payroll classifications, and Marketplace/non-sponsorship disclosures.
+- Employer ALE determination and measurement inputs;
+- Eligibility classes and each benefit offered to them;
+- MEC plan document, SPD, offer, election, and waiver records;
+- Health FSA and EBHRA governing documents and limits;
+- EBHRA notices and delivery records;
+- Dental and vision excepted-benefit support;
+- HSA eligibility attestations and contribution records;
+- Employee Marketplace acknowledgment;
+- Post-tax premium-remittance authorization;
+- Payroll mapping for restricted benefits and unrestricted wages;
+- Evidence that employer staff did not select or endorse Marketplace coverage; and
+- Annual legal, tax, plan-limit, and document review.
 
 ## Employee acknowledgment points
 
