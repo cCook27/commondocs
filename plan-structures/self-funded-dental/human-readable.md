@@ -147,6 +147,17 @@ uncapped_plan_payment = \$750
 
 If \$750 remains under both maximums, the plan pays \$750. The participant owes \$300 of the approved price, plus any balance bill if the provider did not accept \$1,050 as payment in full.
 
+### When a remaining maximum reduces payment
+
+Using the same crown (\$1,400 charge, \$1,050 approved price, \$750 uncapped plan payment), either remaining maximum can reduce the benefit:
+
+| Individual remaining | Family remaining | Plan payment | Participant share of approved price | Possible balance bill | Total participant responsibility if balance-billed |
+|---|---|---|---|---|---|
+| \$400 | \$900 | \$400 | \$650 | \$350 | \$1,000 |
+| \$900 | \$200 | \$200 | \$850 | \$350 | \$1,200 |
+
+The plan payment is the smallest of \$750 and the two remaining maximums. The participant share of the approved price is \$1,050 minus the actual plan payment. The possible balance bill is the separate \$350 difference between the provider charge and approved price; it is zero if the provider accepts \$1,050 as payment in full. These examples apply the benefit formula above and do not change the deductible or caps.
+
 ## 7. Cap-aware pricing model
 
 For `n` enrolled people:
