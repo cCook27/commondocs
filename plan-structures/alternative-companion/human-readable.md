@@ -9,7 +9,7 @@ CommonCare makes those choices visible without turning every visible choice into
 > [!Important]
 > This companion plan structure works alongside any type of employer plan for any size of employer
 
-This document is the canonical source for employer neutrality, nonsponsorship, voluntary access, and post-tax payment of independently selected options. It does not replace:
+This document is the canonical source for employer neutrality, non-sponsorship, voluntary access, and post-tax payment of independently selected options. It does not replace:
 
 - The [Premium Tax Credit Plan](../ptc-plan/human-readable.md), which controls PTC eligibility, MEC offer-and-enrollment rules, non-ALE strategy, and Marketplace-specific administration; or
 - [CommonFunds](../common-funds/human-readable.md), which controls EBHRA, Health FSA, ICHRA, allowance classification, account limits, and claims availability.

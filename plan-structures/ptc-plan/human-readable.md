@@ -10,11 +10,11 @@ The plan is not a reimbursement arrangement for individual insurance. It is a co
 
 1. The employer does **not** offer affordable minimum-value major-medical coverage that would block PTC eligibility;
 2. Eligible employees independently enroll in qualified health plans through the Marketplace and claim the PTC;
-3. The employer may offer a carefully designed package of excepted benefits, HSA contributions, CommonFunds, and taxable compensation; and
+3. The employer may offer a carefully designed package of excepted benefits—limited categories such as qualifying dental and vision that are exempt from certain ACA market rules and do not themselves block PTC—HSA contributions, CommonFunds—CommonCare's system for coordinating separate employer benefit accounts without turning them into one new legal benefit—and taxable compensation; and
 4. CommonCare administers the employer benefits, Marketplace comparison, employee elections, and payroll flows without treating employee-selected Marketplace coverage as employer sponsored.
 
 > [!IMPORTANT]
-> The point is not to exploit a drafting gap. Congress applied the employer shared-responsibility rules to applicable large employers and created income-based credits for eligible households buying Marketplace coverage. Non-ALE employers are outside §4980H, and federal rules expressly preserve PTC eligibility where an employer offer is not affordable and minimum value, where an employee does not enroll in employer-sponsored MEC, and where employer benefits are genuinely excepted.
+> The point is not to exploit a drafting gap. Congress applied the employer shared-responsibility rules—the ACA rules that can penalize applicable large employers for failing to make qualifying coverage available—to applicable large employers and created income-based credits for eligible households buying Marketplace coverage. Non-ALE employers are outside §4980H, the Internal Revenue Code section containing those employer-penalty rules, and federal rules expressly preserve PTC eligibility where an employer offer is not affordable and minimum value, where an employee does not enroll in employer-sponsored MEC, and where employer benefits are genuinely excepted.
 
 ## At a glance
 
@@ -234,7 +234,7 @@ The payroll-tax advantage should be stated precisely:
 - FUTA and, depending on state law and rating mechanics, state unemployment or workers' compensation payroll charges may also be reduced.
 
 > [!WARNING]
-> A general-purpose Health FSA or HRA usually makes an employee ineligible to contribute to an HSA. An HSA-compatible CommonFunds design must use limited-purpose or post-deductible coverage and satisfy the HSA rules. PTC compatibility and HSA compatibility are different questions. [IRS Publication 15-B](https://www.irs.gov/publications/p15b#en_US_2026_publink1000193716)
+> A general-purpose Health FSA or HRA—an employer health account that can reimburse ordinary medical expenses before the HSA deductible is met—usually makes an employee ineligible to contribute to an HSA. An HSA-compatible CommonFunds design must instead use limited-purpose coverage, generally restricted to dental and vision expenses, or post-deductible coverage, which pays only after the required deductible is met. Those restrictions matter because they can preserve HSA eligibility. PTC compatibility and HSA compatibility are different questions. [IRS Publication 15-B](https://www.irs.gov/publications/p15b#en_US_2026_publink1000193716)
 
 ## CommonFunds plus MEC: threading the needle
 
@@ -277,7 +277,7 @@ The two systems fit together because the excepted-benefit rules require the unde
 
 ### What CommonFunds may reimburse
 
-The PTC Plan version of CommonFunds may reimburse qualified expenses permitted by its EBHRA/FSA documents, subject to their exclusions and limits. It must not become a disguised employer payment plan for Marketplace premiums.
+The PTC Plan version of CommonFunds may reimburse qualified expenses permitted by its EBHRA/FSA documents, subject to their exclusions and limits. It must not become a disguised employer payment plan—an employer arrangement that reimburses or directly pays individual health-insurance premiums and is therefore generally subject to group-health-plan market rules—for Marketplace premiums.
 
 ```text
 Marketplace major-medical premium
@@ -295,7 +295,43 @@ This separation is substantive, documented, and visible in payroll and claims re
 
 ## Post-tax payroll remittance
 
-An employer can collect an employee's individual-policy premium through payroll and remit it without turning the policy into an employer plan when the employer remains within the voluntary-program safe harbor: no employer contribution, completely voluntary participation, no endorsement, only permitted collection/remittance functions, and no consideration beyond reasonable no-profit administrative compensation. [29 CFR §2510.3-1(j)](https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XXV/subchapter-A/part-2510/section-2510.3-1#p-2510.3-1(j))
+Post-tax payroll remittance is a payment convenience, not employer funding. The employee first earns the wages, the full amount remains taxable, and the employer then transmits the employee's elected deduction. The arrangement must independently satisfy both the DOL nonsponsorship analysis below and the IRS employer-payment-plan boundary in the next section.
+
+### The DOL voluntary-program safe harbor
+
+Department of Labor regulation 29 CFR §2510.3-1(j) excludes a group or group-type insurance program from the definition of an ERISA employee welfare benefit plan only when **all four** conditions are satisfied:
+
+1. **No employer contribution.** The employer contributes nothing toward the independent insurance program. (hence why employer allowances that "end up" going toward these plans **MUST** be unrestricted cash wages)
+2. **Completely voluntary participation.** Employees are free to enroll, decline, change, or terminate subject to the insurer's and Marketplace's rules, without employment-related pressure or penalty.
+3. **Limited employer functions without endorsement.** The employer's sole functions are permitting the insurer to publicize the program, collecting premiums through payroll deductions, and remitting those premiums. The employer cannot endorse the program.
+4. **No employer consideration.** The employer receives no consideration in connection with the program other than reasonable compensation, without profit, for payroll-deduction services actually performed.
+
+[29 CFR §2510.3-1(j), current eCFR](https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XXV/subchapter-A/part-2510/section-2510.3-1#p-2510.3-1(j)) · [DOL Advisory Opinion 94-24A](https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/advisory-opinions/1994-24a)
+
+The safe harbor is conjunctive: failing any one condition means the regulation no longer supplies the exclusion. That does not automatically decide that an ERISA plan exists, but the arrangement must then be evaluated under the broader facts-and-circumstances test for whether the employer established or maintained a plan.
+
+> [!IMPORTANT]
+> Section 2510.3-1(j) expressly addresses a group or group-type **insurance program offered by an insurer**. It should not be cited as automatically protecting a health sharing ministry, direct-care membership, discount program, or other non-insurance arrangement. Those arrangements require the broader established-or-maintained analysis. See the [Alternative Companion](../alternative-companion/human-readable.md#the-dol-voluntary-program-safe-harbor) for the fuller treatment of insurance and non-insurance options.
+
+### Neutral facilitation is not endorsement
+
+The DOL asks whether employer conduct would cause employees reasonably to view the program as part of an employer-established or employer-maintained benefit arrangement. An employer endorses the program when it urges or encourages participation or acts in a way that communicates sponsorship. [DOL Advisory Opinion 94-24A](https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/advisory-opinions/1994-24a)
+
+Even seemingly informal language matters. The DOL has treated a statement that an employer is “enthusiastic” about a program as endorsement and has warned that saying the employer “arranged” the program can convey endorsement when combined with other employer activity. [DOL Advisory Opinion 94-25A](https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/advisory-opinions/1994-25a)
+
+| Neutral employer conduct | Conduct inconsistent with the safe harbor |
+|---|---|
+| State that Marketplace coverage is independent and employee selected | Call the Marketplace policy an employer benefit or part of the employer plan |
+| Provide neutral Marketplace and PTC education | Recommend, praise, rank, or urge enrollment in a particular issuer or policy |
+| Permit insurer materials without adding an employer recommendation | Use employer-authored sales language or imply the employer arranged the policy |
+| Let the employee use independent CommonCare comparison tools | Select the issuer, negotiate policy terms, or limit employees to an employer-chosen option |
+| Collect an authorized post-tax deduction and remit it | Contribute to, reimburse, match, or condition compensation on the premium |
+| Direct coverage, claims, and policy questions to the insurer or Marketplace | Resolve claims, interpret the policy, or act as the policy administrator |
+| Receive no enrollment-related consideration | Receive commissions, rebates, or other consideration connected to enrollment |
+
+CommonCare may provide employees with broad Marketplace access and independent analytical tools, but the employer must remain neutral: it does not choose the plans displayed for employer-benefit purposes, direct the employee's selection, or convert a Marketplace policy into an employer election. CommonCare communications and compensation must also be structured so they do not attribute recommendation, sponsorship, or enrollment-linked financial interest to the employer.
+
+### Required payroll treatment
 
 CommonCare therefore records Marketplace premium remittance as:
 
@@ -308,13 +344,18 @@ CommonCare therefore records Marketplace premium remittance as:
 | Election | Voluntary individual election |
 | Policy status | Not employer sponsored |
 
-The employer does not select the policy, negotiate its terms, recommend an issuer, answer claims questions, or receive enrollment-based compensation.
+The payroll authorization should identify the employee-selected policy, state that the deduction is revocable subject to reasonable payroll timing, disclose that the employer does not sponsor or guarantee the coverage, and authorize only the mechanical deduction and remittance of employee money. The employer should not make eligibility for employment, compensation, or employer-sponsored benefits depend on using the remittance service.
+
+> [!CAUTION]
+> DOL safe-harbor compliance and federal tax compliance answer different questions. Staying outside ERISA under §2510.3-1(j) does not authorize employer reimbursement of an individual premium, and calling an employer payment “post-tax” does not turn it into employee-only payroll remittance.
 
 ## Unrestricted wages versus an employer payment plan
 
 An employer may increase taxable compensation without creating an employer payment plan when the increase is not conditioned on purchasing health coverage and the employer does not endorse a policy, form, or issuer. The IRS also confirms that merely giving employees information about the Marketplace or PTC is not endorsement. [IRS Notice 2015-17, Q&A 4](https://www.irs.gov/irb/2015-14_IRB#NOT-2015-17)
 
-By contrast, treating a premium reimbursement as after-tax does not cure it. If payment depends on buying, maintaining, or substantiating an individual policy, it remains an employer payment arrangement. [IRS Notice 2015-17, Q&A 5](https://www.irs.gov/irb/2015-14_IRB#NOT-2015-17)
+By contrast, treating a premium reimbursement as after-tax does not cure it. If payment depends on buying, maintaining, or substantiating an individual policy, it remains an employer payment arrangement—the employer-conditioned premium funding described above, regardless of whether it is labeled taxable or post-tax. [IRS Notice 2015-17, Q&A 5](https://www.irs.gov/irb/2015-14_IRB#NOT-2015-17)
+
+The operational distinction is control over the money. With lawful post-tax remittance, the employer owes the employee ordinary wages regardless of whether the employee buys insurance; only after those wages are earned does the employer follow the employee's revocable direction to transmit part of them. With an employer payment plan, the employer provides or releases money because the employee bought, maintained, or substantiated individual coverage. Running either arrangement through payroll does not erase that difference.
 
 | Unrestricted taxable wages | Restricted individual-premium funding |
 |---|---|
@@ -396,6 +437,11 @@ The structure does not depend on relabeling a reimbursement, ignoring a plan, or
 - [ ] Keep Marketplace coverage outside the employer's plan documents and ERISA benefit descriptions.
 - [ ] Do not reimburse, match, or directly fund Marketplace major-medical premiums.
 - [ ] Keep every premium payroll deduction post-tax.
+- [ ] Confirm that individual-policy participation is completely voluntary and that employees may decline payroll remittance without losing wages or employer benefits.
+- [ ] Limit employer functions to neutral insurer publicity and mechanical post-tax collection and remittance; do not select, recommend, negotiate, interpret, or administer an individual policy.
+- [ ] Ensure the employer receives no commissions, rebates, or other consideration connected to an individual-policy program, except permissible no-profit compensation for payroll services actually performed.
+- [ ] Use employer and CommonCare communications that clearly identify Marketplace coverage as independent and employee selected; avoid saying the employer “arranged,” recommends, or is “enthusiastic” about a policy or issuer.
+- [ ] Apply the §2510.3-1(j) safe-harbor label only to an insurance program offered by an insurer; separately analyze non-insurance arrangements.
 - [ ] Separate restricted employer-benefit credits from unrestricted taxable wages.
 - [ ] Apply the Health FSA maximum-benefit rule and the current EBHRA annual limit.
 - [ ] Issue the required EBHRA notice and maintain SPD, claims, appeals, and substantiation procedures.
@@ -417,7 +463,7 @@ The employee should acknowledge that:
 - General-purpose CommonFunds coverage may affect HSA eligibility; and
 - The employee remains responsible for verifying provider networks, prescriptions, plan terms, and tax information.
 
-## Records Plan Sponsore should retain (CommonCare provides most of these)
+## Records Plan Sponsors should retain (CommonCare provides most of these)
 
 - Employer ALE determination and measurement inputs;
 - Eligibility classes and each benefit offered to them;
@@ -450,7 +496,8 @@ The employee should acknowledge that:
 | 2026 EBHRA and HSA limits | [Revenue Procedure 2025-19](https://www.irs.gov/irb/2025-21_IRB#REV-PROC-2025-19) |
 | HSA tax treatment and incompatible coverage | [IRS Publication 15-B](https://www.irs.gov/publications/p15b) |
 | Unconditional wages versus individual-premium reimbursement | [IRS Notice 2015-17](https://www.irs.gov/irb/2015-14_IRB#NOT-2015-17) |
-| Voluntary insurance and payroll-remittance safe harbor | [29 CFR §2510.3-1(j)](https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XXV/subchapter-A/part-2510/section-2510.3-1#p-2510.3-1(j)) |
+| Voluntary insurance and payroll-remittance safe harbor | [29 CFR §2510.3-1(j)](https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XXV/subchapter-A/part-2510/section-2510.3-1#p-2510.3-1(j)) · [DOL Advisory Opinion 94-24A](https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/advisory-opinions/1994-24a) |
+| Employer endorsement under the voluntary-program safe harbor | [DOL Advisory Opinion 94-25A](https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/advisory-opinions/1994-25a) |
 
 > [!WARNING]
 > This document describes CommonCare's plan model and the federal rules supporting it. Final implementation depends on employer aggregation, workforce, state law, Marketplace facts, plan-year timing, benefit documents, payroll configuration, and individual tax circumstances. The employer and its advisors remain responsible for adopting and operating the actual plans.
