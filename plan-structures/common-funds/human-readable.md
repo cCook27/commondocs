@@ -11,6 +11,14 @@ An **excepted-benefit Health Flexible Spending Arrangement (Health FSA)** may pr
 
 CommonFunds is an administrative structure. It is not a separate statutory benefit category, a replacement for an HRA, or a replacement for a Health FSA. Every dollar retains the rules of its underlying benefit component.
 
+This document is the canonical source for CommonFunds account classification, allocation, limits, and claims availability. Two companion structures control questions outside that scope:
+
+- The [Premium Tax Credit Plan](../ptc-plan/human-readable.md) controls when Marketplace PTC access is preserved and how the self-funded MEC offer supports an excepted CommonFunds pathway without enrolling the PTC claimant; and
+- [Private Alternatives Alongside an Employer Plan](../alternative-companion/human-readable.md) controls employer neutrality, nonsponsorship, and post-tax payroll treatment for independently selected options.
+
+> [!IMPORTANT]
+> A participant can use the `excepted` CommonFunds pathway while enrolled in a PTC-supported Marketplace plan. In that context, CommonFunds pays only expenses permitted by its EBHRA and Health FSA components. It does **not** reimburse the Marketplace major-medical premium, and the employee must decline—not enroll in—the employer MEC offered to support the excepted-benefit structure.
+
 ## Foreword: CommonFunds origin and purpose
 
 ### How it started: because of how CommonCare scores health coverages
@@ -134,6 +142,25 @@ One participant may see one CommonFunds balance while the system maintains multi
 > [!IMPORTANT]
 > The combined user experience does not merge the legal classifications. Compliance, tax treatment, limits, claims eligibility, and availability are determined component by component.
 
+### Coverage context is separate from benefit pathway
+
+`benefit_path` identifies the employer account structure. `coverage_context` identifies the participant's major-medical situation. They answer different questions:
+
+| `coverage_context` | Common major-medical position | Compatible primary CommonFunds path | Premium rule |
+|---|---|---|---|
+| `employer_group` | Enrolled in employer group coverage | `excepted` | Applicable employer-plan premiums may receive only the treatment permitted by the cafeteria-plan documents and tax rules |
+| `ptc_marketplace` | Enrolled in a Marketplace QHP with or without PTC | `excepted` | Marketplace QHP premium is paid with PTC and unrestricted post-tax employee money; never through Section 125 |
+| `outside_group` | Enrolled in a spouse's or other outside group plan | `excepted` | Outside-plan premium treatment depends on the applicable plan and tax rules; no ICHRA reimbursement |
+| `ichra_individual` | Enrolled in qualifying individual coverage under CHOICE/ICHRA | `ichra` | ICHRA may reimburse eligible individual premiums; Section 125 may pay only eligible off-Exchange residual premiums, not Exchange QHP premiums |
+
+The calculation engine must never infer one value from the other. In particular, `ptc_marketplace` remains an `excepted` account pathway; PTC is not a third type of HRA.
+
+### HSA compatibility is a separate test
+
+PTC compatibility does not establish HSA compatibility. A participant can receive PTC for an HSA-qualified Marketplace HDHP and receive employer HSA contributions, but participation in a general-purpose Health FSA or HRA ordinarily makes the participant ineligible to contribute to an HSA.
+
+An HSA-compatible CommonFunds design must restrict the applicable FSA/HRA component to permitted coverage, such as limited-purpose dental/vision or post-deductible benefits, and must satisfy the HSA rules independently. [IRS Publication 15-B, “Health Savings Accounts”](https://www.irs.gov/publications/p15b)
+
 ---
 
 ## 1. Classify the dollar before applying a limit
@@ -156,7 +183,7 @@ The product name and displayed balance do not determine classification.
 | Available as cash or another taxable benefit and elected into the Health FSA | Treat as employee salary reduction; it consumes the Section 125(i) Health FSA limit |
 | Direct employee payroll election into the Health FSA | Treat as employee salary reduction |
 | Employer-only amount remaining after the EBHRA is filled | May be allocated to the Health FSA as an employer contribution, but only within the excepted-benefit maximum-benefit test and the plan documents |
-| Cashable amount elected for eligible premiums | May be a Section 125 salary reduction amount, but does not consume the separate Section 125(i) Health FSA limit |
+| Cashable amount elected for premiums that Section 125 permits | May be a Section 125 salary reduction amount, but does not consume the separate Section 125(i) Health FSA limit; **Marketplace Exchange QHP premiums are excluded** |
 | Cashable amount elected as wages | Taxable compensation |
 
 The decisive question is not who originally budgeted the money. It is whether the employee can elect cash or another taxable benefit and what the employee actually elects.
@@ -164,6 +191,20 @@ The decisive question is not who originally budgeted the money. It is whether th
 An employer credit elected into the Health FSA is treated as salary reduction when the employee could have taken it as cash or another taxable benefit. Calling it an “employer allowance,” “flex credit,” or “contribution” does not change that result.
 
 A choice solely among employer-provided nontaxable health benefits, with no cash or taxable option, is not by itself a Section 125 election.
+
+### Premium-payment boundary
+
+“Eligible premium” is not a universal category. The system must identify the policy and payment authority before assigning any pre-tax or employer dollar:
+
+| Premium | Permitted CommonFunds treatment |
+|---|---|
+| Employer-sponsored group coverage | May be paid under the employer's cafeteria plan when the plan and tax rules permit |
+| Marketplace Exchange QHP on the PTC pathway | PTC plus unrestricted post-tax employee money only; no Section 125 salary reduction, EBHRA reimbursement, or employer payment arrangement |
+| Off-Exchange individual coverage under CHOICE/ICHRA | ICHRA reimbursement as provided by the ICHRA; an eligible residual employee premium may be paid through Section 125 when the cafeteria plan permits |
+| Individual major-medical premium on the excepted pathway | No EBHRA reimbursement; any employee payment must remain outside CommonFunds and use unrestricted post-tax money unless another independently valid arrangement applies |
+| Excepted-benefit premium | May be reimbursable by the EBHRA or payable under the cafeteria plan when the governing component permits |
+
+Section 125(f)(3) prohibits cafeteria-plan payment of a qualified health plan offered through an Exchange. Calling the employee amount “cashable flex,” “salary reduction,” or “post-tax reimbursement” does not change the underlying rule. [IRS ACA tax provisions](https://www.irs.gov/affordable-care-act/affordable-care-act-tax-provisions) · [IRS Notice 2019-45 discussion of Section 125 and Exchange coverage](https://www.irs.gov/irb/2019-42_IRB)
 
 ### The primary home for employer-only dollars
 
@@ -200,7 +241,7 @@ CommonCare divides the allowance into legally distinct tranches so the engine ca
 
 | Tranche | May become cash? | Primary job | Affordability treatment | CommonFunds treatment |
 |---|---:|---|---|---|
-| **Health-only flex credit** | No | Preserve affordability while allowing allocation among qualified health benefits | Creditable when it satisfies the health-flex rules described below | May pay the qualifying premium, Health FSA, HSA when permitted, or another qualified medical benefit under the cafeteria terms |
+| **Health-only flex credit** | No | Preserve affordability while allowing allocation among qualified employer benefits | Creditable when it satisfies the health-flex rules described below | May pay the applicable employer coverage premium, Health FSA, HSA when permitted, or another qualified medical benefit under the cafeteria terms; it may not pay a Marketplace QHP premium |
 | **Primary employer account** | No | Provide employer-controlled health value | Counts only when the governing affordability rule treats that particular contribution as reducing required contribution | EBHRA on the excepted path; ICHRA on the ICHRA path |
 | **Conditional cashable flex** | Yes, after the plan's required allocation or election conditions are satisfied | Preserve employee choice without making the entire allowance an automatic bonus | The cashable amount does not reduce required contribution | Defaults by election into the Health FSA or another qualified benefit; may ultimately be taken as taxable wages |
 | **True employer Health FSA contribution** | No | Move health-only value into the FSA as capacity is unlocked by salary reduction | Retains affordability value when it is an allocation of a health-only flex credit that was made available to pay MEC; a separate FSA-only contribution does not qualify merely because it pays medical expenses | Added within the excepted-benefit maximum-benefit test |
@@ -220,6 +261,8 @@ Under 26 CFR §1.36B-2(c)(3)(v)(A)(6), an employer cafeteria-plan amount reduces
 This produces a clean rule:
 
 > **A health-only, noncashable flex dollar that can pay the applicable coverage premium may reduce required contribution. A dollar that can become taxable cash does not.**
+
+Here, “applicable coverage premium” means the employer coverage used in the affordability calculation. It does not mean an employee's Marketplace QHP premium. Exchange coverage cannot be offered through Section 125, and a health-only employer credit cannot be repurposed as PTC-pathway Marketplace-premium funding.
 
 The allowance can contain both kinds of dollars. Making only the amount above a defined health-only threshold cashable does not contaminate the health-only tranche, provided the cafeteria plan and enrollment system establish two genuinely separate rights.
 
@@ -432,6 +475,20 @@ CommonCare may collect an employee declaration that the employee participates in
 
 For an employer not using ICHRA, CommonCare can pair a self-funded MEC with the excepted CommonFunds pathway. The employer makes non-excepted group coverage available, while CommonFunds uses the EBHRA and excepted-benefit Health FSA structure for account-based value. This often produces a cleaner home for a generous allowance when individual-coverage participation is not the employer's objective.
 
+### PTC Marketplace coverage and the excepted pathway
+
+The [Premium Tax Credit Plan](../ptc-plan/human-readable.md) is a specific use of the excepted pathway:
+
+1. The employer makes CommonCare's self-funded MEC available as the non-excepted, non-HRA group coverage required for the excepted-benefit Health FSA and EBHRA.
+2. The employee seeking PTC **declines the MEC**. The offer of MEC that fails minimum value does not itself block PTC, but enrollment in employer-sponsored MEC does.
+3. The employee independently enrolls in a Marketplace QHP and applies any available PTC.
+4. The Marketplace premium is paid with PTC and unrestricted post-tax employee money, directly or through neutral payroll remittance.
+5. CommonFunds reimburses only expenses permitted by its excepted-benefit components and never the Marketplace major-medical premium.
+
+The enrollment system must treat the MEC waiver as a material tax-credit control. Automatic or accidental MEC enrollment can eliminate the employee's PTC for enrolled months even though the MEC fails minimum value. [26 CFR §1.36B-2(c)(3)](https://www.law.cornell.edu/cfr/text/26/1.36B-2) · [IRS Publication 974](https://www.irs.gov/publications/p974)
+
+For a non-ALE, employee PTC receipt does not create §4980H liability because §4980H applies only to applicable large employers. An ALE may model intentional §4980H(b) exposure, but that is a specialized sponsor decision governed by the PTC Plan—not a default CommonFunds allocation. [IRS ALE determination guidance](https://www.irs.gov/affordable-care-act/employers/determining-if-an-employer-is-an-applicable-large-employer)
+
 ### Worked example: preserve affordability while maximizing FSA flexibility
 
 Assume:
@@ -501,6 +558,7 @@ Use annual plan-year amounts. Every value is an argument supplied to the calcula
 | Input | Type | Meaning |
 |---|---|---|
 | `benefit_path` | `"excepted" \| "ichra"` | Primary account pathway offered to the employee's class |
+| `coverage_context` | `"employer_group" \| "ptc_marketplace" \| "outside_group" \| "ichra_individual"` | Participant's major-medical context; controls premium, PTC, MEC-election, and HSA validation without changing the account pathway |
 | `ichra_participation` | `"accepted" \| "opted_out" \| "not_applicable"` | Employee's ICHRA election; must be `not_applicable` on the excepted path |
 | `ichra_covers_nonpremium_expenses` | Boolean | Whether the ICHRA document permits reimbursement of eligible §213(d) expenses beyond premiums |
 
@@ -511,7 +569,7 @@ Use annual plan-year amounts. Every value is an argument supplied to the calcula
 | `employer_noncashable_budget` | Total employer-only amount available for allocation; cannot be taken as cash or another taxable benefit |
 | `cashable_flex_credit` | Employer flex amount the employee may receive as cash or another taxable benefit |
 | `cashable_flex_to_fsa` | Cashable flex credit elected into the Health FSA |
-| `cashable_flex_to_premiums` | Cashable flex credit elected for premiums permitted under Section 125 |
+| `cashable_flex_to_premiums` | Cashable flex credit elected for premiums permitted under Section 125; must be zero for `ptc_marketplace` because Exchange QHP premiums cannot be paid through Section 125 |
 | `cashable_flex_to_wages` | Cashable flex credit elected as taxable compensation |
 | `cashable_flex_to_other` | Cashable flex credit directed to another permitted cashable benefit |
 | `direct_employee_fsa_election` | Additional employee salary reduction elected into the Health FSA |
@@ -570,7 +628,17 @@ if benefit_path == "excepted":
 
 if benefit_path == "ichra":
     existing_ebhra_newly_available must equal 0
+
+if coverage_context == "ptc_marketplace":
+    benefit_path must equal "excepted"
+    ichra_participation must equal "not_applicable"
+    cashable_flex_to_premiums must equal 0
+
+if coverage_context == "ichra_individual":
+    benefit_path must equal "ichra"
 ```
+
+The PTC Marketplace validation applies only to pre-tax/CommonFunds premium allocation. It does not prevent a separate post-tax payroll-remittance record funded entirely from unrestricted employee wages.
 
 An ICHRA participant may receive nonpremium reimbursements only when:
 
@@ -1112,6 +1180,9 @@ For every claim, determine:
 | “The Health FSA limit is the most an employee can have available.” | “The indexed limit applies to salary reduction; permitted employer contributions may increase the total benefit.” |
 | “The CommonFunds balance exceeds the EBHRA limit.” | “Apply the EBHRA limit only to the EBHRA component and test the other components separately.” |
 | “CommonFunds reimburses this expense.” | “The applicable CommonFunds component determines whether the expense is eligible.” |
+| “The employee has Marketplace coverage, so CommonFunds can pay the premium.” | “The PTC pathway uses CommonFunds only for eligible excepted-benefit expenses; the Marketplace premium is paid with PTC and unrestricted post-tax employee money.” |
+| “The employee was offered MEC, so the employee cannot receive PTC.” | “An offer of MEC that fails minimum value does not itself block PTC, but enrollment in employer-sponsored MEC does; the PTC claimant must decline the MEC.” |
+| “PTC-compatible CommonFunds is automatically HSA-compatible.” | “PTC and HSA eligibility are separate; general-purpose FSA/HRA coverage ordinarily prevents HSA contributions.” |
 
 ---
 
@@ -1121,6 +1192,10 @@ For every claim, determine:
 - [IRS Notice 2012-40](https://www.irs.gov/pub/irs-drop/n-12-40.pdf)—cashable employer flex credits elected into a Health FSA are treated as salary reduction for Section 125(i).
 - [45 C.F.R. § 146.145(b)(3)(v)](https://www.law.cornell.edu/cfr/text/45/146.145)—Health FSA excepted-benefit requirements and treatment of taxable options elected into the FSA.
 - [26 C.F.R. § 54.9831-1(c)(3)(v)](https://www.law.cornell.edu/cfr/text/26/54.9831-1)—parallel Treasury excepted-benefit rule.
+- [26 C.F.R. § 1.36B-2(c)(3)](https://www.law.cornell.edu/cfr/text/26/1.36B-2)—PTC treatment of employer-coverage offers and enrollment.
+- [IRS Publication 974](https://www.irs.gov/publications/p974)—PTC eligibility, employer-sponsored MEC, affordability, and minimum value.
+- [IRS ACA tax provisions](https://www.irs.gov/affordable-care-act/affordable-care-act-tax-provisions)—Section 125 prohibition on purchasing Exchange coverage pre-tax.
+- [IRS Publication 15-B](https://www.irs.gov/publications/p15b)—HSA eligibility and incompatible FSA/HRA coverage.
 
 ---
 

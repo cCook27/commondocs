@@ -5,16 +5,16 @@ kind: vector-store-source
 schema_version: "1.0"
 source_document: plan-structures/common-funds/human-readable.md
 metadata_document: plan-structures/common-funds/metadata.yaml
-source_commit: 2b6ee17093e27a00afc6b54c86f6f2a244e9acd9
-source_sha256: 681c63c1a32bd60e13cd58316de967cb9134804b6c248fc43704cb4a2848dd24
-metadata_sha256: 242e0b9567a3a775bf269d2acb0a8c0a73af902bb2206acafad8fc6bf6064a90
+source_commit: 75ce68a53bf402b26e564185d83f1c9b7db858b4
+source_sha256: 7bf3f2debce66346654a90504856a760fe8a5b2fa25d953ddcd6d2945d40b95b
+metadata_sha256: ec2da998690975e56cbbb2bd3f6e342a3faf67c8c52304eb46facc31c41c1c61
 generation_method: deterministic-commonfunds-split-conversion
 canonical_source: false
 source_status: draft
 source_version: 1.0
 jurisdiction: United States
 scope: explanation-and-design-rationale
-last_reviewed: unknown
+last_reviewed: 2026-10-01
 ---
 
 # CommonFunds — Explanation and Design Rationale
@@ -35,6 +35,14 @@ CommonFunds can combine multiple account-based benefits in one participant exper
 An **excepted-benefit Health Flexible Spending Arrangement (Health FSA)** may provide an additional layer under either pathway when its separate requirements are satisfied.
 
 CommonFunds is an administrative structure. It is not a separate statutory benefit category, a replacement for an HRA, or a replacement for a Health FSA. Every dollar retains the rules of its underlying benefit component.
+
+This document is the canonical source for CommonFunds account classification, allocation, limits, and claims availability. Two companion structures control questions outside that scope:
+
+- The [Premium Tax Credit Plan](../ptc-plan/human-readable.md) controls when Marketplace PTC access is preserved and how the self-funded MEC offer supports an excepted CommonFunds pathway without enrolling the PTC claimant; and
+- [Private Alternatives Alongside an Employer Plan](../alternative-companion/human-readable.md) controls employer neutrality, nonsponsorship, and post-tax payroll treatment for independently selected options.
+
+> [!IMPORTANT]
+> A participant can use the `excepted` CommonFunds pathway while enrolled in a PTC-supported Marketplace plan. In that context, CommonFunds pays only expenses permitted by its EBHRA and Health FSA components. It does **not** reimburse the Marketplace major-medical premium, and the employee must decline—not enroll in—the employer MEC offered to support the excepted-benefit structure.
 
 <!-- record_id: product.commonfunds.explaining.vector-store.foreword-commonfunds-origin-and-purpose -->
 ## Foreword: CommonFunds origin and purpose
@@ -193,5 +201,54 @@ One participant may see one CommonFunds balance while the system maintains multi
 
 > [!IMPORTANT]
 > The combined user experience does not merge the legal classifications. Compliance, tax treatment, limits, claims eligibility, and availability are determined component by component.
+
+<!-- record_id: product.commonfunds.explaining.vector-store.coverage-context-is-separate-from-benefit-pathway -->
+### Coverage context is separate from benefit pathway
+> Retrieval context: CommonFunds — The essential idea > Coverage context is separate from benefit pathway
+
+`benefit_path` identifies the employer account structure. `coverage_context` identifies the participant's major-medical situation. They answer different questions:
+
+#### employergroup
+<!-- record_id: product.commonfunds.explaining.vector-store.the-essential-idea-coverage-context-is-separate-from-benefit-pathway.employergroup; record_type: table-row -->
+- Context: CommonFunds — The essential idea > Coverage context is separate from benefit pathway
+- `coverage_context`: `employer_group`
+- Common major-medical position: Enrolled in employer group coverage
+- Compatible primary CommonFunds path: `excepted`
+- Premium rule: Applicable employer-plan premiums may receive only the treatment permitted by the cafeteria-plan documents and tax rules
+
+#### ptcmarketplace
+<!-- record_id: product.commonfunds.explaining.vector-store.the-essential-idea-coverage-context-is-separate-from-benefit-pathway.ptcmarketplace; record_type: table-row -->
+- Context: CommonFunds — The essential idea > Coverage context is separate from benefit pathway
+- `coverage_context`: `ptc_marketplace`
+- Common major-medical position: Enrolled in a Marketplace QHP with or without PTC
+- Compatible primary CommonFunds path: `excepted`
+- Premium rule: Marketplace QHP premium is paid with PTC and unrestricted post-tax employee money; never through Section 125
+
+#### outsidegroup
+<!-- record_id: product.commonfunds.explaining.vector-store.the-essential-idea-coverage-context-is-separate-from-benefit-pathway.outsidegroup; record_type: table-row -->
+- Context: CommonFunds — The essential idea > Coverage context is separate from benefit pathway
+- `coverage_context`: `outside_group`
+- Common major-medical position: Enrolled in a spouse's or other outside group plan
+- Compatible primary CommonFunds path: `excepted`
+- Premium rule: Outside-plan premium treatment depends on the applicable plan and tax rules; no ICHRA reimbursement
+
+#### ichraindividual
+<!-- record_id: product.commonfunds.explaining.vector-store.the-essential-idea-coverage-context-is-separate-from-benefit-pathway.ichraindividual; record_type: table-row -->
+- Context: CommonFunds — The essential idea > Coverage context is separate from benefit pathway
+- `coverage_context`: `ichra_individual`
+- Common major-medical position: Enrolled in qualifying individual coverage under CHOICE/ICHRA
+- Compatible primary CommonFunds path: `ichra`
+- Premium rule: ICHRA may reimburse eligible individual premiums; Section 125 may pay only eligible off-Exchange residual premiums, not Exchange QHP premiums
+
+
+The calculation engine must never infer one value from the other. In particular, `ptc_marketplace` remains an `excepted` account pathway; PTC is not a third type of HRA.
+
+<!-- record_id: product.commonfunds.explaining.vector-store.hsa-compatibility-is-a-separate-test -->
+### HSA compatibility is a separate test
+> Retrieval context: CommonFunds — The essential idea > HSA compatibility is a separate test
+
+PTC compatibility does not establish HSA compatibility. A participant can receive PTC for an HSA-qualified Marketplace HDHP and receive employer HSA contributions, but participation in a general-purpose Health FSA or HRA ordinarily makes the participant ineligible to contribute to an HSA.
+
+An HSA-compatible CommonFunds design must restrict the applicable FSA/HRA component to permitted coverage, such as limited-purpose dental/vision or post-deductible benefits, and must satisfy the HSA rules independently. [IRS Publication 15-B, “Health Savings Accounts”](https://www.irs.gov/publications/p15b)
 
 ---

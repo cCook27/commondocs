@@ -5,14 +5,14 @@ kind: vector-store-source
 schema_version: "1.0"
 source_document: plan-structures/alternative-companion/human-readable.md
 metadata_document: plan-structures/alternative-companion/metadata.yaml
-source_commit: 2b6ee17093e27a00afc6b54c86f6f2a244e9acd9
-source_sha256: 56cc23f84de3ca41e5964dded14f2fb0919e3637c31e5baeaa540b26c6d09522
-metadata_sha256: 52f7b5bc38cafb9ebcd01126a7527ba89707c0532e3fa4f21a0d6d70698068eb
+source_commit: 75ce68a53bf402b26e564185d83f1c9b7db858b4
+source_sha256: d021e606e997c468b42cd6695e68c89842a9075a63b76f949b2059756fa4351f
+metadata_sha256: da5e6b0b873fa5932441cf208b9b3c7cf3175df9b6397c0e10188ada317567a7
 generation_method: deterministic-markdown-conversion
 canonical_source: false
 source_status: draft
 owner: CommonCare
-last_reviewed: unknown
+last_reviewed: 2026-10-01
 ---
 
 # Private Alternatives Alongside an Employer Plan — Vector Store Source
@@ -31,6 +31,11 @@ CommonCare makes those choices visible without turning every visible choice into
 
 > [!Important]
 > This companion plan structure works alongside any type of employer plan for any size of employer
+
+This document is the canonical source for employer neutrality, nonsponsorship, voluntary access, and post-tax payment of independently selected options. It does not replace:
+
+- The [Premium Tax Credit Plan](../ptc-plan/human-readable.md), which controls PTC eligibility, MEC offer-and-enrollment rules, non-ALE strategy, and Marketplace-specific administration; or
+- [CommonFunds](../common-funds/human-readable.md), which controls EBHRA, Health FSA, ICHRA, allowance classification, account limits, and claims availability.
 
 <!-- record_id: product.alternative-companion.at-a-glance -->
 ## At a glance
@@ -78,6 +83,59 @@ CommonCare makes those choices visible without turning every visible choice into
 - Question: Can an employee use taxable compensation?
 - CommonCare treatment: Yes; once paid as unconditional taxable wages, the employee may spend it as the employee chooses
 
+#### Does this document determine PTC eligibility?
+<!-- record_id: product.alternative-companion.at-a-glance.does-this-document-determine-ptc-eligibility; record_type: table-row -->
+- Context: Private Alternatives Alongside an Employer Plan — At a glance
+- Question: Does this document determine PTC eligibility?
+- CommonCare treatment: No; Marketplace PTC eligibility follows the PTC Plan and the employee's household and coverage facts
+
+#### Can employer-sponsored benefits coexist with a private option?
+<!-- record_id: product.alternative-companion.at-a-glance.can-employer-sponsored-benefits-coexist-with-a-private-option; record_type: table-row -->
+- Context: Private Alternatives Alongside an Employer Plan — At a glance
+- Question: Can employer-sponsored benefits coexist with a private option?
+- CommonCare treatment: Yes; qualified employer benefits remain governed by their own documents while the private option remains separate and employee funded
+
+
+<!-- record_id: product.alternative-companion.choose-the-correct-structure -->
+## Choose the correct structure
+> Retrieval context: Private Alternatives Alongside an Employer Plan — Choose the correct structure
+
+#### PTC Plan
+<!-- record_id: product.alternative-companion.choose-the-correct-structure.ptc-plan; record_type: table-row -->
+- Context: Private Alternatives Alongside an Employer Plan — Choose the correct structure
+- Structure: **PTC Plan**
+- Coverage being supported: Marketplace qualified health plan selected by the employee
+- Employer premium funding: No premium reimbursement; only unrestricted taxable wages may ultimately be used
+- PTC treatment: Designed to preserve PTC when the employee is otherwise eligible and declines employer MEC
+- Canonical document: [Premium Tax Credit Plan](../ptc-plan/human-readable.md)
+
+#### Alternative Companion
+<!-- record_id: product.alternative-companion.choose-the-correct-structure.alternative-companion; record_type: table-row -->
+- Context: Private Alternatives Alongside an Employer Plan — Choose the correct structure
+- Structure: **Alternative Companion**
+- Coverage being supported: Independent insurance, health sharing, direct care, cash-pay strategy, or another nonsponsored option
+- Employer premium funding: None; employee post-tax money only
+- PTC treatment: Depends on the selected coverage and the employee's separate PTC facts
+- Canonical document: This document
+
+#### CHOICE/ICHRA
+<!-- record_id: product.alternative-companion.choose-the-correct-structure.choice-ichra; record_type: table-row -->
+- Context: Private Alternatives Alongside an Employer Plan — Choose the correct structure
+- Structure: **CHOICE/ICHRA**
+- Coverage being supported: Qualifying individual insurance integrated with an employer ICHRA
+- Employer premium funding: Employer HRA reimbursement under the ICHRA
+- PTC treatment: Acceptance eliminates PTC for the same month; an affordable ICHRA offer can also block PTC
+- Canonical document: [CHOICE](../choice-ichra/human-readable.md)
+
+#### CommonFunds
+<!-- record_id: product.alternative-companion.choose-the-correct-structure.commonfunds; record_type: table-row -->
+- Context: Private Alternatives Alongside an Employer Plan — Choose the correct structure
+- Structure: **CommonFunds**
+- Coverage being supported: Account-based expenses under an EBHRA, Health FSA, or ICHRA
+- Employer premium funding: Determined component by component
+- PTC treatment: PTC pathway uses only excepted components and never reimburses the Marketplace major-medical premium
+- Canonical document: [CommonFunds](../common-funds/human-readable.md)
+
 
 <!-- record_id: product.alternative-companion.navigate-this-document -->
 ## Navigate this document
@@ -88,7 +146,9 @@ CommonCare makes those choices visible without turning every visible choice into
 - [The legal boundary](#the-legal-boundary)
 - [The DOL voluntary-program safe harbor](#the-dol-voluntary-program-safe-harbor)
 - [What endorsement means](#what-endorsement-means)
+- [PTC, MEC, and HSA boundaries](#ptc-mec-and-hsa-boundaries)
 - [How CommonCare separates the two environments](#how-commoncare-separates-the-two-environments)
+- [Employer benefits alongside private choice](#employer-benefits-alongside-private-choice)
 - [Payroll and employer allowances](#payroll-and-employer-allowances)
 - [How options are evaluated](#how-options-are-evaluated)
 - [Participant disclosures](#participant-disclosures)
@@ -206,6 +266,32 @@ CommonCare draws a bright line:
 
 
 Calling something “voluntary” is not enough. The documents, money, communications, enrollment flow, payroll treatment, compensation, and actual conduct must all support the distinction.
+
+<!-- record_id: product.alternative-companion.ptc-mec-and-hsa-boundaries -->
+## PTC, MEC, and HSA boundaries
+> Retrieval context: Private Alternatives Alongside an Employer Plan — Part II — The legal boundary > PTC, MEC, and HSA boundaries
+
+Nonsponsorship does not answer every tax question. PTC eligibility, employer MEC, and HSA eligibility follow separate rules.
+
+<!-- record_id: product.alternative-companion.marketplace-ptc -->
+### Marketplace PTC
+> Retrieval context: Private Alternatives Alongside an Employer Plan — Part II — The legal boundary > PTC, MEC, and HSA boundaries > Marketplace PTC
+
+An employee may be able to receive PTC for Marketplace coverage when an employer offer is absent or does not provide affordable minimum-value coverage. But enrollment in employer-sponsored MEC blocks PTC for the enrolled individual for those months even when the MEC is unaffordable or fails minimum value. [26 CFR §1.36B-2(c)(3)](https://www.law.cornell.edu/cfr/text/26/1.36B-2) · [IRS Publication 974](https://www.irs.gov/publications/p974)
+
+The [Premium Tax Credit Plan](../ptc-plan/human-readable.md) therefore pairs an offer of self-funded MEC with an employee opt-out. The offer supports the excepted-benefit CommonFunds structure; the employee seeking PTC declines the MEC and independently enrolls in a Marketplace qualified health plan.
+
+<!-- record_id: product.alternative-companion.hsa-eligibility -->
+### HSA eligibility
+> Retrieval context: Private Alternatives Alongside an Employer Plan — Part II — The legal boundary > PTC, MEC, and HSA boundaries > HSA eligibility
+
+An independently selected plan is HSA-compatible only if it is an HSA-qualified HDHP and the participant has no disqualifying other coverage. A general-purpose Health FSA or HRA ordinarily prevents HSA contributions, while limited-purpose or post-deductible coverage may be permitted. PTC compatibility does not establish HSA compatibility. [IRS Publication 15-B](https://www.irs.gov/publications/p15b)
+
+<!-- record_id: product.alternative-companion.marketplace-premiums-cannot-be-paid-pre-tax-through-section-125 -->
+### Marketplace premiums cannot be paid pre-tax through Section 125
+> Retrieval context: Private Alternatives Alongside an Employer Plan — Part II — The legal boundary > PTC, MEC, and HSA boundaries > Marketplace premiums cannot be paid pre-tax through Section 125
+
+The employee's Marketplace QHP premium must remain outside the employer cafeteria plan. Section 125(f)(3) prohibits using pre-tax employee contributions to purchase an Exchange qualified health plan. On the PTC pathway, the premium is paid with PTC plus unrestricted post-tax employee money. [IRS ACA tax provisions](https://www.irs.gov/affordable-care-act/affordable-care-act-tax-provisions)
 
 <!-- record_id: product.alternative-companion.the-dol-voluntary-program-safe-harbor -->
 ## The DOL voluntary-program safe harbor
@@ -378,6 +464,57 @@ When an employee selects an independent option:
 - The provider receives the employee's money through remittance or direct payment; and
 - Product service, claims, sharing, and disputes remain between the participant and provider.
 
+<!-- record_id: product.alternative-companion.employer-benefits-alongside-private-choice -->
+## Employer benefits alongside private choice
+> Retrieval context: Private Alternatives Alongside an Employer Plan — Part III — The CommonCare structure > Employer benefits alongside private choice
+
+An employer does not need to abandon its own benefits merely because employees can see or buy independent options. The two environments must remain distinct.
+
+#### Limited-scope dental or vision
+<!-- record_id: product.alternative-companion.part-iii-the-commoncare-structure-employer-benefits-alongside-private-ch.limited-scope-dental-or-vision; record_type: table-row -->
+- Context: Private Alternatives Alongside an Employer Plan — Part III — The CommonCare structure > Employer benefits alongside private choice
+- Employer-sponsored benefit: Limited-scope dental or vision
+- How it can coexist: Offered and funded under the employer plan as an excepted benefit; the private option remains separate
+
+#### Self-funded dental or vision
+<!-- record_id: product.alternative-companion.part-iii-the-commoncare-structure-employer-benefits-alongside-private-ch.self-funded-dental-or-vision; record_type: table-row -->
+- Context: Private Alternatives Alongside an Employer Plan — Part III — The CommonCare structure > Employer benefits alongside private choice
+- Employer-sponsored benefit: Self-funded dental or vision
+- How it can coexist: Administered under its own employer plan document and excepted-benefit rules
+
+#### HSA contribution
+<!-- record_id: product.alternative-companion.part-iii-the-commoncare-structure-employer-benefits-alongside-private-ch.hsa-contribution; record_type: table-row -->
+- Context: Private Alternatives Alongside an Employer Plan — Part III — The CommonCare structure > Employer benefits alongside private choice
+- Employer-sponsored benefit: HSA contribution
+- How it can coexist: Available only for an HSA-eligible employee; the independent major-medical option must be an HSA-qualified HDHP and other coverage must be compatible
+
+#### CommonFunds
+<!-- record_id: product.alternative-companion.part-iii-the-commoncare-structure-employer-benefits-alongside-private-ch.commonfunds; record_type: table-row -->
+- Context: Private Alternatives Alongside an Employer Plan — Part III — The CommonCare structure > Employer benefits alongside private choice
+- Employer-sponsored benefit: CommonFunds
+- How it can coexist: Uses the applicable EBHRA/Health FSA/ICHRA components; component rules—not the unified display—control
+
+#### Self-funded MEC supporting excepted CommonFunds
+<!-- record_id: product.alternative-companion.part-iii-the-commoncare-structure-employer-benefits-alongside-private-ch.self-funded-mec-supporting-excepted-commonfunds; record_type: table-row -->
+- Context: Private Alternatives Alongside an Employer Plan — Part III — The CommonCare structure > Employer benefits alongside private choice
+- Employer-sponsored benefit: Self-funded MEC supporting excepted CommonFunds
+- How it can coexist: Employer offers the MEC; a participant seeking PTC must decline it
+
+#### Restricted employer benefit credit
+<!-- record_id: product.alternative-companion.part-iii-the-commoncare-structure-employer-benefits-alongside-private-ch.restricted-employer-benefit-credit; record_type: table-row -->
+- Context: Private Alternatives Alongside an Employer Plan — Part III — The CommonCare structure > Employer benefits alongside private choice
+- Employer-sponsored benefit: Restricted employer benefit credit
+- How it can coexist: May be use-it-or-lose-it only within qualified employer-sponsored benefits under the governing arrangement
+
+#### Unrestricted taxable wages
+<!-- record_id: product.alternative-companion.part-iii-the-commoncare-structure-employer-benefits-alongside-private-ch.unrestricted-taxable-wages; record_type: table-row -->
+- Context: Private Alternatives Alongside an Employer Plan — Part III — The CommonCare structure > Employer benefits alongside private choice
+- Employer-sponsored benefit: Unrestricted taxable wages
+- How it can coexist: May be spent by the employee on anything, including a private option, after becoming ordinary wages
+
+
+See [CommonFunds](../common-funds/human-readable.md) for account allocation and [the Premium Tax Credit Plan](../ptc-plan/human-readable.md) for the MEC-plus-excepted-benefit implementation used with Marketplace PTC.
+
 ---
 
 <!-- record_id: product.alternative-companion.part-iv-payroll-and-employer-allowances -->
@@ -408,7 +545,7 @@ CommonCare payroll reports therefore classify each independent-option payment as
 <!-- record_id: product.alternative-companion.part-iv-payroll-and-employer-allowances-post-tax-payroll-is-permitted-bu.employer-plan-contribution; record_type: table-row -->
 - Context: Private Alternatives Alongside an Employer Plan — Part IV — Payroll and employer allowances > Post-tax payroll is permitted—but it must remain employee money
 - Payroll field: Employer plan contribution
-- Treatment: $0
+- Treatment: \$0
 
 #### Section 125 treatment
 <!-- record_id: product.alternative-companion.part-iv-payroll-and-employer-allowances-post-tax-payroll-is-permitted-bu.section-125-treatment; record_type: table-row -->
@@ -480,6 +617,29 @@ Accordingly:
 - Any employer amount available for that purchase must first become unconditional taxable wages—not a reimbursement, match, credit, or use-it-or-lose-it allowance tied to the purchase.
 
 This preserves both sides of the structure: real employer benefits where the employer intends to sponsor them, and real private choice where it does not.
+
+<!-- record_id: product.alternative-companion.split-allowance-example -->
+### Split-allowance example
+> Retrieval context: Private Alternatives Alongside an Employer Plan — Part IV — Payroll and employer allowances > Use-it-or-lose-it restrictions belong only inside the employer plan > Split-allowance example
+
+An employer may establish a `\$300` monthly compensation package as two legally distinct rights:
+
+#### Restricted employer-benefit credit
+<!-- record_id: product.alternative-companion.part-iv-payroll-and-employer-allowances-use-it-or-lose-it-restrictions-b.restricted-employer-benefit-credit; record_type: table-row -->
+- Context: Private Alternatives Alongside an Employer Plan — Part IV — Payroll and employer allowances > Use-it-or-lose-it restrictions belong only inside the employer plan > Split-allowance example
+- Tranche: Restricted employer-benefit credit
+- Example amount: `\$150`
+- Treatment: Available only for qualified employer-sponsored benefits and may be forfeited if unused
+
+#### Cashable flex credit
+<!-- record_id: product.alternative-companion.part-iv-payroll-and-employer-allowances-use-it-or-lose-it-restrictions-b.cashable-flex-credit; record_type: table-row -->
+- Context: Private Alternatives Alongside an Employer Plan — Part IV — Payroll and employer allowances > Use-it-or-lose-it restrictions belong only inside the employer plan > Split-allowance example
+- Tranche: Cashable flex credit
+- Example amount: `\$150`
+- Treatment: Available as taxable wages under the plan's election rules and not conditioned on purchasing a private option
+
+
+The restricted `\$150` cannot fund a nonsponsored option. The cashable `\$150`, once paid as ordinary taxable compensation, belongs to the employee and can be used for a private option or any other purpose. Payroll and plan records must not collapse the two tranches into a single “health allowance.”
 
 ---
 
@@ -579,6 +739,8 @@ Before selecting an independent option, the participant should affirmatively ack
 - The employer and CommonCare do not receive product commissions;
 - The option's own terms control eligibility, payment, sharing, exclusions, and disputes;
 - Selecting it may affect access to employer contributions or tax-favored accounts under separate rules; and
+- Enrollment in employer-sponsored MEC can eliminate Marketplace PTC even if that MEC is unaffordable or fails minimum value;
+- General-purpose Health FSA or HRA participation can eliminate HSA contribution eligibility even when it does not eliminate PTC; and
 - The participant may choose the employer plan, another private option, or no private option, subject to the consequences of each choice.
 
 ---
@@ -619,12 +781,15 @@ For every independent option shown or administered, CommonCare should retain:
 - [ ] Confirm that participation is completely voluntary.
 - [ ] Confirm that the employer contributes nothing to the independent option.
 - [ ] Treat payroll deductions as post-tax employee deductions.
+- [ ] Prohibit Section 125 payment of Marketplace Exchange QHP premiums.
 - [ ] Pay any broadly available employer amount as unconditional taxable wages before the employee's private purchase.
 - [ ] Do not condition a credit, reimbursement, match, or forfeiture rule on the private purchase.
 - [ ] Receive no consideration connected with participation.
 - [ ] Route product questions, claims, and disputes to the provider.
 - [ ] Preserve participant acknowledgments and payroll records.
 - [ ] Review non-insurance arrangements under the general ERISA “established or maintained” standard rather than claiming the insurance safe harbor automatically applies.
+- [ ] Route Marketplace PTC and MEC questions to the Premium Tax Credit Plan controls.
+- [ ] Test HSA eligibility independently from PTC eligibility.
 
 ---
 

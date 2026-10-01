@@ -5,8 +5,8 @@ kind: vector-store-source
 schema_version: "1.0"
 source_document: plan-structures/ptc-plan/human-readable.md
 metadata_document: plan-structures/ptc-plan/metadata.yaml
-source_commit: 12fe4869fdf748f5749e9233788a0c4aea9ec5bd
-source_sha256: 15fac2339e42e99bf80fd3f7c32e1d12c242a637cb17d670fdaccef2dd1e8187
+source_commit: 75ce68a53bf402b26e564185d83f1c9b7db858b4
+source_sha256: 887afad8c9c03cc39df16bd4086f2b976ae60458acf03dea40e18b874dd61176
 metadata_sha256: f5c5571178ae622af4d6eb8612decaba77a2d4d16dec26c71c91b7b13486869d
 generation_method: deterministic-markdown-conversion
 canonical_source: false
@@ -833,9 +833,9 @@ The employee should acknowledge that:
 - General-purpose CommonFunds coverage may affect HSA eligibility; and
 - The employee remains responsible for verifying provider networks, prescriptions, plan terms, and tax information.
 
-<!-- record_id: product.ptc-plan.records-commoncare-should-retain -->
-## Records CommonCare should retain
-> Retrieval context: Premium Tax Credit Plan — Part VI — Implementation controls > Records CommonCare should retain
+<!-- record_id: product.ptc-plan.records-plan-sponsore-should-retain-commoncare-provides-most-of-these -->
+## Records Plan Sponsore should retain (CommonCare provides most of these)
+> Retrieval context: Premium Tax Credit Plan — Part VI — Implementation controls > Records Plan Sponsore should retain (CommonCare provides most of these)
 
 - Employer ALE determination and measurement inputs;
 - Eligibility classes and each benefit offered to them;
