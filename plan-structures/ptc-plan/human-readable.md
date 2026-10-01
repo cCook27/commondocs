@@ -197,9 +197,12 @@ Preserving the PTC does not require the employer to abandon health benefits. It 
 | Employer HSA contribution | Yes | Employee must be HSA-eligible and enrolled in an HSA-qualified HDHP |
 | Unconditional taxable wages | Yes | Payment cannot depend on buying or proving purchase of individual coverage |
 | Post-tax payroll remittance of employee premium | Yes | Employee money only; no endorsement, contribution, pre-tax treatment, or reimbursement |
-| ICHRA or QSEHRA | Not while receiving PTC for the same month | Separate coordination rules reduce or eliminate PTC; not the PTC Plan pathway |
+| Individual coverage HRA (ICHRA) | Only after declining an unaffordable ICHRA | An affordable offer blocks PTC; accepting the ICHRA also blocks PTC for the same months |
+| Qualified small employer HRA (QSEHRA) | Sometimes, with a reduced PTC | An affordable QSEHRA blocks PTC; an unaffordable QSEHRA reduces otherwise available monthly PTC by the monthly permitted benefit, not below zero |
 | Affordable minimum-value employer coverage | Generally no | The offer itself generally blocks PTC for those to whom it is affordable and provides MV |
 | Enrollment in employer-sponsored MEC | No | Enrollment blocks PTC for the enrolled individual for those months |
+
+ICHRA and QSEHRA are separate alternatives to this PTC Plan design. Their coordination rules differ: a person must opt out of an unaffordable ICHRA to claim PTC, while an unaffordable QSEHRA can coexist with PTC after the required reduction. [IRS PTC Questions and Answers, Q22–Q23](https://www.irs.gov/affordable-care-act/individuals-and-families/questions-and-answers-on-the-premium-tax-credit) · [IRS Notice 2017-67, Q65–Q71](https://www.irs.gov/irb/2017-47_IRB#NOT-2017-67)
 
 ## Dental and vision
 
