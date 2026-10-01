@@ -154,6 +154,8 @@ If the employer and employee together pay $15,600 for the group plan, they have 
 
 ## Offer, affordability, minimum value, and enrollment are separate tests
 
+**Minimum essential coverage (MEC)** is a legal coverage category that includes eligible employer-sponsored plans and other qualifying coverage; it does not by itself describe how generous the benefits are. **Minimum value (MV)** is a separate employer-plan standard: the plan must pay at least 60% of the total allowed cost of benefits and provide substantial inpatient hospital and physician coverage. A plan can therefore be MEC without providing MV. Coverage consisting solely of **excepted benefits**, such as qualifying limited-scope dental or vision, is not MEC. [26 CFR §1.5000A-2](https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/subject-group-ECFRca308c7e6b0ff17/section-1.5000A-2) · [26 CFR §1.36B-6(a)](https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/subject-group-ECFRcb39f040b41b74b/section-1.36B-6)
+
 The PTC rules distinguish between an **offer** of employer coverage and **enrollment** in employer coverage:
 
 | Employer coverage fact | General PTC result for the individual |
