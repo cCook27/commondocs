@@ -57,19 +57,13 @@ For an eligible household, the PTC is federal money available only for qualified
 
 That makes the first comparison economic:
 
-```text
-net Marketplace cost
-= selected Marketplace premium
-− allowed premium tax credit
-```
+> **Net Marketplace cost**  
+> = Marketplace premium − tax credit
 
 versus:
 
-```text
-net group-plan cost
-= employer premium contribution
-+ employee premium contribution
-```
+> **Net group-plan cost**  
+> = employer contribution + employee contribution
 
 The employer contribution is still compensation cost. Moving a dollar from wages, bonuses, retirement, HSA funding, or other benefits into group insurance does not make the dollar free. If a Marketplace tax credit would have purchased the same risk protection, replacing it dollar-for-dollar with employer and employee money should be an explicit decision—not an accidental consequence of conventional plan design.
 
