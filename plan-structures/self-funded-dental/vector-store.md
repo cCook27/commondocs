@@ -6,7 +6,7 @@ schema_version: "1.0"
 source_document: plan-structures/self-funded-dental/human-readable.md
 metadata_document: plan-structures/self-funded-dental/metadata.yaml
 source_commit: dce1605c06d63fd8cf22d90754ae558c2ffba18e
-source_sha256: 022041e4bf616a055fd4a4c7d64fc310f4dce833af3eff89288ada9ca81b4bbf
+source_sha256: a019c14894bb769cade8022435130b6571bf09869c6e1eb11008355d4639c725
 metadata_sha256: e559c1066d3668c8b651b076980cb3afb95abe748f063c995094bfa7d0b35d45
 generation_method: deterministic-markdown-conversion
 canonical_source: false
