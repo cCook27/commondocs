@@ -216,6 +216,10 @@ See [CommonCare Self-Funded Dental](../self-funded-dental/human-readable.md) for
 
 ## HSA contributions
 
+A **health savings account (HSA)** is an individual's tax-favored account for eligible medical expenses; the employee keeps it when changing jobs. The **high-deductible health plan (HDHP)** is the health coverage, while the HSA is the account. A **Health FSA** (health flexible spending arrangement) reimburses eligible medical expenses and is usually funded through employee salary reduction, with possible employer contributions. An **HRA** (health reimbursement arrangement) is funded only by the employer; employees cannot contribute through salary reduction. The excepted-benefit HRA used below is abbreviated **EBHRA**. These arrangements have separate eligibility and reimbursement rules. [IRS Publication 969](https://www.irs.gov/publications/p969)
+
+A **§125 salary-reduction arrangement** lets an employee elect qualified benefits in place of taxable pay through the employer's written cafeteria plan. It is the payroll election mechanism, rather than a separate medical account. [IRS Publication 15-B, “Cafeteria Plans”](https://www.irs.gov/publications/p15b)
+
 An employee enrolled in an HSA-qualified Marketplace HDHP can remain eligible for employer HSA contributions if the employee has no disqualifying other coverage. For 2026, the HSA contribution limits are $4,400 for self-only coverage and $8,750 for family coverage. [IRS Revenue Procedure 2025-19](https://www.irs.gov/irb/2025-21_IRB#REV-PROC-2025-19)
 
 Employer HSA contributions, and employee HSA contributions made through a §125 salary-reduction arrangement, are generally excluded from federal income-tax withholding, Social Security, Medicare, and FUTA when the contribution is reasonably believed excludable. [IRS Publication 15-B, “Health Savings Accounts”](https://www.irs.gov/publications/p15b#en_US_2026_publink1000193741) · [IRS Publication 15, “Health savings accounts”](https://www.irs.gov/publications/p15)
