@@ -23,7 +23,7 @@ last_reviewed: 2026-10-01
 ## Private alternative options alongside an employer plan
 > Retrieval context: Private Alternatives Alongside an Employer Plan — Private alternative options alongside an employer plan
 
-> **An employer can sponsor a health plan without making that plan the price of admission to every other healthcare option.** Alternative Companion gives employees a separate, post-tax path to health shares, CrowdHealth-style models, and other private alternatives the employer does not sponsor.
+> **An employer can sponsor a health plan without making that plan the price of admission to every other healthcare option.** Alternative Companion gives employees a separate, post-tax path to health shares, crowdfunded, and other private alternatives the employer does not sponsor.
 
 In practice, the alternatives employees ask about are not an abstract universe of experimental products. They are usually health care sharing ministries, secular medical-cost-sharing communities, CrowdHealth-style crowdfunding and member-support models, and the cash-pay care strategies that accompany them.
 
@@ -153,7 +153,7 @@ This document is the canonical source for employer neutrality, non-sponsorship, 
 
 Alternative Companion exists to correct one practical failure of employer benefits: an employee can choose only the products the employer is willing to sponsor, or leave the benefits system and assemble an alternative alone.
 
-That failure matters because health shares and CrowdHealth-style models do not merely offer a different insurance card. They can create a substantially different healthcare experience:
+That failure matters because health shares and crowdfunded models (like CrowdHealth - which is really the main option in this space, but we aren't here to speak for them) do not merely offer a different insurance card. They can create a substantially different healthcare experience:
 
 - Lower monthly fixed costs for households that fit the membership rules;
 - Broad provider access without a carrier network;
@@ -163,7 +163,7 @@ That failure matters because health shares and CrowdHealth-style models do not m
 - Greater personal responsibility for routine and manageable expenses; and
 - Community support or crowdfunding for larger eligible needs.
 
-Health shares are generally not insurance. CrowdHealth-style models may not make an insurance promise or operate as a health care sharing ministry. Their agreements can limit pre-existing conditions, define eligible needs differently, rely on member funding, or reserve discretion that an insurance policy does not reserve in the same way. Those differences are material and must be explained.
+Health shares are generally not insurance. Crowdfunded models may not make an insurance promise or operate as a health care sharing ministry. Their agreements can limit pre-existing conditions, define eligible needs differently, rely on member funding, or reserve discretion that an insurance policy does not reserve in the same way. Those differences are material and must be explained.
 
 They are not, however, the end of the analysis. Insurance presents a different package of risks: premium is a guaranteed expense; networks constrain provider choice; prior authorization and claim adjudication can delay or deny payment; and routine care is routed through a structure that weakens price sensitivity and adds administrative cost.
 
@@ -187,6 +187,8 @@ Retaining lower-risk employees to subsidize higher-risk employees is therefore a
 
 Employers are often uncomfortable stating the decision in those terms. Instead, they describe the single-plan approach as fairness, safety, or generosity. That rhetorical move is the real problem. It hides the financial purpose from the people bearing its cost and makes an employer-selected insurance pool look morally neutral.
 
+Who is equalizing the cost of care fair to? The conscientious healthcare consumer? The overactive consumer? The congenitally ill? There are complex questions involved in this, and it's a big deal to people. Taking a hard positon where employees forfeit pay if they choose otherwise should warrant strong articulable justification.
+
 CommonCare's position is that businesses should be cautious about taking responsibility for equalizing healthcare outcomes through compulsory participation in one financing structure. Equal access, equal employer contribution, equal insurance enrollment, and equal health outcomes are different objectives. Pursuing one can produce very unequal consequences under another.
 
 An employer may still decide that preserving the group pool is worth limiting alternatives. If so, it should make that decision consciously, quantify the effect, and communicate the tradeoff honestly.
@@ -199,7 +201,7 @@ The second position is paternalistic in the literal sense: the employer believes
 
 That judgment may be reasonable for a particular product or person. Someone with active expensive treatment, little ability to absorb an unpaid bill, or a need for a benefit excluded by the alternative may be poorly served by leaving regulated major medical coverage. A product with weak reserves, vague rules, poor administration, or a bad payment record should not receive a polite pass because it calls itself a community.
 
-But the standard must run both ways. It is odd to call neutral access to a health share “pushy” while presenting employer-selected insurance as a factually safe default after years of premium escalation, network disruption, prior authorization, opaque pricing, and highly public claim disputes. A legal payment promise is valuable. It is not the same thing as certainty, affordability, or a frictionless claim experience.
+But the standard must run both ways. It is odd to call neutral access to a health share “unsafe” while presenting employer-selected insurance as a factually safe default after years of premium escalation, network disruption, prior authorization, opaque pricing, and highly public claim disputes. A legal payment promise is valuable. It is not the same thing as certainty, affordability, or a frictionless claim experience.
 
 CommonCare does not require the employer to endorse a health share. It prevents the employer's unexamined preference for insurance from becoming the employee's only administratively realistic choice.
 
@@ -213,7 +215,7 @@ Maintaining a separate private path adds work. The population that benefits may 
 
 For the right participant—often a relatively healthy household comfortable with active healthcare purchasing—the difference can be substantial:
 
-- Hundreds of dollars per month in lower fixed cost;
+- Hundreds or thousands of dollars per month in lower fixed cost;
 - Networkless access to physicians and facilities willing to accept the member as a cash-pay patient;
 - Better cash prices for routine and planned care;
 - A structure aligned with the participant's actual health needs;
@@ -538,8 +540,8 @@ An employer does not need to abandon its own benefits merely because employees c
 #### Limited-scope dental or vision
 <!-- record_id: product.alternative-companion.part-iii-the-commoncare-structure-employer-benefits-alongside-private-ch.limited-scope-dental-or-vision; record_type: table-row -->
 - Context: Private Alternatives Alongside an Employer Plan — Part III — The CommonCare structure > Employer benefits alongside private choice
-- Employer-sponsored benefit: Limited-scope dental or vision
-- How it can coexist: Offered and funded under the employer plan as an excepted benefit; the private option remains separate
+- Employer-sponsored benefit: Major Medical Coverage
+- How it can coexist: Offered and funded under the employer plan as usual; the private option remains separate and voluntary
 
 #### Self-funded dental or vision
 <!-- record_id: product.alternative-companion.part-iii-the-commoncare-structure-employer-benefits-alongside-private-ch.self-funded-dental-or-vision; record_type: table-row -->
@@ -821,10 +823,10 @@ Those are genuine tradeoffs—not a reason to pretend the arrangement has no val
 Insurance carries different risks: expensive fixed premiums, opaque adjudication, network restrictions, prior authorization, and claims that can be delayed or denied. Those are not theoretical footnotes. They are part of the product's actual performance. “Not insurance” identifies the legal structure; it does not decide comparative value.
 
 <!-- record_id: product.alternative-companion.crowdhealth-style-models -->
-### CrowdHealth-style models
-> Retrieval context: Private Alternatives Alongside an Employer Plan — Part V — Decision quality > Health sharing in particular > CrowdHealth-style models
+### Crowdfunded models
+> Retrieval context: Private Alternatives Alongside an Employer Plan — Part V — Decision quality > Health sharing in particular > Crowdfunded models
 
-CrowdHealth-style communities are not necessarily health care sharing ministries and should not inherit that label automatically. Their structure may combine a monthly membership, a member-funded community, bill negotiation, direct cash payment, crowdfunding, and support for navigating larger medical events.
+Crowdfunded style communities, like CrowdHealth, are not necessarily health care sharing ministries and should not inherit that label automatically. Their structure may combine a monthly membership, a member-funded community, bill negotiation, direct cash payment, crowdfunding, and support for navigating larger medical events.
 
 The attraction is similar but not identical to health sharing. The participant may receive broad provider freedom and active bill advocacy without buying a carrier network. The community may fund eligible large needs while leaving routine care and defined member responsibilities outside the pool.
 
