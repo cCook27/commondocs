@@ -5,8 +5,8 @@ kind: vector-store-source
 schema_version: "1.0"
 source_document: plan-structures/self-funded-dental/human-readable.md
 metadata_document: plan-structures/self-funded-dental/metadata.yaml
-source_commit: 2b6ee17093e27a00afc6b54c86f6f2a244e9acd9
-source_sha256: f77bf0320c01d02efb121a0c8f111fc9ead62182dbb50def62ff4bf5828747b6
+source_commit: dce1605c06d63fd8cf22d90754ae558c2ffba18e
+source_sha256: a019c14894bb769cade8022435130b6571bf09869c6e1eb11008355d4639c725
 metadata_sha256: e559c1066d3668c8b651b076980cb3afb95abe748f063c995094bfa7d0b35d45
 generation_method: deterministic-markdown-conversion
 canonical_source: false
@@ -292,6 +292,35 @@ uncapped_plan_payment = \$750
 ```
 
 If \$750 remains under both maximums, the plan pays \$750. The participant owes \$300 of the approved price, plus any balance bill if the provider did not accept \$1,050 as payment in full.
+
+<!-- record_id: plan.self-funded-dental.when-a-remaining-maximum-reduces-payment -->
+### When a remaining maximum reduces payment
+> Retrieval context: CommonCare Self-Funded Dental Plan — 6. Claims calculation > When a remaining maximum reduces payment
+
+Using the same crown (\$1,400 charge, \$1,050 approved price, \$750 uncapped plan payment), either remaining maximum can reduce the benefit:
+
+#### \$400
+<!-- record_id: plan.self-funded-dental.6-claims-calculation-when-a-remaining-maximum-reduces-payment.400; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — 6. Claims calculation > When a remaining maximum reduces payment
+- Individual remaining: \$400
+- Family remaining: \$900
+- Plan payment: \$400
+- Participant share of approved price: \$650
+- Possible balance bill: \$350
+- Total participant responsibility if balance-billed: \$1,000
+
+#### \$900
+<!-- record_id: plan.self-funded-dental.6-claims-calculation-when-a-remaining-maximum-reduces-payment.900; record_type: table-row -->
+- Context: CommonCare Self-Funded Dental Plan — 6. Claims calculation > When a remaining maximum reduces payment
+- Individual remaining: \$900
+- Family remaining: \$200
+- Plan payment: \$200
+- Participant share of approved price: \$850
+- Possible balance bill: \$350
+- Total participant responsibility if balance-billed: \$1,200
+
+
+The plan payment is the smallest of \$750 and the two remaining maximums. The participant share of the approved price is \$1,050 minus the actual plan payment. The possible balance bill is the separate \$350 difference between the provider charge and approved price; it is zero if the provider accepts \$1,050 as payment in full. These examples apply the benefit formula above and do not change the deductible or caps.
 
 <!-- record_id: plan.self-funded-dental.7-cap-aware-pricing-model -->
 ## 7. Cap-aware pricing model

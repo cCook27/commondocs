@@ -5,8 +5,8 @@ kind: vector-store-source
 schema_version: "1.0"
 source_document: plan-structures/choice-ichra/human-readable.md
 metadata_document: plan-structures/choice-ichra/metadata.yaml
-source_commit: 2b6ee17093e27a00afc6b54c86f6f2a244e9acd9
-source_sha256: dacefe6afd0828ff6fa290ee178580d42b633b02f96c3e64000ad2e4aba0c1de
+source_commit: 1eb6e3d61a4ca5c61bdd1fa63c92983bdfdc9132
+source_sha256: 31254922c3644bb23f89d77e1b4d92739ebb6a8aa8cabe68791f6992b7c9e1ee
 metadata_sha256: 9b769bd2d50959f57bfb1171245902f69217a5d83d81470045364dd1d8325bb9
 generation_method: deterministic-markdown-conversion
 canonical_source: false
@@ -370,6 +370,8 @@ IRS Notice 2015-87 calls an amount meeting these conditions a **health flex cont
 <!-- record_id: product.choice.how-this-works-with-the-ichra-calculation -->
 #### How this works with the ICHRA calculation
 > Retrieval context: CHOICE — Flex credits and health-flex credits > Health-flex credit > How this works with the ICHRA calculation
+
+**LCSP** means the *lowest-cost silver plan*. For the ICHRA required-HRA-contribution calculation, the baseline benchmark is self-only Exchange coverage for the employee in the rating area where the employee resides. This differs from the **SLCSP** (*second-lowest-cost silver plan*) used to calculate the Marketplace premium tax credit for the applicable coverage family. Use the benchmark required by the calculation; neither abbreviation means the premium of the plan the participant actually selects. Employer safe-harbor rules, when applicable, are addressed separately below. [26 CFR §1.36B-2(c)(5)(ii)](https://www.ecfr.gov/current/title-26/chapter-I/subchapter-A/part-1/subject-group-ECFRcb39f040b41b74b/section-1.36B-2) · [IRS Form 8962 instructions, “Applicable SLCSP premium”](https://www.irs.gov/instructions/i8962)
 
 The later ICHRA rules add a specific first-stage calculation. Under §1.36B-2(c)(5), the employee's **required HRA contribution** begins as:
 

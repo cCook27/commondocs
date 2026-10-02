@@ -5,8 +5,8 @@ kind: vector-store-source
 schema_version: "1.0"
 source_document: plan-structures/common-funds/human-readable.md
 metadata_document: plan-structures/common-funds/metadata.yaml
-source_commit: 75ce68a53bf402b26e564185d83f1c9b7db858b4
-source_sha256: 7bf3f2debce66346654a90504856a760fe8a5b2fa25d953ddcd6d2945d40b95b
+source_commit: cb2d724e1710d1f2b6a9ba282c6d05c10dab29f6
+source_sha256: e16c82253e0b0d0b60add887f580c73976e8673f34b4fadb3b1951e2e6025513
 metadata_sha256: ec2da998690975e56cbbb2bd3f6e342a3faf67c8c52304eb46facc31c41c1c61
 generation_method: deterministic-commonfunds-split-conversion
 canonical_source: false
