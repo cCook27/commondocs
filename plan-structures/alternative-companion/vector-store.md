@@ -5,8 +5,8 @@ kind: vector-store-source
 schema_version: "1.0"
 source_document: plan-structures/alternative-companion/human-readable.md
 metadata_document: plan-structures/alternative-companion/metadata.yaml
-source_commit: 75ce68a53bf402b26e564185d83f1c9b7db858b4
-source_sha256: d021e606e997c468b42cd6695e68c89842a9075a63b76f949b2059756fa4351f
+source_commit: b07a3f23dbb4e7c65f6e91ba7f805450a528c20a
+source_sha256: c626174e68e559edc1843ab261073984dfeb9aebbf90de53c5b4442fe6e8cad5
 metadata_sha256: da5e6b0b873fa5932441cf208b9b3c7cf3175df9b6397c0e10188ada317567a7
 generation_method: deterministic-markdown-conversion
 canonical_source: false
@@ -23,16 +23,18 @@ last_reviewed: 2026-10-01
 ## Private alternative options alongside an employer plan
 > Retrieval context: Private Alternatives Alongside an Employer Plan — Private alternative options alongside an employer plan
 
-> **A defined employer plan and genuine individual choice can coexist.** CommonCare keeps the employer's plan within the employer-plan rules while giving employees a separate, post-tax path to private options the employer does not sponsor.
+> **An employer can sponsor a health plan without making that plan the price of admission to every other healthcare option.** Alternative Companion gives employees a separate, post-tax path to health shares, CrowdHealth-style models, and other private alternatives the employer does not sponsor.
 
-Employer-sponsored health plans are useful, but they are not the only way to finance or obtain healthcare. Some employees can achieve substantially better outcomes through an individual policy, health sharing arrangement, direct-care membership, cash-pay strategy, or another private solution.
+In practice, the alternatives employees ask about are not an abstract universe of experimental products. They are usually health care sharing ministries, secular medical-cost-sharing communities, CrowdHealth-style crowdfunding and member-support models, and the cash-pay care strategies that accompany them.
 
-CommonCare makes those choices visible without turning every visible choice into an employer benefit.
+For relatively healthy households that understand the rules, these options can be extremely compelling: dramatically lower fixed cost, no provider network, direct cash-price purchasing, and a pool whose membership and incentives may be more favorable to them than an ACA insurance pool.
+
+CommonCare makes those choices as easy to examine and administer as traditional options without turning them into employer benefits. The employer's position is simple: **these are not our plans, but employment here does not require pretending our plans are your only choices.**
 
 > [!Important]
 > This companion plan structure works alongside any type of employer plan for any size of employer
 
-This document is the canonical source for employer neutrality, nonsponsorship, voluntary access, and post-tax payment of independently selected options. It does not replace:
+This document is the canonical source for employer neutrality, non-sponsorship, voluntary access, and post-tax payment of independently selected options. It does not replace:
 
 - The [Premium Tax Credit Plan](../ptc-plan/human-readable.md), which controls PTC eligibility, MEC offer-and-enrollment rules, non-ALE strategy, and Marketplace-specific administration; or
 - [CommonFunds](../common-funds/human-readable.md), which controls EBHRA, Health FSA, ICHRA, allowance classification, account limits, and claims availability.
@@ -53,17 +55,41 @@ This document is the canonical source for employer neutrality, nonsponsorship, v
 - Question: Can employees choose something else?
 - CommonCare treatment: Yes, through a clearly separate voluntary marketplace or by selecting their own option
 
+#### Which alternatives are principally in scope?
+<!-- record_id: product.alternative-companion.at-a-glance.which-alternatives-are-principally-in-scope; record_type: table-row -->
+- Context: Private Alternatives Alongside an Employer Plan — At a glance
+- Question: Which alternatives are principally in scope?
+- CommonCare treatment: Health shares, CrowdHealth-style medical-cost communities, and their associated cash-pay care strategies
+
 #### Does the employer recommend private alternatives?
 <!-- record_id: product.alternative-companion.at-a-glance.does-the-employer-recommend-private-alternatives; record_type: table-row -->
 - Context: Private Alternatives Alongside an Employer Plan — At a glance
 - Question: Does the employer recommend private alternatives?
 - CommonCare treatment: No
 
+#### Why would an employer resist access?
+<!-- record_id: product.alternative-companion.at-a-glance.why-would-an-employer-resist-access; record_type: table-row -->
+- Context: Private Alternatives Alongside an Employer Plan — At a glance
+- Question: Why would an employer resist access?
+- CommonCare treatment: Usually to retain healthier people in the employer risk pool or because the employer believes the alternative is unacceptably risky or inferior
+
 #### Does CommonCare sell or receive product commissions?
 <!-- record_id: product.alternative-companion.at-a-glance.does-commoncare-sell-or-receive-product-commissions; record_type: table-row -->
 - Context: Private Alternatives Alongside an Employer Plan — At a glance
 - Question: Does CommonCare sell or receive product commissions?
 - CommonCare treatment: No; options are compared using the same disclosed analytical framework
+
+#### Can the employer sign a group, list-bill, or employer-rate agreement for the private option?
+<!-- record_id: product.alternative-companion.at-a-glance.can-the-employer-sign-a-group-list-bill-or-employer-rate-agreement-for-t; record_type: table-row -->
+- Context: Private Alternatives Alongside an Employer Plan — At a glance
+- Question: Can the employer sign a group, list-bill, or employer-rate agreement for the private option?
+- CommonCare treatment: Not within this structure; employer negotiation, selection, contracting, or contribution creates evidence of sponsorship and defeats the intended separation
+
+#### Can CommonCare obtain broadly available member pricing?
+<!-- record_id: product.alternative-companion.at-a-glance.can-commoncare-obtain-broadly-available-member-pricing; record_type: table-row -->
+- Context: Private Alternatives Alongside an Employer Plan — At a glance
+- Question: Can CommonCare obtain broadly available member pricing?
+- CommonCare treatment: Yes, when the pricing belongs to CommonCare's membership population and is not negotiated for or conditioned on employment with a particular employer
 
 #### How are employee payments handled?
 <!-- record_id: product.alternative-companion.at-a-glance.how-are-employee-payments-handled; record_type: table-row -->
@@ -96,58 +122,19 @@ This document is the canonical source for employer neutrality, nonsponsorship, v
 - CommonCare treatment: Yes; qualified employer benefits remain governed by their own documents while the private option remains separate and employee funded
 
 
-<!-- record_id: product.alternative-companion.choose-the-correct-structure -->
-## Choose the correct structure
-> Retrieval context: Private Alternatives Alongside an Employer Plan — Choose the correct structure
-
-#### PTC Plan
-<!-- record_id: product.alternative-companion.choose-the-correct-structure.ptc-plan; record_type: table-row -->
-- Context: Private Alternatives Alongside an Employer Plan — Choose the correct structure
-- Structure: **PTC Plan**
-- Coverage being supported: Marketplace qualified health plan selected by the employee
-- Employer premium funding: No premium reimbursement; only unrestricted taxable wages may ultimately be used
-- PTC treatment: Designed to preserve PTC when the employee is otherwise eligible and declines employer MEC
-- Canonical document: [Premium Tax Credit Plan](../ptc-plan/human-readable.md)
-
-#### Alternative Companion
-<!-- record_id: product.alternative-companion.choose-the-correct-structure.alternative-companion; record_type: table-row -->
-- Context: Private Alternatives Alongside an Employer Plan — Choose the correct structure
-- Structure: **Alternative Companion**
-- Coverage being supported: Independent insurance, health sharing, direct care, cash-pay strategy, or another nonsponsored option
-- Employer premium funding: None; employee post-tax money only
-- PTC treatment: Depends on the selected coverage and the employee's separate PTC facts
-- Canonical document: This document
-
-#### CHOICE/ICHRA
-<!-- record_id: product.alternative-companion.choose-the-correct-structure.choice-ichra; record_type: table-row -->
-- Context: Private Alternatives Alongside an Employer Plan — Choose the correct structure
-- Structure: **CHOICE/ICHRA**
-- Coverage being supported: Qualifying individual insurance integrated with an employer ICHRA
-- Employer premium funding: Employer HRA reimbursement under the ICHRA
-- PTC treatment: Acceptance eliminates PTC for the same month; an affordable ICHRA offer can also block PTC
-- Canonical document: [CHOICE](../choice-ichra/human-readable.md)
-
-#### CommonFunds
-<!-- record_id: product.alternative-companion.choose-the-correct-structure.commonfunds; record_type: table-row -->
-- Context: Private Alternatives Alongside an Employer Plan — Choose the correct structure
-- Structure: **CommonFunds**
-- Coverage being supported: Account-based expenses under an EBHRA, Health FSA, or ICHRA
-- Employer premium funding: Determined component by component
-- PTC treatment: PTC pathway uses only excepted components and never reimburses the Marketplace major-medical premium
-- Canonical document: [CommonFunds](../common-funds/human-readable.md)
-
-
 <!-- record_id: product.alternative-companion.navigate-this-document -->
 ## Navigate this document
 > Retrieval context: Private Alternatives Alongside an Employer Plan — Navigate this document
 
-- [Why preserve a private path](#why-preserve-a-private-path)
+- [What Alternative Companion is actually for](#what-alternative-companion-is-actually-for)
+- [The two reasons employers resist](#the-two-reasons-employers-resist)
 - [Who may benefit](#who-may-benefit)
 - [The legal boundary](#the-legal-boundary)
 - [The DOL voluntary-program safe harbor](#the-dol-voluntary-program-safe-harbor)
 - [What endorsement means](#what-endorsement-means)
 - [PTC, MEC, and HSA boundaries](#ptc-mec-and-hsa-boundaries)
 - [How CommonCare separates the two environments](#how-commoncare-separates-the-two-environments)
+- [Why group and list-bill arrangements are the wrong shortcut](#why-group-and-list-bill-arrangements-are-the-wrong-shortcut)
 - [Employer benefits alongside private choice](#employer-benefits-alongside-private-choice)
 - [Payroll and employer allowances](#payroll-and-employer-allowances)
 - [How options are evaluated](#how-options-are-evaluated)
@@ -160,22 +147,61 @@ This document is the canonical source for employer neutrality, nonsponsorship, v
 ## Part I — Why preserve a private path
 > Retrieval context: Private Alternatives Alongside an Employer Plan — Part I — Why preserve a private path
 
-<!-- record_id: product.alternative-companion.the-missing-market -->
-## The missing market
-> Retrieval context: Private Alternatives Alongside an Employer Plan — Part I — Why preserve a private path > The missing market
+<!-- record_id: product.alternative-companion.what-alternative-companion-is-actually-for -->
+## What Alternative Companion is actually for
+> Retrieval context: Private Alternatives Alongside an Employer Plan — Part I — Why preserve a private path > What Alternative Companion is actually for
 
-American healthcare has built an enormous regulated market around employer plans, insurance networks, public subsidies, tax preferences, mandated benefits, risk adjustment, and prescribed methods of cost sharing.
+Alternative Companion exists to correct one practical failure of employer benefits: an employee can choose only the products the employer is willing to sponsor, or leave the benefits system and assemble an alternative alone.
 
-What is missing is not another variation of the same structure. What is missing is a healthy private market in which people can:
+That failure matters because health shares and CrowdHealth-style models do not merely offer a different insurance card. They can create a substantially different healthcare experience:
 
-- Compare price with value;
-- Understand what they are buying;
-- Reward providers and organizations that perform well;
-- Reject products that perform poorly;
-- Spend their own money with ordinary consumer competence; and
-- Use structures that do not depend on navigating one regulatory incentive after another.
+- Lower monthly fixed costs for households that fit the membership rules;
+- Broad provider access without a carrier network;
+- Direct negotiation and cash-price purchasing;
+- More visibility into the relationship between a medical bill and the money used to pay it;
+- Member eligibility or lifestyle rules that can produce a differently composed risk pool;
+- Greater personal responsibility for routine and manageable expenses; and
+- Community support or crowdfunding for larger eligible needs.
 
-CommonCare's declarative position is that healthcare needs more fully private solutions—not because regulation has no purpose, but because regulation cannot substitute for price sensitivity, understandable transactions, and accountable consumer choice.
+Health shares are generally not insurance. CrowdHealth-style models may not make an insurance promise or operate as a health care sharing ministry. Their agreements can limit pre-existing conditions, define eligible needs differently, rely on member funding, or reserve discretion that an insurance policy does not reserve in the same way. Those differences are material and must be explained.
+
+They are not, however, the end of the analysis. Insurance presents a different package of risks: premium is a guaranteed expense; networks constrain provider choice; prior authorization and claim adjudication can delay or deny payment; and routine care is routed through a structure that weakens price sensitivity and adds administrative cost.
+
+> **“Not insurance” tells a participant what legal structure the product does not use. It does not tell the participant whether the product is a good value.**
+
+CommonCare's role is to make the comparison possible, not to sell the alternative. The participant should be able to compare the employer plan, a health share, a CrowdHealth-style option, and any compatible direct-care strategy with the same seriousness.
+
+<!-- record_id: product.alternative-companion.the-two-reasons-employers-resist -->
+## The two reasons employers resist
+> Retrieval context: Private Alternatives Alongside an Employer Plan — Part I — Why preserve a private path > The two reasons employers resist
+
+When an employer does not want employees to see or select a private alternative, the objection usually reduces to one of two positions. Both can be argued. Neither should remain hidden.
+
+<!-- record_id: product.alternative-companion.1-the-employer-wants-healthier-employees-inside-the-employer-plan -->
+### 1. The employer wants healthier employees inside the employer plan
+> Retrieval context: Private Alternatives Alongside an Employer Plan — Part I — Why preserve a private path > The two reasons employers resist > 1. The employer wants healthier employees inside the employer plan
+
+Employer-plan premiums and renewals depend in part on the claims performance or expected risk of the group. If relatively healthy employees leave for lower-cost alternatives while higher-cost employees remain, the employer plan may become more expensive.
+
+Retaining lower-risk employees to subsidize higher-risk employees is therefore a coherent risk-pool strategy. It is also a redistribution decision. The employer is asking one group of employees to accept higher fixed costs or a less suitable product so that another group can obtain more affordable pooled coverage.
+
+Employers are often uncomfortable stating the decision in those terms. Instead, they describe the single-plan approach as fairness, safety, or generosity. That rhetorical move is the real problem. It hides the financial purpose from the people bearing its cost and makes an employer-selected insurance pool look morally neutral.
+
+CommonCare's position is that businesses should be cautious about taking responsibility for equalizing healthcare outcomes through compulsory participation in one financing structure. Equal access, equal employer contribution, equal insurance enrollment, and equal health outcomes are different objectives. Pursuing one can produce very unequal consequences under another.
+
+An employer may still decide that preserving the group pool is worth limiting alternatives. If so, it should make that decision consciously, quantify the effect, and communicate the tradeoff honestly.
+
+<!-- record_id: product.alternative-companion.2-the-employer-believes-alternatives-are-an-unacceptable-risk -->
+### 2. The employer believes alternatives are an unacceptable risk
+> Retrieval context: Private Alternatives Alongside an Employer Plan — Part I — Why preserve a private path > The two reasons employers resist > 2. The employer believes alternatives are an unacceptable risk
+
+The second position is paternalistic in the literal sense: the employer believes some employees will choose badly unless the employer withholds or discourages the alternative.
+
+That judgment may be reasonable for a particular product or person. Someone with active expensive treatment, little ability to absorb an unpaid bill, or a need for a benefit excluded by the alternative may be poorly served by leaving regulated major medical coverage. A product with weak reserves, vague rules, poor administration, or a bad payment record should not receive a polite pass because it calls itself a community.
+
+But the standard must run both ways. It is odd to call neutral access to a health share “pushy” while presenting employer-selected insurance as a factually safe default after years of premium escalation, network disruption, prior authorization, opaque pricing, and highly public claim disputes. A legal payment promise is valuable. It is not the same thing as certainty, affordability, or a frictionless claim experience.
+
+CommonCare does not require the employer to endorse a health share. It prevents the employer's unexamined preference for insurance from becoming the employee's only administratively realistic choice.
 
 > **Price sensitivity is not hostility to care. It is one of the forces that makes useful care available at sustainable prices.**
 
@@ -185,15 +211,15 @@ CommonCare's declarative position is that healthcare needs more fully private so
 
 Maintaining a separate private path adds work. The population that benefits may be smaller than the population served by the employer plan. That does not make the work immaterial.
 
-For the right participant, the difference can be substantial:
+For the right participant—often a relatively healthy household comfortable with active healthcare purchasing—the difference can be substantial:
 
 - Hundreds of dollars per month in lower fixed cost;
-- Direct access to physicians without network friction;
+- Networkless access to physicians and facilities willing to accept the member as a cash-pay patient;
 - Better cash prices for routine and planned care;
 - A structure aligned with the participant's actual health needs;
 - Freedom from paying for benefits the participant does not value;
 - More control over providers, treatment, and timing; or
-- A better combination of catastrophic protection, direct care, savings, and voluntary sharing.
+- A better combination of personal reserves, direct care, negotiated bills, and community funding for larger eligible needs.
 
 The relevant question is not whether a private alternative is best for everyone. It is whether the value for the people it fits is large enough to justify making an informed choice possible. Often it is.
 
@@ -214,7 +240,7 @@ Private alternatives are most likely to deserve serious consideration when a par
 
 They may be a poor fit when a participant needs guaranteed access to expensive ongoing treatment, depends on a particular protected benefit, cannot absorb payment uncertainty, or simply prefers the regulatory and contractual guarantees of insurance.
 
-This is why CommonCare analyzes rather than evangelizes.
+This is why CommonCare analyzes rather than sells. It is not why CommonCare should treat insurance as the presumed winner.
 
 ---
 
@@ -464,6 +490,45 @@ When an employee selects an independent option:
 - The provider receives the employee's money through remittance or direct payment; and
 - Product service, claims, sharing, and disputes remain between the participant and provider.
 
+<!-- record_id: product.alternative-companion.why-group-and-list-bill-arrangements-are-the-wrong-shortcut -->
+## Why group and list-bill arrangements are the wrong shortcut
+> Retrieval context: Private Alternatives Alongside an Employer Plan — Part III — The CommonCare structure > Why group and list-bill arrangements are the wrong shortcut
+
+Many health shares and private medical-cost communities offer a “group” channel, employer rate, association arrangement, or list-bill process. Those arrangements may look administratively convenient. They are a poor fit for Alternative Companion when the employer is the contracting or organizing party.
+
+The concern is not the word `group`. The concern is the employer's conduct. Evidence of sponsorship accumulates when an employer:
+
+- Negotiates or receives a rate available because of that employer's workforce;
+- Signs the product or billing agreement;
+- Selects which alternative will be offered;
+- Supplies an employer census for product pricing or eligibility;
+- Pays or guarantees the bill;
+- Contributes toward participation;
+- Collects one employer-level invoice and allocates it among employees;
+- Promotes the arrangement as part of the benefits package; or
+- Intervenes in membership, sharing, billing, or disputes.
+
+A post-tax label does not erase those facts. Nor does calling a product “voluntary” automatically place it outside the employer plan. The employer-payment-plan rules and the broader ERISA question look to the substance of the arrangement: what the employer established, maintained, funded, selected, or endorsed.
+
+<!-- record_id: product.alternative-companion.commoncare-membership-pricing-is-different -->
+### CommonCare membership pricing is different
+> Retrieval context: Private Alternatives Alongside an Employer Plan — Part III — The CommonCare structure > Why group and list-bill arrangements are the wrong shortcut > CommonCare membership pricing is different
+
+CommonCare may obtain pricing or access terms for the population of CommonCare members as a whole. That relationship is not negotiated for a particular employer, does not depend on a particular employment relationship, and is not presented as an employer group option.
+
+The employee receives access because the employee is using CommonCare—not because the employer contracted with the health share or private community. The same path can remain available if the employee changes jobs, subject to the provider's and CommonCare's applicable terms.
+
+CommonCare then administers the individual transaction separately:
+
+1. The employee voluntarily opens the independent marketplace;
+2. CommonCare—not the employer—provides the comparison and product administration;
+3. The employee accepts the provider's agreement directly;
+4. Payment uses the employee's post-tax money;
+5. Any payroll remittance is separately identified as an employee deduction; and
+6. The employer receives no product-specific role, compensation, claim information, or authority.
+
+> **Alternative Companion is not an employer group health-share program. It is the administrative path that makes an employer group program unnecessary.**
+
 <!-- record_id: product.alternative-companion.employer-benefits-alongside-private-choice -->
 ## Employer benefits alongside private choice
 > Retrieval context: Private Alternatives Alongside an Employer Plan — Part III — The CommonCare structure > Employer benefits alongside private choice
@@ -657,63 +722,125 @@ Equal analysis does not mean pretending the products are identical.
 <!-- record_id: product.alternative-companion.part-v-decision-quality-how-options-are-evaluated.regulatory-status; record_type: table-row -->
 - Context: Private Alternatives Alongside an Employer Plan — Part V — Decision quality > How options are evaluated
 - Dimension: Regulatory status
-- Employer insurance: Employer-sponsored group coverage
-- Private alternative: Individual contract or membership
+- Employer insurance: Employer-sponsored group insurance or insured employer plan
+- Health share or CrowdHealth-style alternative: Individual membership, sharing, crowdfunding, or member-support arrangement; often not insurance
+
+#### Fixed cost
+<!-- record_id: product.alternative-companion.part-v-decision-quality-how-options-are-evaluated.fixed-cost; record_type: table-row -->
+- Context: Private Alternatives Alongside an Employer Plan — Part V — Decision quality > How options are evaluated
+- Dimension: Fixed cost
+- Employer insurance: Premium is owed regardless of claims and is permanently spent
+- Health share or CrowdHealth-style alternative: Membership or contribution is often materially lower, but varies by age, household, rules, and selected support level
 
 #### Payment promise
 <!-- record_id: product.alternative-companion.part-v-decision-quality-how-options-are-evaluated.payment-promise; record_type: table-row -->
 - Context: Private Alternatives Alongside an Employer Plan — Part V — Decision quality > How options are evaluated
 - Dimension: Payment promise
-- Employer insurance: Governed by policy and insurance law
-- Private alternative: Governed by the option's actual agreement
+- Employer insurance: Governed by the policy, insurance law, coverage definitions, medical-necessity rules, and claims process
+- Health share or CrowdHealth-style alternative: Governed by the actual member agreement; payment or sharing may not be an insurance guarantee
 
 #### Pre-existing conditions
 <!-- record_id: product.alternative-companion.part-v-decision-quality-how-options-are-evaluated.pre-existing-conditions; record_type: table-row -->
 - Context: Private Alternatives Alongside an Employer Plan — Part V — Decision quality > How options are evaluated
 - Dimension: Pre-existing conditions
-- Employer insurance: Generally protected under ACA rules
-- Private alternative: May be limited or excluded
+- Employer insurance: Generally covered under ACA rules
+- Health share or CrowdHealth-style alternative: Commonly excluded, limited, or phased in under product-specific rules
 
 #### Maximum exposure
 <!-- record_id: product.alternative-companion.part-v-decision-quality-how-options-are-evaluated.maximum-exposure; record_type: table-row -->
 - Context: Private Alternatives Alongside an Employer Plan — Part V — Decision quality > How options are evaluated
 - Dimension: Maximum exposure
-- Employer insurance: Usually contractually capped for covered in-network essential benefits
-- Private alternative: May be capped, shared, limited, discretionary, or uncapped
+- Employer insurance: Usually contractually capped for covered in-network essential benefits; premium, noncovered care, and balance bills remain outside that cap
+- Health share or CrowdHealth-style alternative: May use an initial unshareable amount, per-need thresholds, member responsibility, sharing limits, or uncapped exposure
 
 #### Provider access
 <!-- record_id: product.alternative-companion.part-v-decision-quality-how-options-are-evaluated.provider-access; record_type: table-row -->
 - Context: Private Alternatives Alongside an Employer Plan — Part V — Decision quality > How options are evaluated
 - Dimension: Provider access
-- Employer insurance: Usually network-dependent
-- Private alternative: May use cash pricing, direct contracts, broad access, or its own limitations
+- Employer insurance: Usually network-dependent, with different rules or no coverage outside the network
+- Health share or CrowdHealth-style alternative: Commonly networkless; member obtains cash prices and may receive negotiation or payment support
+
+#### Routine care
+<!-- record_id: product.alternative-companion.part-v-decision-quality-how-options-are-evaluated.routine-care; record_type: table-row -->
+- Context: Private Alternatives Alongside an Employer Plan — Part V — Decision quality > How options are evaluated
+- Dimension: Routine care
+- Employer insurance: Frequently routed through carrier contracts and claims systems
+- Health share or CrowdHealth-style alternative: Commonly paid directly, through membership benefits, or retained by the household
 
 #### Price sensitivity
 <!-- record_id: product.alternative-companion.part-v-decision-quality-how-options-are-evaluated.price-sensitivity; record_type: table-row -->
 - Context: Private Alternatives Alongside an Employer Plan — Part V — Decision quality > How options are evaluated
 - Dimension: Price sensitivity
-- Employer insurance: Often obscured by premium and claims administration
-- Private alternative: Frequently more direct and visible
+- Employer insurance: Often obscured by premium, contracted rates, and claims administration
+- Health share or CrowdHealth-style alternative: More direct because the member, community, or advocate sees and negotiates the bill
+
+#### Pool incentives
+<!-- record_id: product.alternative-companion.part-v-decision-quality-how-options-are-evaluated.pool-incentives; record_type: table-row -->
+- Context: Private Alternatives Alongside an Employer Plan — Part V — Decision quality > How options are evaluated
+- Dimension: Pool incentives
+- Employer insurance: Guaranteed-issue pool with broad required coverage and limited health underwriting
+- Health share or CrowdHealth-style alternative: Membership rules and pre-existing-condition treatment may reduce adverse selection and lower fixed cost for people who qualify
+
+#### Failure mode
+<!-- record_id: product.alternative-companion.part-v-decision-quality-how-options-are-evaluated.failure-mode; record_type: table-row -->
+- Context: Private Alternatives Alongside an Employer Plan — Part V — Decision quality > How options are evaluated
+- Dimension: Failure mode
+- Employer insurance: Premium escalation, network change, authorization, exclusion, denial, or coverage dispute
+- Health share or CrowdHealth-style alternative: Ineligible need, sharing limitation, insufficient community funding, discretionary decision, or organizational failure
 
 #### Employer role
 <!-- record_id: product.alternative-companion.part-v-decision-quality-how-options-are-evaluated.employer-role; record_type: table-row -->
 - Context: Private Alternatives Alongside an Employer Plan — Part V — Decision quality > How options are evaluated
 - Dimension: Employer role
 - Employer insurance: Sponsor and administrator
-- Private alternative: None
+- Health share or CrowdHealth-style alternative: None under Alternative Companion
 
 
-CommonCare models the option that actually exists. It does not penalize a private arrangement merely because it is not insurance, and it does not award it imaginary guarantees it does not provide.
+CommonCare models the option that actually exists. It does not penalize a private arrangement merely because it is not insurance, and it does not award it imaginary guarantees it does not provide. It also does not treat insurance's legal form as proof that the participant will receive affordable, timely, network-accessible care.
+
+<!-- record_id: product.alternative-companion.commoncare-shop-bias -->
+### CommonCare shop bias
+> Retrieval context: Private Alternatives Alongside an Employer Plan — Part V — Decision quality > How options are evaluated > CommonCare shop bias
+
+CommonCare deliberately corrects for the ordinary shopping bias that treats insurance as the safe default and every alternative as a deviation requiring special defense.
+
+The comparison begins with total expected cost. CommonCare simulates realistic medical bills for each household member across many possible years and applies each option's actual rules. For insurance, that includes premium, deductible, copays, coinsurance, covered services, maximum out-of-pocket rules, and network assumptions. For a private alternative, it includes membership cost, the member's initial responsibility, eligibility rules, sharing limits, direct-pay expenses, and any expenses the agreement leaves with the member.
+
+Premium must remain visible as risk. It is a certain expense, not the absence of expense. A participant should not be told that a `\$20,000` premium is “safe” while a possible `\$10,000` unshared bill is uniquely dangerous without comparing probability, total exposure, liquidity, and the value actually received.
+
+The simulation does not settle qualitative questions. Provider access, payment timing, service quality, member support, organizational reserves, discretion, and the participant's ability to navigate cash-pay care still matter. CommonCare exposes those issues rather than burying them beneath a metal level or actuarial-value label.
 
 <!-- record_id: product.alternative-companion.health-sharing-in-particular -->
 ## Health sharing in particular
 > Retrieval context: Private Alternatives Alongside an Employer Plan — Part V — Decision quality > Health sharing in particular
 
-Health sharing commonly offers lower fixed costs and more understandable rules for people who fit its eligibility model. It may exclude or limit pre-existing conditions, impose lifestyle or membership standards, lack a contractual insurance guarantee, and depend on available member contributions.
+Health sharing commonly offers lower fixed costs and more understandable rules for people who fit its eligibility model. Many programs exclude active pre-existing conditions for a period, phase in sharing over time, impose lifestyle or membership standards, lack a contractual insurance guarantee, and depend on available member contributions.
 
 Those are genuine tradeoffs—not a reason to pretend the arrangement has no value.
 
-Insurance carries different risks: expensive fixed premiums, opaque adjudication, network restrictions, prior authorization, and claims that can be delayed or denied. “Not insurance” identifies the legal structure; it does not decide comparative performance.
+Insurance carries different risks: expensive fixed premiums, opaque adjudication, network restrictions, prior authorization, and claims that can be delayed or denied. Those are not theoretical footnotes. They are part of the product's actual performance. “Not insurance” identifies the legal structure; it does not decide comparative value.
+
+<!-- record_id: product.alternative-companion.crowdhealth-style-models -->
+### CrowdHealth-style models
+> Retrieval context: Private Alternatives Alongside an Employer Plan — Part V — Decision quality > Health sharing in particular > CrowdHealth-style models
+
+CrowdHealth-style communities are not necessarily health care sharing ministries and should not inherit that label automatically. Their structure may combine a monthly membership, a member-funded community, bill negotiation, direct cash payment, crowdfunding, and support for navigating larger medical events.
+
+The attraction is similar but not identical to health sharing. The participant may receive broad provider freedom and active bill advocacy without buying a carrier network. The community may fund eligible large needs while leaving routine care and defined member responsibilities outside the pool.
+
+The evaluation must follow the actual agreement:
+
+- What makes a bill eligible for community funding;
+- Whether funding is guaranteed, discretionary, or dependent on available contributions;
+- How pre-membership and pre-existing conditions are handled;
+- What the member pays before community support begins;
+- Whether any need, annual, or lifetime limits apply;
+- How bills are negotiated and paid;
+- What happens when a provider requires money before treatment;
+- What financial information and payment history are published; and
+- What recourse exists when the community declines or cannot fund a need.
+
+For a healthy household with reserves and comfort using cash-pay care, this structure can be exceptionally attractive. For a household with active high-cost treatment or little capacity to absorb a payment delay, the same structure can be a poor fit. The person-specific answer is the point.
 
 A participant considering health sharing should be shown:
 
@@ -725,6 +852,8 @@ A participant considering health sharing should be shown:
 - Published financial and payment information;
 - The process for disputed or unshared expenses; and
 - A direct comparison with the employer-sponsored options available to that participant.
+
+The same disclosure discipline applies to CrowdHealth-style products, using their own terminology rather than implying an insurance policy or ministry structure that does not exist.
 
 <!-- record_id: product.alternative-companion.participant-disclosures -->
 ## Participant disclosures
@@ -780,6 +909,8 @@ For every independent option shown or administered, CommonCare should retain:
 - [ ] Prohibit employer recommendations and product-specific promotion.
 - [ ] Confirm that participation is completely voluntary.
 - [ ] Confirm that the employer contributes nothing to the independent option.
+- [ ] Do not use an employer-specific group rate, list bill, employer contract, employer census, or employer guarantee for the independent option.
+- [ ] Confirm that any CommonCare member pricing is available through CommonCare independently of employment with the sponsoring employer.
 - [ ] Treat payroll deductions as post-tax employee deductions.
 - [ ] Prohibit Section 125 payment of Marketplace Exchange QHP premiums.
 - [ ] Pay any broadly available employer amount as unconditional taxable wages before the employee's private purchase.
