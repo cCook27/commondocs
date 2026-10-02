@@ -1,6 +1,6 @@
 ## Private alternative options alongside an employer plan
 
-> **An employer can sponsor a health plan without making that plan the price of admission to every other healthcare option.** Alternative Companion gives employees a separate, post-tax path to health shares, Crowdfunded models, and other private alternatives the employer does not sponsor.
+> **An employer can sponsor a health plan without making that plan the price of admission to every other healthcare option.** Alternative Companion gives employees a separate, post-tax path to health shares, crowdfunded models, and other private alternatives the employer does not sponsor.
 
 In practice, the alternatives employees ask about are not an abstract universe of experimental products. They are usually health care sharing ministries, secular medical-cost-sharing communities, CrowdHealth-style crowdfunding and member-support models, and the cash-pay care strategies that accompany them.
 
@@ -39,17 +39,15 @@ This document is the canonical source for employer neutrality, non-sponsorship, 
 - [What Alternative Companion is actually for](#what-alternative-companion-is-actually-for)
 - [The two reasons employers resist](#the-two-reasons-employers-resist)
 - [Who may benefit](#who-may-benefit)
-- [The legal boundary](#the-legal-boundary)
+- [The legal boundary](#part-ii--the-legal-boundary)
 - [The DOL voluntary-program safe harbor](#the-dol-voluntary-program-safe-harbor)
 - [What endorsement means](#what-endorsement-means)
-- [PTC, MEC, and HSA boundaries](#ptc-mec-and-hsa-boundaries)
 - [How CommonCare separates the two environments](#how-commoncare-separates-the-two-environments)
 - [Why group and list-bill arrangements are the wrong shortcut](#why-group-and-list-bill-arrangements-are-the-wrong-shortcut)
-- [Employer benefits alongside private choice](#employer-benefits-alongside-private-choice)
-- [Payroll and employer allowances](#payroll-and-employer-allowances)
+- [Payroll and employer allowances](#part-iv--payroll-and-employer-allowances)
 - [How options are evaluated](#how-options-are-evaluated)
 - [Participant disclosures](#participant-disclosures)
-- [Operational specification](#operational-specification)
+- [Operational specification](#part-vi--operational-specification)
 
 ---
 
@@ -59,7 +57,7 @@ This document is the canonical source for employer neutrality, non-sponsorship, 
 
 Alternative Companion exists to correct one practical failure of employer benefits: an employee can choose only the products the employer is willing to sponsor, or leave the benefits system and assemble an alternative alone.
 
-That failure matters because health shares and crowdfunded models (like CrowdHealth - which is really the main option in this space, but we aren't here to speak for them) do not merely offer a different insurance card. They can create a substantially different healthcare experience:
+That failure matters because health shares and crowdfunded models—of which CrowdHealth is currently the most prominent example, though CommonCare does not speak for it—do not merely offer a different insurance card. They can create a substantially different healthcare experience:
 
 - Lower monthly fixed costs for households that fit the membership rules;
 - Broad provider access without a carrier network;
@@ -79,7 +77,7 @@ CommonCare's role is to make the comparison possible, not to sell the alternativ
 
 ## The two reasons employers resist
 
-When an employer does not want employees to see or select a private alternative, the objection usually reduces to one of two positions. Both can be good reasons. Both should be carefully measured by actual outcomes instead of sentiment. 
+When an employer does not want employees to see or select a private alternative, the objection usually reduces to one of two positions. Both can be good reasons. Both should be carefully measured by actual outcomes instead of sentiment.
 
 ### 1. The employer wants healthier employees inside the employer plan
 
@@ -89,7 +87,7 @@ Retaining lower-risk employees to subsidize higher-risk employees is therefore a
 
 Employers are often uncomfortable stating the decision in those terms. Instead, they describe the single-plan approach as fairness, safety, or generosity. That rhetorical move is the real problem. It hides the financial purpose from the people bearing its cost and makes an employer-selected insurance pool look like a moral decision.
 
-Who is equalizing the cost of care fair to? The conscientious healthcare consumer? The overactive consumer? The congenitally ill? There are complex questions involved, and it's a big deal to people. Taking a hard position where employees forfeit pay if they choose otherwise should warrant strong articulable justification.
+For whom is equalizing the cost of care fair: the conscientious healthcare consumer, the high-utilizing consumer, or the person born with an expensive condition? These are complex questions with substantial consequences. Taking a hard position under which employees forfeit compensation if they choose another path warrants a clear, articulable justification.
 
 Businesses should be cautious taking responsibility for equalizing healthcare outcomes through compulsory participation in one financing structure. Equal access, equal employer contribution, equal insurance enrollment, and equal health outcomes are different objectives. Pursuing one can produce very unequal consequences under another.
 
@@ -109,7 +107,7 @@ Allowing employees to select alternatives does not require the employer to endor
 
 ## Why the effort can be worthwhile
 
-Mostly because, if we can get past the above two concerns, there is no effort involved. It's simply declining to have the full employer allowance be "use-it-or-lose-it." 
+Once the two objections above are addressed, the employer does not need to sponsor or administer the alternative. Its central design decision is simply not to make the entire employer allowance use-it-or-lose-it within the sponsored plan. CommonCare performs the separate comparison and administration described below.
 
 For the right participant—often a relatively healthy household comfortable with active healthcare purchasing—the difference can be substantial:
 
@@ -125,19 +123,28 @@ The relevant question is not whether a private alternative is best for everyone.
 
 ## The question of compensation tied to health insurance preference
 
-Really, this question can be addressed well without regard to alternative coverage options. Employer health "benefits," which are just compensation to be used on healthcare, that are forfeit unless used toward healthcare, puts the employer in the position of incentivizing employees to choose a specific health insurance option. 
+> Here we digress into the philosophical and moral concerns that often dominate the conversation of "why employers control health insurance." A technical reader looking for implementation details may skip this section. For many people, these concerns are really the main concern involved in this document and discussion.
 
-They are saying: "When you work here, you get extra pay if you choose this health plan."
+The question of why employers should allow access to alternative solutions can be addressed without regard to any particular alternative. Employer health benefits are compensation designated for healthcare. When that compensation is forfeited unless it is used within the employer's plan, the employer is saying: **“When you work here, you get extra pay if you choose this health plan.”**
 
-It is highly questionable whether this is a natural top priority for incentivizing workers. Setting aside the work-related issues of performance, tenure, or otherwise, if we dive into employee consumer decisions and needs: employees need groceries, housing, clothing, power, education for their children—all of these are as critical as healthcare. Employees make choices in these categories that the employer would disagree with. No compensation is forfeit in the process.
+That is a strong condition to attach to compensation. Employees (and their families) need groceries, housing, clothing, power, transportation, and education. Employers may disagree with how employees spend money in every one of those categories, but the employee does not ordinarily forfeit compensation by making the “wrong” choice. It might be argued that every one of these categories has more impact on work performance than health insurance choice.
 
-Regarding health, as many employers say "we need our employees to be healthy to work," significant data exists to discover whether insured persons miss less work, or even have better health outcomes in general, and neither is the case. Furthermore, keeping a sleep log, improving diet, exercising, these are known, with zero uncertainty, to actually improve health outcomes and improve working capacity. We have never seen a compensation package that said "if you do these things, you'll get extra pay."
+Employers often defend the exception by saying, “We need our employees healthy enough to work.” Despite decades of research, enormous healthcare spending, and no shortage of opportunities to prove the point, no meaningful evidence establishes that more health insurance produces healthier employees, fewer missed workdays, or employees who can do more or better work. In fact, evidence is almost completely absent that health outcomes are improved by more health insurance at all.
 
-The goal of this section is to point out what an odd social norm it is that employees would choose a specific health insurance option or forfeit pay. It's a powerful norm. The ACA wrote it into law as a human right with unprecedented, sweeping, compulsory changes to the healthcare system and mandatory financing. The rhetoric around health insurance is human-rights oriented, despite the largest profit sector of our economy running it.
+The evidence most often offered for that proposition instead shows that more generous coverage causes people to consume more healthcare. That is not the same result. The RAND experiment found much higher consumption under free care but no improvement in average health outcomes. Its handful of favorable findings came from four of thirty measures within the poorest and sickest six percent of participants and combined unrelated outcomes such as blood-pressure control, vision, dental care, and a collection of “serious symptoms.” The Oregon Medicaid experiment likewise produced more consumption, more diagnoses, and more medication without statistically significant improvement in measured blood pressure, cholesterol, or blood sugar. Its labor analysis found no significant improvement in employment or earnings. Research specifically on missed work is observational, conflicting, and incapable of establishing that insurance caused better attendance. Even when the evidence isolates populations most plausibly expected to benefit from more healthcare services, it still comes up nearly empty on the broad health-and-work claim. ([RAND](https://www.rand.org/pubs/research_briefs/RB9174.html); [Oregon clinical outcomes](https://pubmed.ncbi.nlm.nih.gov/23635051/); [Oregon labor outcomes](https://www.nber.org/papers/w19547); [absence studies](https://pubmed.ncbi.nlm.nih.gov/16404205/), [2025](https://pubmed.ncbi.nlm.nih.gov/40345984/))
 
-Again, maintaining a health risk pool would be a valid reason to take this position, but doing so should mean:
-1. The risk pool is verified as "better-than-market" rate, or the benefit is actually backward.
-2. The employer knows how they profit from the endeavor. Otherwise, how is it a thing for the business to champion?
+There is abundant evidence that insurance changes who pays, how much care people consume, when they seek care, and how medical bills are distributed. Those may be important effects. They are not evidence that employer-sponsored insurance makes a workforce healthier or more capable. That crucial claim is continually asserted and conspicuously unproven.
+
+Meanwhile, exercise is known to improve function, sleep, and numerous health outcomes. Sleep, nutrition, stress, substance use, and daily habits have direct relationships with health and working capacity. Yet compensation packages do not ordinarily say, “Keep an exercise log, improve your diet, sleep eight hours, and receive extra pay.” ([CDC](https://www.cdc.gov/physical-activity-basics/health-benefits/adults.html))
+
+The point is not that employers should begin policing those choices. It is that requiring an employee to choose a specific health-insurance structure or forfeit pay is an odd and powerful social norm. The ACA wrote insurance more deeply into the legal and financial architecture of healthcare through compulsory rules, subsidies, required benefits, and employer obligations. Its rhetoric is frequently the rhetoric of human rights, while the mechanism remains a commercial financing industry operating inside a healthcare economy that consumed $5.3 trillion—18 percent of U.S. GDP—in 2024. That contradiction deserves examination, not reverence. ([CMS](https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-expenditure-data/historical))
+
+Maintaining a health risk pool is still a valid reason to restrict the compensation. But saying so should require the employer to establish two things:
+
+1. The risk pool has been verified as producing better-than-market value for the workforce; otherwise, preserving it may make the benefit backward.
+2. The employer knows what business or workforce objective it gains from the restriction and why that objective is worth compelling employees to finance it.
+
+Without those findings, how did equalizing healthcare financing become a business priority the employer is prepared to enforce through compensation? “We offer benefits” is not an answer. It is merely a description of the arrangement under question.
 
 ## Who may benefit
 
@@ -154,7 +161,7 @@ Private alternatives are most likely to deserve serious consideration when a par
 
 They may be a poor fit when a participant needs guaranteed access to expensive ongoing treatment, depends on a particular protected benefit, cannot absorb payment uncertainty, or simply prefers the regulatory and contractual guarantees of insurance.
 
-This is why CommonCare analyzes rather than sells products (CommonCare never take product commissions).
+This is why CommonCare analyzes rather than sells products. CommonCare never takes product commissions.
 
 ---
 
@@ -189,7 +196,7 @@ Department of Labor regulation 29 CFR §2510.3-1(j) excludes a group or group-ty
 The rule is unusually practical. It expressly permits a neutral employer to support voluntary access and post-tax payroll collection without converting the program into an employer plan.
 
 > [!IMPORTANT]
-> This safe harbor expressly addresses a program “offered by an insurer.” A health sharing ministry, direct-care membership, discount program, or other non-insurance arrangement does not become insurance by following it. For those products, CommonCare uses the same neutrality discipline to support the broader conclusion that the employer has not established or maintained the arrangement, but does not label the product as automatically protected by the insurance safe harbor. The DOL has "shaken down" a few health shares regarding employer plans and has cited these same rules and required the health shares to agree to a similar "disclosure" for employers who use them.
+> This safe harbor expressly addresses a program “offered by an insurer.” A health sharing ministry, direct-care membership, discount program, or other non-insurance arrangement does not become insurance by following it. For those products, CommonCare uses the same neutrality discipline to support the broader conclusion that the employer has not established or maintained the arrangement, but does not label the product as automatically protected by the insurance safe harbor. Any product-specific regulator agreement, disclosure requirement, or enforcement history must be reviewed separately rather than assumed to extend the insurance safe harbor.
 
 ## What endorsement means
 
@@ -286,7 +293,7 @@ When an employee selects an independent option:
 - The amount is not shown as an employer health-plan contribution;
 - Product service, claims, sharing, and disputes remain between the participant and provider.
 
-Allowance the administrative convenience of having payroll remit the funds directly to the alternative provider is fine as discussed below.
+The administrative convenience of having payroll remit the employee's funds directly to the alternative provider is permitted as discussed below.
 
 ## Why group and list-bill arrangements are the wrong shortcut
 
@@ -294,7 +301,7 @@ Many health shares and private medical-cost communities offer a “group” chan
 
 The concern is not the word `group`. The concern is the employer's conduct. Evidence of sponsorship accumulates when an employer:
 
-- Negotiates or receives a rate available because of that employer's workforce; (although this alone is not sponsorship, many retail services offer employer discount programs)
+- Negotiates or receives a rate available because of that employer's workforce, although a discount alone is not necessarily sponsorship and many retail services offer employer discount programs;
 - Signs the product or billing agreement;
 - Selects which alternative will be offered;
 - Supplies an employer census for product pricing or eligibility;

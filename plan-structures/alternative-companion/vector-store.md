@@ -5,8 +5,8 @@ kind: vector-store-source
 schema_version: "1.0"
 source_document: plan-structures/alternative-companion/human-readable.md
 metadata_document: plan-structures/alternative-companion/metadata.yaml
-source_commit: b07a3f23dbb4e7c65f6e91ba7f805450a528c20a
-source_sha256: c626174e68e559edc1843ab261073984dfeb9aebbf90de53c5b4442fe6e8cad5
+source_commit: 2678173f18da3e92a0d2fd8319714720b8342528
+source_sha256: 9ff550c85ca7197b2958467b219a299c3d060fb72c373d6d2eaf7d586427d682
 metadata_sha256: da5e6b0b873fa5932441cf208b9b3c7cf3175df9b6397c0e10188ada317567a7
 generation_method: deterministic-markdown-conversion
 canonical_source: false
@@ -23,7 +23,7 @@ last_reviewed: 2026-10-01
 ## Private alternative options alongside an employer plan
 > Retrieval context: Private Alternatives Alongside an Employer Plan — Private alternative options alongside an employer plan
 
-> **An employer can sponsor a health plan without making that plan the price of admission to every other healthcare option.** Alternative Companion gives employees a separate, post-tax path to health shares, crowdfunded, and other private alternatives the employer does not sponsor.
+> **An employer can sponsor a health plan without making that plan the price of admission to every other healthcare option.** Alternative Companion gives employees a separate, post-tax path to health shares, crowdfunded models, and other private alternatives the employer does not sponsor.
 
 In practice, the alternatives employees ask about are not an abstract universe of experimental products. They are usually health care sharing ministries, secular medical-cost-sharing communities, CrowdHealth-style crowdfunding and member-support models, and the cash-pay care strategies that accompany them.
 
@@ -129,17 +129,15 @@ This document is the canonical source for employer neutrality, non-sponsorship, 
 - [What Alternative Companion is actually for](#what-alternative-companion-is-actually-for)
 - [The two reasons employers resist](#the-two-reasons-employers-resist)
 - [Who may benefit](#who-may-benefit)
-- [The legal boundary](#the-legal-boundary)
+- [The legal boundary](#part-ii--the-legal-boundary)
 - [The DOL voluntary-program safe harbor](#the-dol-voluntary-program-safe-harbor)
 - [What endorsement means](#what-endorsement-means)
-- [PTC, MEC, and HSA boundaries](#ptc-mec-and-hsa-boundaries)
 - [How CommonCare separates the two environments](#how-commoncare-separates-the-two-environments)
 - [Why group and list-bill arrangements are the wrong shortcut](#why-group-and-list-bill-arrangements-are-the-wrong-shortcut)
-- [Employer benefits alongside private choice](#employer-benefits-alongside-private-choice)
-- [Payroll and employer allowances](#payroll-and-employer-allowances)
+- [Payroll and employer allowances](#part-iv--payroll-and-employer-allowances)
 - [How options are evaluated](#how-options-are-evaluated)
 - [Participant disclosures](#participant-disclosures)
-- [Operational specification](#operational-specification)
+- [Operational specification](#part-vi--operational-specification)
 
 ---
 
@@ -153,7 +151,7 @@ This document is the canonical source for employer neutrality, non-sponsorship, 
 
 Alternative Companion exists to correct one practical failure of employer benefits: an employee can choose only the products the employer is willing to sponsor, or leave the benefits system and assemble an alternative alone.
 
-That failure matters because health shares and crowdfunded models (like CrowdHealth - which is really the main option in this space, but we aren't here to speak for them) do not merely offer a different insurance card. They can create a substantially different healthcare experience:
+That failure matters because health shares and crowdfunded models—of which CrowdHealth is currently the most prominent example, though CommonCare does not speak for it—do not merely offer a different insurance card. They can create a substantially different healthcare experience:
 
 - Lower monthly fixed costs for households that fit the membership rules;
 - Broad provider access without a carrier network;
@@ -175,7 +173,7 @@ CommonCare's role is to make the comparison possible, not to sell the alternativ
 ## The two reasons employers resist
 > Retrieval context: Private Alternatives Alongside an Employer Plan — Part I — Why preserve a private path > The two reasons employers resist
 
-When an employer does not want employees to see or select a private alternative, the objection usually reduces to one of two positions. Both can be argued. Neither should remain hidden.
+When an employer does not want employees to see or select a private alternative, the objection usually reduces to one of two positions. Both can be good reasons. Both should be carefully measured by actual outcomes instead of sentiment.
 
 <!-- record_id: product.alternative-companion.1-the-employer-wants-healthier-employees-inside-the-employer-plan -->
 ### 1. The employer wants healthier employees inside the employer plan
@@ -183,13 +181,13 @@ When an employer does not want employees to see or select a private alternative,
 
 Employer-plan premiums and renewals depend in part on the claims performance or expected risk of the group. If relatively healthy employees leave for lower-cost alternatives while higher-cost employees remain, the employer plan may become more expensive.
 
-Retaining lower-risk employees to subsidize higher-risk employees is therefore a coherent risk-pool strategy. It is also a redistribution decision. The employer is asking one group of employees to accept higher fixed costs or a less suitable product so that another group can obtain more affordable pooled coverage.
+Retaining lower-risk employees to subsidize higher-risk employees is therefore a coherent risk-pool strategy. It is also a redistribution decision. The employer is asking one group of employees to accept higher fixed costs or a less suitable product so that another group can get more affordable pooled coverage.
 
-Employers are often uncomfortable stating the decision in those terms. Instead, they describe the single-plan approach as fairness, safety, or generosity. That rhetorical move is the real problem. It hides the financial purpose from the people bearing its cost and makes an employer-selected insurance pool look morally neutral.
+Employers are often uncomfortable stating the decision in those terms. Instead, they describe the single-plan approach as fairness, safety, or generosity. That rhetorical move is the real problem. It hides the financial purpose from the people bearing its cost and makes an employer-selected insurance pool look like a moral decision.
 
-Who is equalizing the cost of care fair to? The conscientious healthcare consumer? The overactive consumer? The congenitally ill? There are complex questions involved in this, and it's a big deal to people. Taking a hard positon where employees forfeit pay if they choose otherwise should warrant strong articulable justification.
+For whom is equalizing the cost of care fair: the conscientious healthcare consumer, the high-utilizing consumer, or the person born with an expensive condition? These are complex questions with substantial consequences. Taking a hard position under which employees forfeit compensation if they choose another path warrants a clear, articulable justification.
 
-CommonCare's position is that businesses should be cautious about taking responsibility for equalizing healthcare outcomes through compulsory participation in one financing structure. Equal access, equal employer contribution, equal insurance enrollment, and equal health outcomes are different objectives. Pursuing one can produce very unequal consequences under another.
+Businesses should be cautious taking responsibility for equalizing healthcare outcomes through compulsory participation in one financing structure. Equal access, equal employer contribution, equal insurance enrollment, and equal health outcomes are different objectives. Pursuing one can produce very unequal consequences under another.
 
 An employer may still decide that preserving the group pool is worth limiting alternatives. If so, it should make that decision consciously, quantify the effect, and communicate the tradeoff honestly.
 
@@ -203,7 +201,7 @@ That judgment may be reasonable for a particular product or person. Someone with
 
 But the standard must run both ways. It is odd to call neutral access to a health share “unsafe” while presenting employer-selected insurance as a factually safe default after years of premium escalation, network disruption, prior authorization, opaque pricing, and highly public claim disputes. A legal payment promise is valuable. It is not the same thing as certainty, affordability, or a frictionless claim experience.
 
-CommonCare does not require the employer to endorse a health share. It prevents the employer's unexamined preference for insurance from becoming the employee's only administratively realistic choice.
+Allowing employees to select alternatives does not require the employer to endorse a health share. It prevents the employer's unexamined preference for insurance from becoming the employee's only administratively realistic choice.
 
 > **Price sensitivity is not hostility to care. It is one of the forces that makes useful care available at sustainable prices.**
 
@@ -211,7 +209,7 @@ CommonCare does not require the employer to endorse a health share. It prevents 
 ## Why the effort can be worthwhile
 > Retrieval context: Private Alternatives Alongside an Employer Plan — Part I — Why preserve a private path > Why the effort can be worthwhile
 
-Maintaining a separate private path adds work. The population that benefits may be smaller than the population served by the employer plan. That does not make the work immaterial.
+Once the two objections above are addressed, the employer does not need to sponsor or administer the alternative. Its central design decision is simply not to make the entire employer allowance use-it-or-lose-it within the sponsored plan. CommonCare performs the separate comparison and administration described below.
 
 For the right participant—often a relatively healthy household comfortable with active healthcare purchasing—the difference can be substantial:
 
@@ -224,6 +222,33 @@ For the right participant—often a relatively healthy household comfortable wit
 - A better combination of personal reserves, direct care, negotiated bills, and community funding for larger eligible needs.
 
 The relevant question is not whether a private alternative is best for everyone. It is whether the value for the people it fits is large enough to justify making an informed choice possible. Often it is.
+
+<!-- record_id: product.alternative-companion.the-question-of-compensation-tied-to-health-insurance-preference -->
+## The question of compensation tied to health insurance preference
+> Retrieval context: Private Alternatives Alongside an Employer Plan — Part I — Why preserve a private path > The question of compensation tied to health insurance preference
+
+> Here we digress into the philosophical and moral concerns that often dominate the conversation of "why employers control health insurance." A technical reader looking for implementation details may skip this section. For many people, these concerns are really the main concern involved in this document and discussion.
+
+The question of why employers should allow access to alternative solutions can be addressed without regard to any particular alternative. Employer health benefits are compensation designated for healthcare. When that compensation is forfeited unless it is used within the employer's plan, the employer is saying: **“When you work here, you get extra pay if you choose this health plan.”**
+
+That is a strong condition to attach to compensation. Employees (and their families) need groceries, housing, clothing, power, transportation, and education. Employers may disagree with how employees spend money in every one of those categories, but the employee does not ordinarily forfeit compensation by making the “wrong” choice. It might be argued that every one of these categories has more impact on work performance than health insurance choice.
+
+Employers often defend the exception by saying, “We need our employees healthy enough to work.” Despite decades of research, enormous healthcare spending, and no shortage of opportunities to prove the point, no meaningful evidence establishes that more health insurance produces healthier employees, fewer missed workdays, or employees who can do more or better work. In fact, evidence is almost completely absent that health outcomes are improved by more health insurance at all.
+
+The evidence most often offered for that proposition instead shows that more generous coverage causes people to consume more healthcare. That is not the same result. The RAND experiment found much higher consumption under free care but no improvement in average health outcomes. Its handful of favorable findings came from four of thirty measures within the poorest and sickest six percent of participants and combined unrelated outcomes such as blood-pressure control, vision, dental care, and a collection of “serious symptoms.” The Oregon Medicaid experiment likewise produced more consumption, more diagnoses, and more medication without statistically significant improvement in measured blood pressure, cholesterol, or blood sugar. Its labor analysis found no significant improvement in employment or earnings. Research specifically on missed work is observational, conflicting, and incapable of establishing that insurance caused better attendance. Even when the evidence isolates populations most plausibly expected to benefit from more healthcare services, it still comes up nearly empty on the broad health-and-work claim. ([RAND](https://www.rand.org/pubs/research_briefs/RB9174.html); [Oregon clinical outcomes](https://pubmed.ncbi.nlm.nih.gov/23635051/); [Oregon labor outcomes](https://www.nber.org/papers/w19547); [absence studies](https://pubmed.ncbi.nlm.nih.gov/16404205/), [2025](https://pubmed.ncbi.nlm.nih.gov/40345984/))
+
+There is abundant evidence that insurance changes who pays, how much care people consume, when they seek care, and how medical bills are distributed. Those may be important effects. They are not evidence that employer-sponsored insurance makes a workforce healthier or more capable. That crucial claim is continually asserted and conspicuously unproven.
+
+Meanwhile, exercise is known to improve function, sleep, and numerous health outcomes. Sleep, nutrition, stress, substance use, and daily habits have direct relationships with health and working capacity. Yet compensation packages do not ordinarily say, “Keep an exercise log, improve your diet, sleep eight hours, and receive extra pay.” ([CDC](https://www.cdc.gov/physical-activity-basics/health-benefits/adults.html))
+
+The point is not that employers should begin policing those choices. It is that requiring an employee to choose a specific health-insurance structure or forfeit pay is an odd and powerful social norm. The ACA wrote insurance more deeply into the legal and financial architecture of healthcare through compulsory rules, subsidies, required benefits, and employer obligations. Its rhetoric is frequently the rhetoric of human rights, while the mechanism remains a commercial financing industry operating inside a healthcare economy that consumed $5.3 trillion—18 percent of U.S. GDP—in 2024. That contradiction deserves examination, not reverence. ([CMS](https://www.cms.gov/data-research/statistics-trends-and-reports/national-health-expenditure-data/historical))
+
+Maintaining a health risk pool is still a valid reason to restrict the compensation. But saying so should require the employer to establish two things:
+
+1. The risk pool has been verified as producing better-than-market value for the workforce; otherwise, preserving it may make the benefit backward.
+2. The employer knows what business or workforce objective it gains from the restriction and why that objective is worth compelling employees to finance it.
+
+Without those findings, how did equalizing healthcare financing become a business priority the employer is prepared to enforce through compensation? “We offer benefits” is not an answer. It is merely a description of the arrangement under question.
 
 <!-- record_id: product.alternative-companion.who-may-benefit -->
 ## Who may benefit
@@ -242,7 +267,7 @@ Private alternatives are most likely to deserve serious consideration when a par
 
 They may be a poor fit when a participant needs guaranteed access to expensive ongoing treatment, depends on a particular protected benefit, cannot absorb payment uncertainty, or simply prefers the regulatory and contractual guarantees of insurance.
 
-This is why CommonCare analyzes rather than sells. It is not why CommonCare should treat insurance as the presumed winner.
+This is why CommonCare analyzes rather than sells products. CommonCare never takes product commissions.
 
 ---
 
@@ -254,7 +279,7 @@ This is why CommonCare analyzes rather than sells. It is not why CommonCare shou
 ## Two separate environments
 > Retrieval context: Private Alternatives Alongside an Employer Plan — Part II — The legal boundary > Two separate environments
 
-CommonCare draws a bright line:
+We should draw a bright line:
 
 #### Defined in the employer's plan documents
 <!-- record_id: product.alternative-companion.part-ii-the-legal-boundary-two-separate-environments.defined-in-the-employer-s-plan-documents; record_type: table-row -->
@@ -286,40 +311,14 @@ CommonCare draws a bright line:
 - Employer-sponsored environment: Subject to the rules applicable to the employer plan
 - Independent private environment: Governed by the product's own contract, membership terms, and applicable law
 
-#### Employer may explain its own plan
-<!-- record_id: product.alternative-companion.part-ii-the-legal-boundary-two-separate-environments.employer-may-explain-its-own-plan; record_type: table-row -->
+#### Employer may explain and endorse its own plan
+<!-- record_id: product.alternative-companion.part-ii-the-legal-boundary-two-separate-environments.employer-may-explain-and-endorse-its-own-plan; record_type: table-row -->
 - Context: Private Alternatives Alongside an Employer Plan — Part II — The legal boundary > Two separate environments
-- Employer-sponsored environment: Employer may explain its own plan
+- Employer-sponsored environment: Employer may explain and endorse its own plan
 - Independent private environment: Employer remains neutral toward private alternatives
 
 
 Calling something “voluntary” is not enough. The documents, money, communications, enrollment flow, payroll treatment, compensation, and actual conduct must all support the distinction.
-
-<!-- record_id: product.alternative-companion.ptc-mec-and-hsa-boundaries -->
-## PTC, MEC, and HSA boundaries
-> Retrieval context: Private Alternatives Alongside an Employer Plan — Part II — The legal boundary > PTC, MEC, and HSA boundaries
-
-Nonsponsorship does not answer every tax question. PTC eligibility, employer MEC, and HSA eligibility follow separate rules.
-
-<!-- record_id: product.alternative-companion.marketplace-ptc -->
-### Marketplace PTC
-> Retrieval context: Private Alternatives Alongside an Employer Plan — Part II — The legal boundary > PTC, MEC, and HSA boundaries > Marketplace PTC
-
-An employee may be able to receive PTC for Marketplace coverage when an employer offer is absent or does not provide affordable minimum-value coverage. But enrollment in employer-sponsored MEC blocks PTC for the enrolled individual for those months even when the MEC is unaffordable or fails minimum value. [26 CFR §1.36B-2(c)(3)](https://www.law.cornell.edu/cfr/text/26/1.36B-2) · [IRS Publication 974](https://www.irs.gov/publications/p974)
-
-The [Premium Tax Credit Plan](../ptc-plan/human-readable.md) therefore pairs an offer of self-funded MEC with an employee opt-out. The offer supports the excepted-benefit CommonFunds structure; the employee seeking PTC declines the MEC and independently enrolls in a Marketplace qualified health plan.
-
-<!-- record_id: product.alternative-companion.hsa-eligibility -->
-### HSA eligibility
-> Retrieval context: Private Alternatives Alongside an Employer Plan — Part II — The legal boundary > PTC, MEC, and HSA boundaries > HSA eligibility
-
-An independently selected plan is HSA-compatible only if it is an HSA-qualified HDHP and the participant has no disqualifying other coverage. A general-purpose Health FSA or HRA ordinarily prevents HSA contributions, while limited-purpose or post-deductible coverage may be permitted. PTC compatibility does not establish HSA compatibility. [IRS Publication 15-B](https://www.irs.gov/publications/p15b)
-
-<!-- record_id: product.alternative-companion.marketplace-premiums-cannot-be-paid-pre-tax-through-section-125 -->
-### Marketplace premiums cannot be paid pre-tax through Section 125
-> Retrieval context: Private Alternatives Alongside an Employer Plan — Part II — The legal boundary > PTC, MEC, and HSA boundaries > Marketplace premiums cannot be paid pre-tax through Section 125
-
-The employee's Marketplace QHP premium must remain outside the employer cafeteria plan. Section 125(f)(3) prohibits using pre-tax employee contributions to purchase an Exchange qualified health plan. On the PTC pathway, the premium is paid with PTC plus unrestricted post-tax employee money. [IRS ACA tax provisions](https://www.irs.gov/affordable-care-act/affordable-care-act-tax-provisions)
 
 <!-- record_id: product.alternative-companion.the-dol-voluntary-program-safe-harbor -->
 ## The DOL voluntary-program safe harbor
@@ -327,7 +326,7 @@ The employee's Marketplace QHP premium must remain outside the employer cafeteri
 
 Department of Labor regulation 29 CFR §2510.3-1(j) excludes a group or group-type insurance program from the definition of an ERISA employee welfare benefit plan when all four conditions are satisfied:
 
-1. **The employer makes no contribution;**
+1. **The employer makes no contribution;** (this is why allowances that can be used on alternatives must be unrestricted wages)
 2. **Employee participation is completely voluntary;**
 3. **The employer's sole functions, without endorsing the program, are permitting the insurer to publicize it, collecting premiums through payroll deductions, and remitting those premiums;** and
 4. **The employer receives no consideration in connection with the program, other than reasonable compensation—without profit—for payroll-administration services actually performed.**
@@ -337,7 +336,7 @@ Department of Labor regulation 29 CFR §2510.3-1(j) excludes a group or group-ty
 The rule is unusually practical. It expressly permits a neutral employer to support voluntary access and post-tax payroll collection without converting the program into an employer plan.
 
 > [!IMPORTANT]
-> This safe harbor expressly addresses a program “offered by an insurer.” A health sharing ministry, direct-care membership, discount program, or other non-insurance arrangement does not become insurance by following it. For those products, CommonCare uses the same neutrality discipline to support the broader conclusion that the employer has not established or maintained the arrangement, but does not label the product as automatically protected by the insurance safe harbor.
+> This safe harbor expressly addresses a program “offered by an insurer.” A health sharing ministry, direct-care membership, discount program, or other non-insurance arrangement does not become insurance by following it. For those products, CommonCare uses the same neutrality discipline to support the broader conclusion that the employer has not established or maintained the arrangement, but does not label the product as automatically protected by the insurance safe harbor. Any product-specific regulator agreement, disclosure requirement, or enforcement history must be reviewed separately rather than assumed to extend the insurance safe harbor.
 
 <!-- record_id: product.alternative-companion.what-endorsement-means -->
 ## What endorsement means
@@ -364,25 +363,19 @@ The DOL has described employer neutrality as the key reason a voluntary program 
 <!-- record_id: product.alternative-companion.part-ii-the-legal-boundary-what-endorsement-means-neutral-facilitation-v.identifying-the-option-as-independent; record_type: table-row -->
 - Context: Private Alternatives Alongside an Employer Plan — Part II — The legal boundary > What endorsement means > Neutral facilitation versus sponsorship
 - Neutral facilitation: Identifying the option as independent
-- Evidence of sponsorship or endorsement: Calling it an employer benefit
+- Evidence of sponsorship or endorsement: Calling it employer sponsored
 
 #### Allowing completely voluntary access
 <!-- record_id: product.alternative-companion.part-ii-the-legal-boundary-what-endorsement-means-neutral-facilitation-v.allowing-completely-voluntary-access; record_type: table-row -->
 - Context: Private Alternatives Alongside an Employer Plan — Part II — The legal boundary > What endorsement means > Neutral facilitation versus sponsorship
 - Neutral facilitation: Allowing completely voluntary access
-- Evidence of sponsorship or endorsement: Urging employees to enroll
+- Evidence of sponsorship or endorsement: Incentivizing employees to enroll
 
 #### Post-tax payroll collection
 <!-- record_id: product.alternative-companion.part-ii-the-legal-boundary-what-endorsement-means-neutral-facilitation-v.post-tax-payroll-collection; record_type: table-row -->
 - Context: Private Alternatives Alongside an Employer Plan — Part II — The legal boundary > What endorsement means > Neutral facilitation versus sponsorship
 - Neutral facilitation: Post-tax payroll collection
-- Evidence of sponsorship or endorsement: Employer contribution toward the option
-
-#### Remitting the employee's deduction
-<!-- record_id: product.alternative-companion.part-ii-the-legal-boundary-what-endorsement-means-neutral-facilitation-v.remitting-the-employee-s-deduction; record_type: table-row -->
-- Context: Private Alternatives Alongside an Employer Plan — Part II — The legal boundary > What endorsement means > Neutral facilitation versus sponsorship
-- Neutral facilitation: Remitting the employee's deduction
-- Evidence of sponsorship or endorsement: Reimbursing the purchase
+- Evidence of sponsorship or endorsement: Employer allowances tied to the option
 
 #### Allowing factual provider materials where the safe harbor applies
 <!-- record_id: product.alternative-companion.part-ii-the-legal-boundary-what-endorsement-means-neutral-facilitation-v.allowing-factual-provider-materials-where-the-safe-harbor-applies; record_type: table-row -->
@@ -489,8 +482,9 @@ When an employee selects an independent option:
 - The employee separately accepts the product's own agreement and disclosures;
 - Any payroll amount appears as a post-tax deduction;
 - The amount is not shown as an employer health-plan contribution;
-- The provider receives the employee's money through remittance or direct payment; and
 - Product service, claims, sharing, and disputes remain between the participant and provider.
+
+The administrative convenience of having payroll remit the employee's funds directly to the alternative provider is permitted as discussed below.
 
 <!-- record_id: product.alternative-companion.why-group-and-list-bill-arrangements-are-the-wrong-shortcut -->
 ## Why group and list-bill arrangements are the wrong shortcut
@@ -500,7 +494,7 @@ Many health shares and private medical-cost communities offer a “group” chan
 
 The concern is not the word `group`. The concern is the employer's conduct. Evidence of sponsorship accumulates when an employer:
 
-- Negotiates or receives a rate available because of that employer's workforce;
+- Negotiates or receives a rate available because of that employer's workforce, although a discount alone is not necessarily sponsorship and many retail services offer employer discount programs;
 - Signs the product or billing agreement;
 - Selects which alternative will be offered;
 - Supplies an employer census for product pricing or eligibility;
@@ -523,64 +517,13 @@ The employee receives access because the employee is using CommonCare—not beca
 CommonCare then administers the individual transaction separately:
 
 1. The employee voluntarily opens the independent marketplace;
-2. CommonCare—not the employer—provides the comparison and product administration;
+2. CommonCare—not the employer—provides the comparison and product administration, which we will do for any retail consumer as well;
 3. The employee accepts the provider's agreement directly;
 4. Payment uses the employee's post-tax money;
 5. Any payroll remittance is separately identified as an employee deduction; and
 6. The employer receives no product-specific role, compensation, claim information, or authority.
 
 > **Alternative Companion is not an employer group health-share program. It is the administrative path that makes an employer group program unnecessary.**
-
-<!-- record_id: product.alternative-companion.employer-benefits-alongside-private-choice -->
-## Employer benefits alongside private choice
-> Retrieval context: Private Alternatives Alongside an Employer Plan — Part III — The CommonCare structure > Employer benefits alongside private choice
-
-An employer does not need to abandon its own benefits merely because employees can see or buy independent options. The two environments must remain distinct.
-
-#### Limited-scope dental or vision
-<!-- record_id: product.alternative-companion.part-iii-the-commoncare-structure-employer-benefits-alongside-private-ch.limited-scope-dental-or-vision; record_type: table-row -->
-- Context: Private Alternatives Alongside an Employer Plan — Part III — The CommonCare structure > Employer benefits alongside private choice
-- Employer-sponsored benefit: Major Medical Coverage
-- How it can coexist: Offered and funded under the employer plan as usual; the private option remains separate and voluntary
-
-#### Self-funded dental or vision
-<!-- record_id: product.alternative-companion.part-iii-the-commoncare-structure-employer-benefits-alongside-private-ch.self-funded-dental-or-vision; record_type: table-row -->
-- Context: Private Alternatives Alongside an Employer Plan — Part III — The CommonCare structure > Employer benefits alongside private choice
-- Employer-sponsored benefit: Self-funded dental or vision
-- How it can coexist: Administered under its own employer plan document and excepted-benefit rules
-
-#### HSA contribution
-<!-- record_id: product.alternative-companion.part-iii-the-commoncare-structure-employer-benefits-alongside-private-ch.hsa-contribution; record_type: table-row -->
-- Context: Private Alternatives Alongside an Employer Plan — Part III — The CommonCare structure > Employer benefits alongside private choice
-- Employer-sponsored benefit: HSA contribution
-- How it can coexist: Available only for an HSA-eligible employee; the independent major-medical option must be an HSA-qualified HDHP and other coverage must be compatible
-
-#### CommonFunds
-<!-- record_id: product.alternative-companion.part-iii-the-commoncare-structure-employer-benefits-alongside-private-ch.commonfunds; record_type: table-row -->
-- Context: Private Alternatives Alongside an Employer Plan — Part III — The CommonCare structure > Employer benefits alongside private choice
-- Employer-sponsored benefit: CommonFunds
-- How it can coexist: Uses the applicable EBHRA/Health FSA/ICHRA components; component rules—not the unified display—control
-
-#### Self-funded MEC supporting excepted CommonFunds
-<!-- record_id: product.alternative-companion.part-iii-the-commoncare-structure-employer-benefits-alongside-private-ch.self-funded-mec-supporting-excepted-commonfunds; record_type: table-row -->
-- Context: Private Alternatives Alongside an Employer Plan — Part III — The CommonCare structure > Employer benefits alongside private choice
-- Employer-sponsored benefit: Self-funded MEC supporting excepted CommonFunds
-- How it can coexist: Employer offers the MEC; a participant seeking PTC must decline it
-
-#### Restricted employer benefit credit
-<!-- record_id: product.alternative-companion.part-iii-the-commoncare-structure-employer-benefits-alongside-private-ch.restricted-employer-benefit-credit; record_type: table-row -->
-- Context: Private Alternatives Alongside an Employer Plan — Part III — The CommonCare structure > Employer benefits alongside private choice
-- Employer-sponsored benefit: Restricted employer benefit credit
-- How it can coexist: May be use-it-or-lose-it only within qualified employer-sponsored benefits under the governing arrangement
-
-#### Unrestricted taxable wages
-<!-- record_id: product.alternative-companion.part-iii-the-commoncare-structure-employer-benefits-alongside-private-ch.unrestricted-taxable-wages; record_type: table-row -->
-- Context: Private Alternatives Alongside an Employer Plan — Part III — The CommonCare structure > Employer benefits alongside private choice
-- Employer-sponsored benefit: Unrestricted taxable wages
-- How it can coexist: May be spent by the employee on anything, including a private option, after becoming ordinary wages
-
-
-See [CommonFunds](../common-funds/human-readable.md) for account allocation and [the Premium Tax Credit Plan](../ptc-plan/human-readable.md) for the MEC-plus-excepted-benefit implementation used with Marketplace PTC.
 
 ---
 
@@ -822,11 +765,11 @@ Those are genuine tradeoffs—not a reason to pretend the arrangement has no val
 
 Insurance carries different risks: expensive fixed premiums, opaque adjudication, network restrictions, prior authorization, and claims that can be delayed or denied. Those are not theoretical footnotes. They are part of the product's actual performance. “Not insurance” identifies the legal structure; it does not decide comparative value.
 
-<!-- record_id: product.alternative-companion.crowdhealth-style-models -->
+<!-- record_id: product.alternative-companion.crowdfunded-models -->
 ### Crowdfunded models
 > Retrieval context: Private Alternatives Alongside an Employer Plan — Part V — Decision quality > Health sharing in particular > Crowdfunded models
 
-Crowdfunded style communities, like CrowdHealth, are not necessarily health care sharing ministries and should not inherit that label automatically. Their structure may combine a monthly membership, a member-funded community, bill negotiation, direct cash payment, crowdfunding, and support for navigating larger medical events.
+Crowdfunded communities like CrowdHealth are not necessarily health care sharing ministries and should not inherit that label automatically. Their structure may combine a monthly membership, a member-funded community, bill negotiation, direct cash payment, crowdfunding, and support for navigating larger medical events.
 
 The attraction is similar but not identical to health sharing. The participant may receive broad provider freedom and active bill advocacy without buying a carrier network. The community may fund eligible large needs while leaving routine care and defined member responsibilities outside the pool.
 
