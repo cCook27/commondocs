@@ -32,6 +32,8 @@ For account administration, jump directly to the relevant rule. The foreword exp
 | Which annual limit applies? | [Component-specific limits](human-readable.md#5-annual-limits-are-component-specific) |
 | Is the displayed balance owned cash? | [Balance meaning](human-readable.md#6-what-a-commonfunds-balance-means) |
 | Which component can pay a claim? | [Separate claims rules](human-readable.md#7-one-balance-separate-claims-rules) |
+| Does the design preserve HSA eligibility? | [HSA compatibility](human-readable.md#hsa-compatibility-is-a-separate-test) |
+| How do common plan structures differ in practice? | [Implementation examples](human-readable.md#common-implementation-examples) |
 | How should the benefit be explained? | [Interpretation guide](human-readable.md#8-practical-interpretation-guide) |
 | Where are the authorities? | [References](human-readable.md#9-authorities-cited-in-this-document) |
 
@@ -165,20 +167,168 @@ Participants see one CommonFunds balance while the system maintains multiple cla
 
 `benefit_path` identifies the employer account structure. `coverage_context` identifies the participant's major-medical situation. They answer different questions:
 
-| `coverage_context` | Common major-medical position | Compatible primary CommonFunds path | Premium rule |
-|---|---|---|---|
-| `employer_group` | Enrolled in employer group coverage | `excepted` | Applicable employer-plan premiums may receive only the treatment permitted by the cafeteria-plan documents and tax rules |
-| `ptc_marketplace` | Enrolled in a Marketplace QHP with or without PTC | `excepted` | Marketplace QHP premium is paid with PTC and unrestricted post-tax employee money; never through Section 125 |
-| `outside_group` | Enrolled in a spouse's or other outside group plan | `excepted` | Outside-plan premium treatment depends on the applicable plan and tax rules; no ICHRA reimbursement |
-| `ichra_individual` | Enrolled in qualifying individual coverage under CHOICE/ICHRA | `ichra` | ICHRA may reimburse eligible individual premiums; Section 125 may pay only eligible off-Exchange residual premiums, not Exchange QHP premiums |
+| `coverage_context` | Common major-medical position | Compatible primary CommonFunds path | Premium rule                                                                                                                                                                       |
+|---|---|-------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `employer_group` | Enrolled in employer group coverage | `excepted`                          | Applicable employer-plan premiums may receive only the treatment permitted by the cafeteria-plan documents and tax rules                                                           |
+| `ptc_marketplace` | Enrolled in a Marketplace QHP with or without PTC | `excepted`                          | Marketplace QHP premium is paid with PTC and unrestricted post-tax employee money; never through Section 125                                                                       |
+| `outside_group` | Enrolled in a spouse's or other outside group plan | `excepted`                          | Outside-plan premium treatment depends on the applicable plan and tax rules; no ICHRA reimbursement                                                                                |
+| `ichra_individual` | Enrolled in qualifying individual coverage under CHOICE/ICHRA | `split ICHRA/excepted FSA`          | Employer choice is primarily between flexibility vs allowance counting toward affordability. FSA funds can be a mix of flex and health flex credits and can be used more flexibly. |
 
 The calculation engine must never infer one value from the other. In particular, `ptc_marketplace` remains an `excepted` account pathway; PTC is not a third type of HRA.
 
 ### HSA compatibility is a separate test
 
-PTC compatibility does not establish HSA compatibility. A participant can receive PTC for an HSA-qualified Marketplace HDHP and receive employer HSA contributions, but participation in a general-purpose Health FSA or HRA ordinarily makes the participant ineligible to contribute to an HSA.
+PTC compatibility does not establish HSA compatibility. Neither does excepted-benefit status. These are separate legal tests serving different purposes:
 
-An HSA-compatible CommonFunds design must restrict the applicable FSA/HRA component to permitted coverage, such as limited-purpose dental/vision or post-deductible benefits, and must satisfy the HSA rules independently. [IRS Publication 15-B, “Health Savings Accounts”](https://www.irs.gov/publications/p15b)
+| Test | Controlling question |
+|---|---|
+| Health FSA excepted-benefit test | Does the Health FSA satisfy 45 C.F.R. § 146.145(b)(3)(v), including the other-coverage-availability and maximum-benefit requirements? |
+| HSA eligibility test | Does the participant have disqualifying first-dollar health coverage under Internal Revenue Code § 223? |
+| PTC eligibility test | Is the participant eligible for the premium tax credit under the separate Marketplace coverage, employer-offer, affordability, minimum-value, and enrollment rules? |
+
+Passing one test does not establish compliance with either of the others. In particular, a Health FSA may be an excepted benefit under 45 C.F.R. § 146.145 and still disqualify a participant from making or receiving HSA contributions if it can reimburse ordinary medical expenses before the statutory HDHP minimum deductible is satisfied.
+
+#### Reimbursement scope and timing determine HSA compatibility
+
+An HRA or Health FSA label does not, by itself, determine HSA compatibility. The controlling question is what reimbursement the component makes available and when. A participant who can receive reimbursement for ordinary § 213(d) medical expenses before satisfying the applicable statutory HDHP deductible ordinarily has disqualifying coverage. A component can instead be drafted and administered as limited-purpose, post-deductible, suspended, or another HSA-compatible design.
+
+When pre-deductible ordinary medical reimbursement is available, the HSA result generally remains the same even when:
+
+- The participant never submits a claim;
+- The account has been exhausted during its active coverage period;
+- The participant intends to use only dental or vision benefits;
+- The participant is covered by the arrangement through a spouse's employer; or
+- The arrangement separately qualifies as an excepted benefit.
+
+HSA eligibility depends on the coverage made available under the governing terms, not merely how the participant ultimately uses it.
+
+A narrow statutory exception applies to Health FSA grace-period coverage when the prior-year balance is zero. That exception should be applied only when its conditions are affirmatively verified; it does not make an otherwise pre-deductible reimbursement design HSA-compatible.
+
+#### Permitted HSA-compatible designs
+
+CommonFunds may preserve HSA eligibility when every applicable reimbursement component is designed and administered as one or more of the following:
+
+1. **Limited-purpose Health FSA or HRA.** Before the deductible is satisfied, reimbursement is limited to permitted coverage such as dental, vision, and qualifying preventive care.
+2. **Post-deductible Health FSA or HRA or combo.** The arrangement may reimburse qualifying preventive care before the deductible, but it may reimburse other § 213(d) medical expenses only when those expenses are incurred after the applicable statutory minimum HDHP deductible has been satisfied.
+3. **Combined limited-purpose/post-deductible design.** Before the deductible is satisfied, the component pays only permitted limited-purpose expenses. After the deductible is satisfied, it may convert prospectively to general-purpose reimbursement for eligible expenses incurred after that point.
+
+The post-deductible threshold does not have to equal the deductible of the participant's particular HDHP. It may be higher. It must never allow nonpreventive, nonpermitted benefits before the applicable minimum annual deductible under § 223(c)(2)(A) has been satisfied.
+
+For calendar year 2026:
+
+| HSA/HDHP measure | Self-only | Family |
+|---|---:|---:|
+| Maximum HSA contribution | \$4,400 | \$8,750 |
+| Minimum HDHP deductible | \$1,700 | \$3,400 |
+| Maximum HDHP out-of-pocket amount | \$8,500 | \$17,000 |
+
+These amounts are indexed and must be updated for the applicable year. Beginning in 2026, eligible Exchange bronze and catastrophic plans receive separate statutory HSA treatment; the participant must still have no other disqualifying reimbursement coverage.
+
+> [!WARNING]
+> The controlling date is the date the medical expense is **incurred**, not the date the claim is submitted, approved, or paid. An ordinary medical expense incurred before the deductible was satisfied cannot become reimbursable merely because the participant later meets the deductible.
+
+#### Administrative requirements for an HSA-compatible pathway
+
+> CommonCare managed CommonFunds handles all of these requirements through our claims processing and coverage configuration engines.
+
+An HSA-compatible CommonFunds configuration must do more than label the account `post-deductible` or `limited-purpose`. The plan documents, eligibility configuration, claims engine, participant communications, and substantiation process must align. At minimum, administration must:
+
+1. Identify which participants are intended to remain HSA-eligible and apply the compatible restrictions to every FSA and HRA layer available to them.
+2. Store the applicable statutory deductible threshold for the coverage tier and plan year rather than relying only on the deductible printed on a particular insurance card.
+3. Obtain reliable evidence that the applicable deductible has been satisfied and record the effective date on which it was satisfied.
+4. Compare each expense's incurred date with that effective date. For ordinary medical expenses, reject any claim incurred earlier even if submitted or paid later.
+5. Apply the correct self-only or family-coverage rule, including any embedded-individual deductible issue, under then-current § 223 guidance.
+6. Permit pre-deductible payment only for qualifying preventive care or other coverage expressly disregarded under § 223—not merely because the underlying medical plan paid the claim before its deductible.
+7. Preserve the same restrictions during any carryover, grace period, run-out period, or automatic account conversion. A general-purpose carryover or grace-period balance can independently disrupt HSA eligibility.
+8. Coordinate all available coverage, including a spouse's FSA or HRA, before representing that the participant may contribute to an HSA.
+
+The application should treat HSA compatibility as an affirmative configuration state supported by plan terms and claims controls, not as a conclusion inferred from `benefit_path = excepted`.
+
+#### Operational example
+
+Assume the applicable statutory minimum HDHP deductible is satisfied on June 18:
+
+| Expense | Incurred | Result under a post-deductible Health FSA |
+|---|---:|---|
+| Qualifying preventive care | March 10 | May be reimbursed before the deductible, if otherwise eligible |
+| Ordinary office visit | June 2 | Not reimbursable; later satisfaction of the deductible does not cure the claim |
+| Ordinary office visit | June 20 | May be reimbursed, if otherwise eligible |
+| Dental or vision expense | May 5 | May be reimbursed if the arrangement includes a limited-purpose benefit |
+
+This design is recognized in IRS Revenue Ruling 2004-45 and IRS Notice 2008-59. IRS Publications 969 and 15-B provide current plain-language summaries. The governing plan documents and current law control if guidance or indexed thresholds change.
+
+---
+
+## Common implementation examples
+
+CommonFunds is a unified administrative experience, not a single legal account type. The structure underneath it depends on the employer's coverage strategy and on whether participants should have ordinary medical reimbursement before satisfying an HDHP deductible.
+
+The examples below show common architectures. They do not replace the eligibility, integration, nondiscrimination, affordability, claims, or documentation rules applicable to each component.
+
+| Example | Underlying coverage                                                                                          | Primary employer reimbursement component                                   | Ordinary medical reimbursement from the first dollar?                                                                | HSA-compatible?                                                                                                         |
+|---|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| Group plan with integrated HRA | Employee is enrolled in qualifying non-HRA group coverage or is FSA-only CommonFunds                                         | Integrated HRA, optionally accompanied or even fronted by a Health FSA     | A plan-design choice; reimbursement can begin immediately or after a specified threshold                            | Depends on what the HRA/FSA makes available and when; ordinary pre-deductible reimbursement generally disqualifies, while limited-purpose or post-deductible designs may preserve eligibility |
+| Group HDHP preserving HSA eligibility | Employee is enrolled in an HSA-qualified HDHP or is FSA-only CommonFunds                                     | HSA contribution plus limited-purpose or post-deductible HRA/FSA           | No, except permitted coverage and preventive care; ordinary claims wait until the applicable deductible is satisfied | Yes, if every available component satisfies the HSA rules                                                               |
+| Excepted CommonFunds pathway | Qualifying non-excepted group coverage available (MEC at least); participant enrollment offered not required | EBHRA plus an excepted-benefit Health FSA                                  | Can be, if the components are general-purpose                                                                        | Not if general-purpose reimbursement is available; may be preserved with limited-purpose or post-deductible restrictions |
+| CHOICE/ICHRA pathway | Employee enrolls in qualifying individual coverage or is FSA-only CommonFunds                                | ICHRA, optionally accompanied or fronted by an excepted-benefit Health FSA | May be, if the ICHRA/FSA documents permit ordinary medical reimbursement                                             | Depends on the individual coverage and on every HRA/FSA layer being HSA-compatible                                      |
+
+### Example A: Group insurance with an integrated HRA
+
+An employer with favorable group insurance rates may retain its group policy, increase the carrier deductible or other participant cost sharing, and use an integrated HRA to cover that exposure. The employee remains enrolled in the underlying group plan; the HRA supplies the employer-funded reimbursement layer.
+
+This can create a first-dollar CommonFunds experience when the employer chooses it. For example, the group policy may have a \$10,000 deductible while the integrated HRA reimburses the first \$10,000 of eligible participant expense—creating a \$0 participant-facing deductible while self-funding only the \$0-\$10,000 risk range. The employer could instead begin reimbursement later, restrict the reimbursable expense categories, or offer different compatible elections. See [CommonFunded](../common-funded/human-readable.md) for risk/reward analysis. The insurance deductible remains \$10,000. The HRA changes who economically bears part of the participant cost sharing; it does not amend the insurance contract.
+
+> Transactions in this risk range are easy to model for risk since they are fully contained. It depends on the insurer premium response to increased deductibles, but normally the math favors this arrangement significantly, since insurers need to equalize premiums across significant bills. That means claimants in this range are doing the subsidizing. This is capitalizing on an idiosyncratic structure of ACA-era health insurance.
+
+An integrated HRA is not an EBHRA and is not subject to the EBHRA annual limit. It is also not an ICHRA and does not depend on enrollment in individual insurance. It follows the integration rules applicable to an HRA paired with non-HRA group coverage, including actual enrollment in the coverage required by the selected integration method, appropriate eligibility for covered family members, and the required opportunity to opt out and waive future reimbursement.
+
+The employer chooses the HSA result through the reimbursement design. If the integrated HRA or adjacent Health FSA makes ordinary medical reimbursement available before the statutory HDHP deductible is satisfied, the participant is generally ineligible to contribute to an HSA. If every available component is limited-purpose, post-deductible, suspended, or otherwise HSA-compatible, the integrated structure may preserve HSA eligibility. First-dollar reimbursement and HSA preservation are alternatives the employer can intentionally offer where the governing rules permit them.
+
+### Example B: Group HDHP with HSA-compatible CommonFunds
+
+An employer may instead prioritize HSA eligibility. The participant enrolls in an HSA-qualified HDHP and may receive employer or employee cafeteria-plan contributions to an HSA. Any adjacent HRA or Health FSA must then be limited-purpose, post-deductible, suspended, or otherwise HSA-compatible.
+
+One participant experience can still combine several layers:
+
+1. Before the statutory HDHP deductible is satisfied, CommonFunds displays HSA dollars and any permitted dental, vision, or preventive-care reimbursement available through a limited-purpose component.
+2. After the applicable deductible is satisfied, a post-deductible HRA or Health FSA may reimburse eligible ordinary medical expenses incurred after that point.
+3. The underlying HDHP continues to adjudicate claims under its own deductible, coinsurance, and maximum-out-of-pocket terms.
+
+This arrangement does not provide general first-dollar medical reimbursement. The economic value instead comes from tax-advantaged HSA funding, participant ownership of HSA assets, and employer reimbursement that begins only when the HSA rules permit it.
+
+### Example C: Excepted Only CommonFunds
+
+An employer may use the excepted pathway when it makes the required non-excepted group coverage available and structures CommonFunds through an EBHRA and an excepted-benefit Health FSA. See our [self-funded MEC](../self-funded-mec/human-readable.md) product for the simplest pathway to doing this.
+
+The EBHRA and Health FSA qualify under separate provisions. [45 C.F.R. § 146.145(b)(3)(viii)](https://www.law.cornell.edu/cfr/text/45/146.145) governs the EBHRA, including the indexed contribution limit and availability of nonexcepted, non-HRA group coverage. Paragraph `(b)(3)(v)` governs the excepted-benefit Health FSA, including its separate other-coverage and maximum-benefit tests. For plan years beginning in 2026, the EBHRA may make no more than \$2,200 newly available. When each component independently satisfies its rule, the arrangement can offer first-dollar medical reimbursement, HSA-compatible limited-purpose or post-deductible reimbursement, or both elections where permitted.
+
+This can support employees enrolled in the employer plan, a spouse's group plan, or qualifying independent coverage contexts described elsewhere in this document. It can also preserve Marketplace PTC access when the employee declines the employer MEC and all separate PTC requirements are satisfied.
+
+For this excepted EBHRA/Health FSA pathway, employees do not have to enroll in the MEC merely to access the excepted components; the applicable rules require the nonexcepted group plan to be made available. This statement is limited to the excepted pathway. An integrated group-plan HRA applies separate integration rules, including actual enrollment in the coverage required by the selected integration method.
+
+### Example D: ICHRA with different reimbursement designs
+
+An ICHRA participant must maintain qualifying individual coverage. Within that framework, the employer can decide whether the ICHRA reimburses premiums only, premiums plus ordinary § 213(d) expenses, or a more restricted set of expenses. An adjacent excepted-benefit Health FSA can add another account layer when its independent requirements are satisfied.
+
+ICHRA funds are use-it-or-lose-it in the sense that employees must participate in a traditional qualifying plan to access any funds. If more flexibility is desired to meet employee needs and preferences, the CommonFunds arrangement can favor the FSA option, but doing so requires that either:
+
+A. The employee contributes. If `S` is the employee's Health FSA salary reduction, the maximum true employer contribution permitted by this financial test is `max(S, 500)`. In ordinary language, once `S` exceeds \$500, this permits up to a 100% employer match—not a 200% employer contribution. The other excepted-benefit requirements still apply.
+B. The employer makes roughly half of their employer contribution a flex credit (cashable). This causes the contribution to be treated as employee-contributed via salary reduction per the IRS' rules on HRA/FSA contributions. This approach is great for flexibility, but the employer must realize that the flex funds can be taken home as taxable wages if the employee elects it and they do not count toward affordability. The affordability concern is normally worth less concern in reality than employers tend pay to it, but it is worth understanding fully.
+
+Like the other examples, this FSA/HRA combination can provide first-dollar reimbursement, or can structure to preserve HSA eligibility only when the ICHRA and every other available reimbursement component are limited-purpose, post-deductible, suspended, or otherwise compatible with § 223.
+
+### The system must preserve the legal component
+
+These examples may look similar in the participant interface, but their rules are not interchangeable:
+
+- Do not apply the EBHRA limit to an integrated group-plan HRA.
+- Do not make an integrated HRA available merely because group coverage was offered; apply the actual-enrollment and other integration conditions.
+- Do not apply ICHRA premium or qualifying-individual-coverage rules to an integrated group-plan HRA.
+- Do not infer HSA compatibility or incompatibility from the account label alone. Evaluate the expenses the HRA or Health FSA can reimburse and when reimbursement becomes available.
+- Do not reimburse the same expense from an HRA, Health FSA, and HSA. Apply the governing coordination and substantiation rules.
+
+> [!CAUTION]
+> The normalized calculation engine below currently defines `excepted` and `ichra` benefit paths. An integrated group-plan HRA requires its own explicit classification and validation rules before it is represented in production data. It must not be stored as an EBHRA merely to reuse the `excepted` path, or as an ICHRA merely to reuse an HRA balance field.
 
 ---
 
@@ -1056,11 +1206,13 @@ The EBHRA limit applies to the amount newly made available for a plan year. It d
 |---:|---:|---|
 | 2025 | \$2,150 | Official |
 | 2026 | \$2,200 | Official |
-| 2027 | Not stated | Not released when the source was prepared |
+| 2027 | \$2,250 | Official |
 
 ### Health FSA salary reduction limit
 
 The Section 125(i) limit restricts employee salary reduction into the Health FSA. It is not a total account limit.
+
+For plan years beginning in 2026, the Health FSA salary-reduction limit is \$3,400. If the plan adopts a carryover, up to \$680 may carry from the prior plan year without reducing the \$3,400 salary-reduction limit.
 
 It includes:
 
@@ -1201,13 +1353,18 @@ For every claim, determine:
 | “CommonFunds reimburses this expense.” | “The applicable CommonFunds component determines whether the expense is eligible.” |
 | “The employee has Marketplace coverage, so CommonFunds can pay the premium.” | “The PTC pathway uses CommonFunds only for eligible excepted-benefit expenses; the Marketplace premium is paid with PTC and unrestricted post-tax employee money.” |
 | “The employee was offered MEC, so the employee cannot receive PTC.” | “An offer of MEC that fails minimum value does not itself block PTC, but enrollment in employer-sponsored MEC does; the PTC claimant must decline the MEC.” |
-| “PTC-compatible CommonFunds is automatically HSA-compatible.” | “PTC and HSA eligibility are separate; general-purpose FSA/HRA coverage ordinarily prevents HSA contributions.” |
+| “PTC-compatible CommonFunds is automatically HSA-compatible.” | “PTC and HSA eligibility are separate; HSA compatibility depends on what each FSA/HRA component can reimburse and when.” |
+| “The Health FSA is an excepted benefit, so it preserves HSA eligibility.” | “Excepted-benefit status and HSA compatibility are separate tests; ordinary pre-deductible reimbursement generally disqualifies, while limited-purpose or properly post-deductible terms may preserve eligibility.” |
+| “The deductible was met before the FSA paid the claim.” | “For an ordinary medical expense, the deductible must have been satisfied before the expense was incurred.” |
+| “The employee did not use the FSA, so HSA contributions are allowed.” | “HSA eligibility ordinarily turns on the reimbursement coverage made available, not whether the employee submitted a claim.” |
 
 ---
 
 ## 9. Authorities cited in this document
 
 - [IRS Notice 2002-45](https://www.irs.gov/pub/irs-drop/n-02-45.pdf), Parts I and IV—HRA funding and cafeteria-plan interaction.
+- [IRS Notice 2013-54](https://www.irs.gov/irb/2013-40_IRB)—requirements for integrating an HRA with non-HRA group health coverage and the annual opt-out rules.
+- [DOL ACA Implementation FAQ Part 37](https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/faqs/aca-part-37)—integration with group coverage sponsored by the employee's or spouse's employer and alignment of covered family members.
 - [IRS Notice 2012-40](https://www.irs.gov/pub/irs-drop/n-12-40.pdf)—cashable employer flex credits elected into a Health FSA are treated as salary reduction for Section 125(i).
 - [45 C.F.R. § 146.145(b)(3)(v)](https://www.law.cornell.edu/cfr/text/45/146.145)—Health FSA excepted-benefit requirements and treatment of taxable options elected into the FSA.
 - [26 C.F.R. § 54.9831-1(c)(3)(v)](https://www.law.cornell.edu/cfr/text/26/54.9831-1)—parallel Treasury excepted-benefit rule.
@@ -1215,6 +1372,10 @@ For every claim, determine:
 - [IRS Publication 974](https://www.irs.gov/publications/p974)—PTC eligibility, employer-sponsored MEC, affordability, and minimum value.
 - [IRS ACA tax provisions](https://www.irs.gov/affordable-care-act/affordable-care-act-tax-provisions)—Section 125 prohibition on purchasing Exchange coverage pre-tax.
 - [IRS Publication 15-B](https://www.irs.gov/publications/p15b)—HSA eligibility and incompatible FSA/HRA coverage.
+- [Internal Revenue Code § 223](https://www.law.cornell.edu/uscode/text/26/223)—HSA eligibility, HDHP requirements, permitted insurance, permitted coverage, and preventive-care rules.
+- [IRS Revenue Ruling 2004-45](https://www.irs.gov/pub/irs-drop/rr-04-45.pdf)—limited-purpose and post-deductible FSA/HRA designs that preserve HSA eligibility.
+- [IRS Notice 2008-59](https://www.irs.gov/pub/irs-drop/n-08-59.pdf)—definition and administration of post-deductible and limited-purpose Health FSAs and HRAs.
+- [IRS Publication 969](https://www.irs.gov/publications/p969)—current plain-language guidance on HSA-compatible employee health plans and Health FSA grace periods.
 
 ---
 

@@ -30,6 +30,7 @@ The result is genuine participant choice without abandoning employer sponsorship
 - [How CommonCare ranks plans](#how-commoncare-ranks-plans)
 - [What the ranking does—and does not—decide](#what-the-ranking-doesand-does-notdecide)
 - [The CHOICE funding architecture](#the-choice-funding-architecture)
+- [How ICHRA contribution amounts may vary](#how-ichra-contribution-amounts-may-vary)
 - [Why CommonCare generally minimizes the ICHRA amount](#why-commoncare-generally-minimizes-the-ichra-amount)
 - [Flex credits and health-flex credits](#flex-credits-and-health-flex-credits)
 - [A thoughtful word about paternalism](#a-thoughtful-word-about-paternalism)
@@ -138,6 +139,23 @@ CHOICE separates four functions that are often collapsed into one employer contr
 | Employee Section 125 election | Pay the participant’s remaining eligible off-Exchange premium pre-tax |
 
 These components can appear together in one enrollment and payroll experience while retaining their separate legal classifications.
+
+### How ICHRA contribution amounts may vary
+
+An ICHRA must be offered on the same terms to every employee within a permitted employee class. In general, that means every participant in the class receives the same maximum dollar amount. The rules expressly permit the maximum to increase based on:
+
+- The participant's age, provided participants of the same age receive the same amount and the amount available to the oldest participant is no more than three times the amount available to the youngest participant;
+- The number of dependents covered by the ICHRA, provided participants covering the same number of dependents receive the same amount attributable to family size; and
+- Permitted proration for participants who become eligible during the plan year or experience an applicable change in covered dependents.
+
+Different fixed-dollar amounts may be assigned to different classes only when each class is one the ICHRA rules permit, such as full-time and part-time employees, salaried and non-salaried employees, or employees in different qualifying geographic areas. Applicable minimum-class-size rules must also be satisfied. An employer may not invent compensation bands, management levels, job titles, or similar categories as ICHRA classes.
+
+> [!IMPORTANT]
+> **Do not define the ICHRA contribution as a percentage of income, salary, compensation, or the premium an employee selects.** Applying the same percentage can produce different maximum dollar amounts for participants in the same class. Compensation and selected-premium differences are not permitted bases for varying the ICHRA amount within a class. In the final-rule preamble, the Departments specifically declined requests to allow amounts to vary by earnings, salary, role, or title. [2019 final ICHRA rules, same-terms discussion](https://www.irs.gov/irb/2019-28_IRB)
+
+Percentage-of-income calculations still have a separate role in testing whether an offer is affordable. They do not determine how much may be contributed to different participants within the same ICHRA class.
+
+The required participant notice must state the **maximum dollar amount available for each participant**, including the self-only amount available for the plan year. A formula may explain how a permitted age, family-size, class, or proration rule works, but the notice must resolve that formula to the applicable participant's dollar maximum; a percentage alone is not sufficient. [26 CFR §54.9802-4(c)(6)(ii)(A)](https://www.ecfr.gov/current/title-26/chapter-I/subchapter-B/part-54/section-54.9802-4)
 
 ### A simple illustration
 

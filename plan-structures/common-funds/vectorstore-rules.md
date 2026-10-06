@@ -5,8 +5,8 @@ kind: vector-store-source
 schema_version: "1.0"
 source_document: plan-structures/common-funds/human-readable.md
 metadata_document: plan-structures/common-funds/metadata.yaml
-source_commit: cb2d724e1710d1f2b6a9ba282c6d05c10dab29f6
-source_sha256: e16c82253e0b0d0b60add887f580c73976e8673f34b4fadb3b1951e2e6025513
+source_commit: 4c66b2f8254f45dc7647ec4ba83255eefe58d286
+source_sha256: 5f5f8b80477f5d60428d0ecaebd56eba32ffbd2833adf0b3980311c67c71f0c8
 metadata_sha256: ec2da998690975e56cbbb2bd3f6e342a3faf67c8c52304eb46facc31c41c1c61
 generation_method: deterministic-commonfunds-split-conversion
 canonical_source: false
@@ -1630,8 +1630,8 @@ The EBHRA limit applies to the amount newly made available for a plan year. It d
 <!-- record_id: product.commonfunds.rules.vector-store.5-annual-limits-are-component-specific-ebhra-annual-limit.2027; record_type: table-row -->
 - Context: CommonFunds — 5. Annual limits are component-specific > EBHRA annual limit
 - Plan year: 2027
-- Annual EBHRA limit: Not stated
-- Status in source data: Not released when the source was prepared
+- Annual EBHRA limit: \$2,250
+- Status in source data: Official
 
 
 <!-- record_id: product.commonfunds.rules.vector-store.health-fsa-salary-reduction-limit -->
@@ -1639,6 +1639,8 @@ The EBHRA limit applies to the amount newly made available for a plan year. It d
 > Retrieval context: CommonFunds — 5. Annual limits are component-specific > Health FSA salary reduction limit
 
 The Section 125(i) limit restricts employee salary reduction into the Health FSA. It is not a total account limit.
+
+For plan years beginning in 2026, the Health FSA salary-reduction limit is \$3,400. If the plan adopts a carryover, up to \$680 may carry from the prior plan year without reducing the \$3,400 salary-reduction limit.
 
 It includes:
 
@@ -1935,7 +1937,25 @@ For every claim, determine:
 <!-- record_id: product.commonfunds.rules.vector-store.8-practical-interpretation-guide.ptc-compatible-commonfunds-is-automatically-hsa-compatible; record_type: table-row -->
 - Context: CommonFunds — 8. Practical interpretation guide
 - Avoid: “PTC-compatible CommonFunds is automatically HSA-compatible.”
-- Use instead: “PTC and HSA eligibility are separate; general-purpose FSA/HRA coverage ordinarily prevents HSA contributions.”
+- Use instead: “PTC and HSA eligibility are separate; HSA compatibility depends on what each FSA/HRA component can reimburse and when.”
+
+#### “The Health FSA is an excepted benefit, so it preserves HSA eligibility.”
+<!-- record_id: product.commonfunds.rules.vector-store.8-practical-interpretation-guide.the-health-fsa-is-an-excepted-benefit-so-it-preserves-hsa-eligibility; record_type: table-row -->
+- Context: CommonFunds — 8. Practical interpretation guide
+- Avoid: “The Health FSA is an excepted benefit, so it preserves HSA eligibility.”
+- Use instead: “Excepted-benefit status and HSA compatibility are separate tests; ordinary pre-deductible reimbursement generally disqualifies, while limited-purpose or properly post-deductible terms may preserve eligibility.”
+
+#### “The deductible was met before the FSA paid the claim.”
+<!-- record_id: product.commonfunds.rules.vector-store.8-practical-interpretation-guide.the-deductible-was-met-before-the-fsa-paid-the-claim; record_type: table-row -->
+- Context: CommonFunds — 8. Practical interpretation guide
+- Avoid: “The deductible was met before the FSA paid the claim.”
+- Use instead: “For an ordinary medical expense, the deductible must have been satisfied before the expense was incurred.”
+
+#### “The employee did not use the FSA, so HSA contributions are allowed.”
+<!-- record_id: product.commonfunds.rules.vector-store.8-practical-interpretation-guide.the-employee-did-not-use-the-fsa-so-hsa-contributions-are-allowed; record_type: table-row -->
+- Context: CommonFunds — 8. Practical interpretation guide
+- Avoid: “The employee did not use the FSA, so HSA contributions are allowed.”
+- Use instead: “HSA eligibility ordinarily turns on the reimbursement coverage made available, not whether the employee submitted a claim.”
 
 
 ---
@@ -1945,6 +1965,8 @@ For every claim, determine:
 > Retrieval context: CommonFunds — 9. Authorities cited in this document
 
 - [IRS Notice 2002-45](https://www.irs.gov/pub/irs-drop/n-02-45.pdf), Parts I and IV—HRA funding and cafeteria-plan interaction.
+- [IRS Notice 2013-54](https://www.irs.gov/irb/2013-40_IRB)—requirements for integrating an HRA with non-HRA group health coverage and the annual opt-out rules.
+- [DOL ACA Implementation FAQ Part 37](https://www.dol.gov/agencies/ebsa/about-ebsa/our-activities/resource-center/faqs/aca-part-37)—integration with group coverage sponsored by the employee's or spouse's employer and alignment of covered family members.
 - [IRS Notice 2012-40](https://www.irs.gov/pub/irs-drop/n-12-40.pdf)—cashable employer flex credits elected into a Health FSA are treated as salary reduction for Section 125(i).
 - [45 C.F.R. § 146.145(b)(3)(v)](https://www.law.cornell.edu/cfr/text/45/146.145)—Health FSA excepted-benefit requirements and treatment of taxable options elected into the FSA.
 - [26 C.F.R. § 54.9831-1(c)(3)(v)](https://www.law.cornell.edu/cfr/text/26/54.9831-1)—parallel Treasury excepted-benefit rule.
@@ -1952,6 +1974,10 @@ For every claim, determine:
 - [IRS Publication 974](https://www.irs.gov/publications/p974)—PTC eligibility, employer-sponsored MEC, affordability, and minimum value.
 - [IRS ACA tax provisions](https://www.irs.gov/affordable-care-act/affordable-care-act-tax-provisions)—Section 125 prohibition on purchasing Exchange coverage pre-tax.
 - [IRS Publication 15-B](https://www.irs.gov/publications/p15b)—HSA eligibility and incompatible FSA/HRA coverage.
+- [Internal Revenue Code § 223](https://www.law.cornell.edu/uscode/text/26/223)—HSA eligibility, HDHP requirements, permitted insurance, permitted coverage, and preventive-care rules.
+- [IRS Revenue Ruling 2004-45](https://www.irs.gov/pub/irs-drop/rr-04-45.pdf)—limited-purpose and post-deductible FSA/HRA designs that preserve HSA eligibility.
+- [IRS Notice 2008-59](https://www.irs.gov/pub/irs-drop/n-08-59.pdf)—definition and administration of post-deductible and limited-purpose Health FSAs and HRAs.
+- [IRS Publication 969](https://www.irs.gov/publications/p969)—current plain-language guidance on HSA-compatible employee health plans and Health FSA grace periods.
 
 ---
 

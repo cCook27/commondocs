@@ -5,8 +5,8 @@ kind: vector-store-source
 schema_version: "1.0"
 source_document: plan-structures/choice-ichra/human-readable.md
 metadata_document: plan-structures/choice-ichra/metadata.yaml
-source_commit: 1eb6e3d61a4ca5c61bdd1fa63c92983bdfdc9132
-source_sha256: 31254922c3644bb23f89d77e1b4d92739ebb6a8aa8cabe68791f6992b7c9e1ee
+source_commit: 4c66b2f8254f45dc7647ec4ba83255eefe58d286
+source_sha256: 0585933eb84dd0be8871ca07bdeaa76ad4b0052c9e1698c689c9792404c8ec0e
 metadata_sha256: 9b769bd2d50959f57bfb1171245902f69217a5d83d81470045364dd1d8325bb9
 generation_method: deterministic-markdown-conversion
 canonical_source: false
@@ -96,6 +96,7 @@ The result is genuine participant choice without abandoning employer sponsorship
 - [How CommonCare ranks plans](#how-commoncare-ranks-plans)
 - [What the ranking does—and does not—decide](#what-the-ranking-doesand-does-notdecide)
 - [The CHOICE funding architecture](#the-choice-funding-architecture)
+- [How ICHRA contribution amounts may vary](#how-ichra-contribution-amounts-may-vary)
 - [Why CommonCare generally minimizes the ICHRA amount](#why-commoncare-generally-minimizes-the-ichra-amount)
 - [Flex credits and health-flex credits](#flex-credits-and-health-flex-credits)
 - [A thoughtful word about paternalism](#a-thoughtful-word-about-paternalism)
@@ -259,6 +260,25 @@ CHOICE separates four functions that are often collapsed into one employer contr
 
 
 These components can appear together in one enrollment and payroll experience while retaining their separate legal classifications.
+
+<!-- record_id: product.choice.how-ichra-contribution-amounts-may-vary -->
+### How ICHRA contribution amounts may vary
+> Retrieval context: CHOICE — The CHOICE funding architecture > How ICHRA contribution amounts may vary
+
+An ICHRA must be offered on the same terms to every employee within a permitted employee class. In general, that means every participant in the class receives the same maximum dollar amount. The rules expressly permit the maximum to increase based on:
+
+- The participant's age, provided participants of the same age receive the same amount and the amount available to the oldest participant is no more than three times the amount available to the youngest participant;
+- The number of dependents covered by the ICHRA, provided participants covering the same number of dependents receive the same amount attributable to family size; and
+- Permitted proration for participants who become eligible during the plan year or experience an applicable change in covered dependents.
+
+Different fixed-dollar amounts may be assigned to different classes only when each class is one the ICHRA rules permit, such as full-time and part-time employees, salaried and non-salaried employees, or employees in different qualifying geographic areas. Applicable minimum-class-size rules must also be satisfied. An employer may not invent compensation bands, management levels, job titles, or similar categories as ICHRA classes.
+
+> [!IMPORTANT]
+> **Do not define the ICHRA contribution as a percentage of income, salary, compensation, or the premium an employee selects.** Applying the same percentage can produce different maximum dollar amounts for participants in the same class. Compensation and selected-premium differences are not permitted bases for varying the ICHRA amount within a class. In the final-rule preamble, the Departments specifically declined requests to allow amounts to vary by earnings, salary, role, or title. [2019 final ICHRA rules, same-terms discussion](https://www.irs.gov/irb/2019-28_IRB)
+
+Percentage-of-income calculations still have a separate role in testing whether an offer is affordable. They do not determine how much may be contributed to different participants within the same ICHRA class.
+
+The required participant notice must state the **maximum dollar amount available for each participant**, including the self-only amount available for the plan year. A formula may explain how a permitted age, family-size, class, or proration rule works, but the notice must resolve that formula to the applicable participant's dollar maximum; a percentage alone is not sufficient. [26 CFR §54.9802-4(c)(6)(ii)(A)](https://www.ecfr.gov/current/title-26/chapter-I/subchapter-B/part-54/section-54.9802-4)
 
 <!-- record_id: product.choice.a-simple-illustration -->
 ### A simple illustration
